@@ -7,4 +7,10 @@ function video_embed()
 	echo '<div class="videoWrapper"><iframe width="560" height="349" src="' . $src . '" frameborder="0" allowfullscreen></iframe></div><div class="drive-link"><a href="' . $href . '">Download Original File</a></div>'; 
 }
 
+function YouTube_thumbnail()
+{
+	$src = 'http://img.youtube.com/vi/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+	echo '<img src="' . $src . '">';
+}
+
 ; ?>

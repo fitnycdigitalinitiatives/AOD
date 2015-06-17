@@ -4,8 +4,6 @@
 
 <div id="primary">
     <?php echo all_element_texts('item'); ?>
-	<?php echo metadata('item', array('Item Type Metadata', 'Transcription')); ?>
-	
     
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 

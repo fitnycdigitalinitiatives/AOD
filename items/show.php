@@ -17,7 +17,9 @@
 <aside id="sidebar">
 
     <!-- The following returns all of the files associated with an item. -->
-	<?php echo '<div><p>' . getItemType() . '</p></div>'; ?>
+	<?php 
+	$itemType = $item->getItemType();
+	echo '<div><p>' . $itemType . '</p></div>'; ?>
     <?php YouTube_embed(); ?>
 
     <!-- If the item belongs to a collection, the following creates a link to that collection. -->

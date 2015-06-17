@@ -17,7 +17,7 @@
 <aside id="sidebar">
 
     <!-- The following returns all of the files associated with an item. -->
-	<?php if metadata('item', 'item_type_name') == "Moving Image": ?>
+	<?php if (metadata('item', 'item_type_name') == "Moving Image"): ?>
     <?php YouTube_embed(); ?>
 	<?php endif; ?>
 

@@ -10,7 +10,7 @@ function video_embed()
 function YouTube_thumbnail()
 {
 	$src = 'http://img.youtube.com/vi/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
-	echo '<img src="' . $src . '">';
+	return '<img src="' . $src . '">';
 }
 
 ; ?>

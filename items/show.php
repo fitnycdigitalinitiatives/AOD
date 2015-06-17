@@ -13,7 +13,7 @@
 
     <!-- The following returns all of the files associated with an item. -->
 	<?php if (metadata('item', 'item_type_name') == "Moving Image"): ?>
-    <?php video_embed(); ?>
+    <?php echo video_embed(); ?>
 	<?php elseif (metadata('item', 'has files')): ?>
 	<?php echo files_for_item(array('imageSize' => 'fullsize')); ?>
 	<?php endif; ?>

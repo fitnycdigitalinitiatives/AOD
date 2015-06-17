@@ -17,12 +17,7 @@
 <aside id="sidebar">
 
     <!-- The following returns all of the files associated with an item. -->
-    <?php if ((get_theme_option('Item FileGallery') == 1) && metadata('item', 'has files')): ?>
-    <div id="itemfiles" class="element">
-        <h2><?php echo __('Files'); ?></h2>
-        <?php echo item_image_gallery(); ?>
-    </div>
-    <?php endif; ?>
+    <?php YouTube_embed(); ?>
 
     <!-- If the item belongs to a collection, the following creates a link to that collection. -->
     <?php if (metadata('item', 'Collection Name')): ?>

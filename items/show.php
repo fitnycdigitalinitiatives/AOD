@@ -17,7 +17,7 @@
 <aside id="sidebar">
 
     <!-- The following returns all of the files associated with an item. -->
-	<div class="element-text"><?php echo metadata('item', 'permalink', array('no_escape' => true)); ?></div>
+	<?php echo metadata('item', 'item_type_name'); ?>
     <?php YouTube_embed(); ?>
 
     <!-- If the item belongs to a collection, the following creates a link to that collection. -->

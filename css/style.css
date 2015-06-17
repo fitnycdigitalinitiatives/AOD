@@ -936,13 +936,13 @@
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
-  .items.show .videoWrapper {
+  .items.show #content #sidebar .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
   }
-  .items.show .videoWrapper iframe {
+  .items.show #content #sidebar .videoWrapper iframe {
 	position: absolute;
 	top: 0;
 	left: 0;

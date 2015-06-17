@@ -32,7 +32,8 @@ $sortLinks[__('Date Added')] = 'added';
     <div class="item-meta">
 	<?php if (metadata('item', 'item_type_name') == "Moving Image"): ?>
 	<div class="item-img">
-        <?php echo link_to_item(YouTube_thumbnail()); ?>
+        <?php echo link_to_item(); ?>
+		<?php YouTube_thumbnail(); ?>
     </div>
     <?php elseif (metadata('item', 'has files')): ?>
     <div class="item-img">

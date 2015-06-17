@@ -1,6 +1,6 @@
 <?php
 
-function YouTube_embed()
+function video_embed()
 {
 	$src = 'https://www.youtube.com/embed/' . metadata('item', array('Dublin Core', 'Relation'));
 	$href = 'https://drive.google.com/uc?export=download&id=' . metadata('item', array('Dublin Core', 'Identifier'));

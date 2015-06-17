@@ -3,11 +3,6 @@
 <h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
 
 <div id="primary">
-
-    <?php if ((get_theme_option('Item FileGallery') == 0) && metadata('item', 'has files')): ?>
-    <?php echo files_for_item(array('imageSize' => 'fullsize')); ?>
-    <?php endif; ?>
-    
     <?php echo all_element_texts('item'); ?>
     
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
@@ -17,8 +12,11 @@
 <aside id="sidebar">
 
     <!-- The following returns all of the files associated with an item. -->
-	<?php echo metadata('item', 'item_type_name'); ?>
-    <?php YouTube_embed(); ?>
+	<?php if metadata('item', 'item_type_name') == "Moving Image"; ?>
+    <?php video_embed(); ?>
+	<?php else; ?>
+	<?php echo files_for_item(array('imageSize' => 'fullsize')); ?>
+	<?php endif; ?>
 
     <!-- If the item belongs to a collection, the following creates a link to that collection. -->
     <?php if (metadata('item', 'Collection Name')): ?>

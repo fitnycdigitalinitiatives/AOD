@@ -953,6 +953,7 @@
   }
   .item img {
     display: block;
+	width: 100%;
   }
 
   /* !---------- Search ---------- */
@@ -1628,6 +1629,7 @@
   }
 
   /* !---------- Items --------- */
+  
   .items #advanced-search-form > div {
     width: 61.53846%;
     float: left;
@@ -1651,6 +1653,15 @@
     margin-right: 0;
     *margin-left: -1em;
     display: inline;
+  }
+  .item.tile {
+	width: 20%;
+  }
+  .item.tile:nth-child(5n+1) {
+	clear: left;
+  }
+  .item.tile:nth-child(4n+1) {
+	clear: none;
   }
 
   /* !---------- Collections ---------- */

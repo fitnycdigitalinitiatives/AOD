@@ -651,21 +651,6 @@
     border-bottom: 0;
     padding-bottom: 0.375em;
   }
-  #content .item-meta {
-    padding-bottom: 0;
-  }
-  #content .item-meta .item-description {
-    padding-top: 0;
-  }
-  #content .item-meta .item-img {
-    border: 1px solid #dfe2e2;
-    padding: 0;
-    float: left;
-    margin: 0 0.75em 0.75em 0;
-  }
-  #content .item-meta .item-img img {
-    margin: 0;
-  }
   #content #search-filters, #content #item-filters {
     background-color: transparent;
     border-top: 0;

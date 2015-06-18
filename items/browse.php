@@ -25,9 +25,9 @@ $sortLinks[__('Date Added')] = 'added';
 </div>
 
 <?php endif; ?>
-
+<div class="grid">
 <?php foreach (loop('items') as $item): ?>
-<div class="item hentry">
+<div class="item tile">
     <h2><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h2>
     <div class="item-meta">
 	<?php if (metadata('item', 'item_type_name') == "Moving Image"): ?>
@@ -55,9 +55,9 @@ $sortLinks[__('Date Added')] = 'added';
     <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
 
     </div><!-- end class="item-meta" -->
-</div><!-- end class="item hentry" -->
+</div><!-- end class="item tile" -->
 <?php endforeach; ?>
-
+</div>
 <?php echo pagination_links(); ?>
 
 <div id="outputs">

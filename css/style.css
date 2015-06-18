@@ -948,9 +948,6 @@
     box-sizing: border-box;
     *behavior: url("../javascripts/boxsizing.htc");
   }
-  .item.tile:nth-child(odd) {
-	clear: left;
-  }
   .item img {
     display: block;
 	width: 100%;
@@ -1656,12 +1653,6 @@
   }
   .item.tile {
 	width: 20%;
-  }
-  .item.tile:nth-child(5n+1) {
-	clear: left;
-  }
-  .item.tile:nth-child(4n+1) {
-	clear: none;
   }
 
   /* !---------- Collections ---------- */

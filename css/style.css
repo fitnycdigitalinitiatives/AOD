@@ -1761,11 +1761,6 @@
 	width: 33.3333333333333333%;
   }
 }
-@media screen and (min-width: 55em) {
-  .item.tile {
-	width: 25%;
-  }
-}
 @media screen and (min-width: 72em) {
   .item.tile {
 	width: 16.666666666%;

@@ -954,28 +954,24 @@
     display: block;
 	width: 100%;
   }
-  .item .title {
+  .item .overlay {
 	position: absolute;
 	bottom: 0.25em;
 	left: 0.25em;
 	right: 0.25em;
 	top: 0.25em;
 	display: none;
-	background: #000;
 	background: rgba(0, 0, 0, 0.5);
 	background-image: url("../images/play2.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 25%;
-	color: #FFF;
-	padding: 10px;
-	text-align: center;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
   }
-  .item.tile:hover .title {
+  .item.tile:hover .overlay {
 	display: block;
   }
 

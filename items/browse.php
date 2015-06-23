@@ -30,13 +30,13 @@ $sortLinks[__('Date Added')] = 'added';
 <div class="item tile">
 
 	<?php if (metadata('item', 'item_type_name') == "Moving Image"): ?>
-		<div class="item-thumb"?>
+		<div class="item-thumb">
         <?php echo link_to_item(YouTube_thumbnail(), array('class'=>'permalink')); ?>
 		<?php echo link_to_item('<div class="overlay"></div>'); ?>
 		</div>
 		<?php echo link_to_item('<div class="title">' . metadata('item', array('Dublin Core', 'Title')) . '</div>'); ?>
     <?php elseif (metadata('item', 'has files')): ?>
-		<div class="item-thumb"?>
+		<div class="item-thumb">
         <?php echo link_to_item(item_image('square_thumbnail')); ?>
 		<?php echo link_to_item('<div class="overlay"></div>'); ?>
 		</div>

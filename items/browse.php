@@ -31,10 +31,10 @@ $sortLinks[__('Date Added')] = 'added';
 
 	<?php if (metadata('item', 'item_type_name') == "Moving Image"): ?>
         <?php echo link_to_item(YouTube_thumbnail(), array('class'=>'permalink')); ?>
-		<h3><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'))); ?></h3>
+		<h4><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'))); ?></h4>
     <?php elseif (metadata('item', 'has files')): ?>
         <?php echo link_to_item(item_image('square_thumbnail')); ?>
-		<h3><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'))); ?></h3>
+		<h4><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'))); ?></h4>
     <?php endif; ?>
 
     <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>

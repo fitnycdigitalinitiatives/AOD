@@ -34,7 +34,7 @@ $sortLinks[__('Date Added')] = 'added';
 		<?php echo link_to_item('<div class="title"><h4>' . metadata('item', array('Dublin Core', 'Title')) . '</h4></div>'); ?>
     <?php elseif (metadata('item', 'has files')): ?>
         <?php echo link_to_item(item_image('square_thumbnail')); ?>
-		<div class="title"><h4><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'))); ?></h4></div>
+		<?php echo link_to_item('<div class="title"><h4>' . metadata('item', array('Dublin Core', 'Title')) . '</h4></div>'); ?>
     <?php endif; ?>
 
     <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>

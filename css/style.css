@@ -29,7 +29,7 @@
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 120%;
     word-wrap: break-word;
     height: 100%;
@@ -1449,7 +1449,7 @@
   */
   /* !---------- Header ---------- */
   body {
-	font-size: 10px;
+	font-size: 11px;
   }
   header {
     *zoom: 1;
@@ -1763,12 +1763,12 @@
 }
 @media screen and (min-width: 1024px) {
   body {
-	font-size: 8px;
+	font-size: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
   body {
-	font-size: 12px;
+	font-size: 13px;
   }
   .item.tile {
 	width: 20%;

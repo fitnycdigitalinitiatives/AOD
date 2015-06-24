@@ -978,6 +978,8 @@
 	height: 25%;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url("../images/egg-shell.png");
+	background-repeat: repeat;
 	color: white;
 	text-align: center;
 	bottom: 0;

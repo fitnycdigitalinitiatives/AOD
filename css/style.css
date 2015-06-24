@@ -27,9 +27,9 @@
     *behavior: url("../javascripts/boxsizing.htc");
   }
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 120%;
     word-wrap: break-word;
     height: 100%;

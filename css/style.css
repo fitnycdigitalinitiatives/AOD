@@ -27,10 +27,10 @@
     *behavior: url("../javascripts/boxsizing.htc");
   }
   body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 120%;
     word-wrap: break-word;
     height: 100%;
   }
@@ -982,7 +982,7 @@
   }
   .item.tile .title {
 	width: 100%;
-	height: 3em;
+	height: 25%;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
@@ -1448,6 +1448,9 @@
   -- ExhibitBuilder
   */
   /* !---------- Header ---------- */
+  body {
+	font-size: .9em;
+  }
   header {
     *zoom: 1;
   }
@@ -1692,7 +1695,7 @@
     display: inline;
   }
   .item.tile {
-	width: 33.3333333333333333%;
+	width: 25%;
   }
 
   /* !---------- Collections ---------- */
@@ -1758,13 +1761,16 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 40em) {
-  .item.tile {
-	width: 33.3333333333333333%;
+@media screen and (min-width: 1024px) {
+  body {
+	font-size: .8em
   }
 }
-@media screen and (min-width: 72em) {
+@media screen and (min-width: 1200px) {
+  body {
+	font-size: 1em
+  }
   .item.tile {
-	width: 16.666666666%;
+	width: 20%;
   }
 }

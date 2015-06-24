@@ -950,19 +950,11 @@
 	float: left;
 	width: 50%;
 	padding: 0.25em;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    *behavior: url("../javascripts/boxsizing.htc");
   }
   .item-thumb {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    *behavior: url("../javascripts/boxsizing.htc");
   }
   .item img {
     display: block;
@@ -991,10 +983,7 @@
   .item.tile .title {
 	width: 100%;
 	height: 3em;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    *behavior: url("../javascripts/boxsizing.htc");
+
   }
 
   /* !---------- Search ---------- */

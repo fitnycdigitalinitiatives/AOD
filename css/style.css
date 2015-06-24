@@ -20,6 +20,12 @@
   -- ExhibitBuilder
   */
   /* !---------- General HTML Elements ---------- */
+  * {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url("../javascripts/boxsizing.htc");
+  }
   body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;

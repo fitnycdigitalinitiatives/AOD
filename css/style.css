@@ -968,7 +968,7 @@
 	left: 0;
 	right: 0;
 	top: 0;
-	display: none;
+	opacity: 0;
 	background: rgba(0, 0, 0, 0.5);
 	background-image: url("../images/play2.png");
 	background-repeat: no-repeat;
@@ -980,7 +980,7 @@
 	transition: all 0.3s ease-out;
   }
   .item.tile:hover .overlay {
-	display: block;
+	opacity: 1;
   }
   .item.tile .title {
 	width: 100%;

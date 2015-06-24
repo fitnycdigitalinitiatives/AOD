@@ -33,14 +33,14 @@ $sortLinks[__('Date Added')] = 'added';
 		<div class="item-thumb">
         <?php echo link_to_item(YouTube_thumbnail(), array('class'=>'permalink')); ?>
 		<?php echo link_to_item('<div class="overlay"></div>'); ?>
-		</div>
 		<?php echo link_to_item('<div class="title">' . metadata('item', array('Dublin Core', 'Title')) . '</div>'); ?>
+		</div>
     <?php elseif (metadata('item', 'has files')): ?>
 		<div class="item-thumb">
         <?php echo link_to_item(item_image('square_thumbnail')); ?>
 		<?php echo link_to_item('<div class="overlay"></div>'); ?>
-		</div>
 		<?php echo link_to_item('<div class="title">' . metadata('item', array('Dublin Core', 'Title')) . '</div>'); ?>
+		</div>
     <?php endif; ?>
 
     <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>

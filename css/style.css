@@ -991,6 +991,7 @@
 	margin: 0;
 	height: 2.4em;
 	overflow: hidden;
+	font-weight: bold;
   }
 
   /* !---------- Search ---------- */

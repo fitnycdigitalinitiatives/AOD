@@ -119,7 +119,7 @@
 
   input[type=text], input[type=password],
   input[type=submit], button, .button {
-    height: 35px;
+    height: 2.2em;
   }
 
   input[type=text], input[type=password], textarea {
@@ -479,7 +479,6 @@
   }
   #search-form input[type=text] {
     width: 100%;
-    font-size: 0.875em;
     line-height: 1.71429em;
     padding-right: 3em;
   }
@@ -490,6 +489,7 @@
     top: 0;
     right: 0;
     text-indent: -9999px;
+	background-color: #0c6fab;
   }
   #search-form button:after {
     font-family: "FontAwesome";
@@ -499,7 +499,7 @@
     top: 0;
     text-indent: 0;
     width: 2.25em;
-    line-height: 2.25em;
+    line-height: 2.2em;
   }
   #search-form.with-advanced input[type=text] {
     padding-right: 5.25em;
@@ -1596,7 +1596,7 @@
 
   /* !---------- Search ---------- */
   #search-container {
-    padding: 0;
+    padding: 1.5em 0;
     width: 20%;
     float: right;
     margin-right: 0;
@@ -1628,7 +1628,7 @@
   /* !---------- Content --------- */
   header, #content, footer {
     *zoom: 1;
-    padding: 0.5% 8.47458%;
+    padding: 1% 8.47458%;
   }
   header:after, nav.top:after, #content:after, footer:after {
     content: "";

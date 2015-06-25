@@ -449,6 +449,9 @@
     padding-top: 0.75em;
     padding-bottom: 0.75em;
   }
+  #site-title img {
+	width: 100%;
+  }
 
   #search-container {
     padding: 0 16px 1.5em;
@@ -991,6 +994,7 @@
 	margin: 0;
 	height: 2.4em;
 	overflow: hidden;
+	font-weight: bold;
   }
 
   /* !---------- Search ---------- */

@@ -1622,8 +1622,7 @@
   /* !---------- Content --------- */
   header, #content, footer {
     *zoom: 1;
-    padding-left: 8.47458%;
-    padding-right: 8.47458%;
+    padding: 8.47458% 0.5%;
   }
   header:after, nav.top:after, #content:after, footer:after {
     content: "";

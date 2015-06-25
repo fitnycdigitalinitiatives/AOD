@@ -616,11 +616,9 @@
   #content > h2:first-child, #content > div > h2:first-child,
   #content #primary > h2:first-child, #content #primary > div > h2:first-child,
   #content #sidebar > h2:first-child, #content #sidebar > div > h2:first-child {
-    padding: 0 16px 0.375em;
+    padding: 0 0 0.375em;
     font-weight: 500;
-    border-style: solid;
-    border-width: 0 0 5px 0;
-    margin: 0 0 0.75em -16px;
+    margin: 0 0 0.75em 0;
     width: 100%;
   }
   #content > div > *:only-child, #content section > *:only-child {
@@ -1537,7 +1535,9 @@
   nav.top .sub-nav {
     position: absolute;
     display: none;
-    border: 1px solid #dedede;
+    background-image: url("../images/egg-shell.png");
+	background-repeat: repeat;
+	background-color: #3c3c3c;
     min-width: 200px;
   }
   nav.top .sub-nav.open {
@@ -1628,7 +1628,7 @@
   /* !---------- Content --------- */
   header, #content, footer {
     *zoom: 1;
-    padding: 1% 8.47458%;
+    padding: 1em 8.47458%;
   }
   header:after, nav.top:after, #content:after, footer:after {
     content: "";

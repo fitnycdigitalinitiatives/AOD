@@ -50,6 +50,9 @@
             <div id="site-title">
                 <?php echo link_to_home_page('<img src="' . img('AOD_logo.png') . '" alt="Archive On Demand">'); ?>
             </div>
+			<nav id="top-nav" class="top" role="navigation">
+            <?php echo public_nav_main(); ?>
+			</nav>
             <div id="search-container" role="search">
                 <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
                 <?php echo search_form(array('show_advanced' => true)); ?>
@@ -59,10 +62,6 @@
             </div>
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
-
-        <nav id="top-nav" class="top" role="navigation">
-            <?php echo public_nav_main(); ?>
-        </nav>
 
         <div id="content" role="main" tabindex="-1">
             <?php

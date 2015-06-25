@@ -1466,9 +1466,9 @@
   }
 
   #site-title {
-    width: auto%;
+    width: auto;
 	height: 5.2em;
-	padding: 0;
+	padding: 0.4em 0;
     float: left;
     display: inline;
     text-align: left;

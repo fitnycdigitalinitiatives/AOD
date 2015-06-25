@@ -451,8 +451,7 @@
     font-weight: 300;
     text-align: center;
     margin: 0;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
+    padding: 0.75em 16px;
   }
   #site-title img {
 	width: 100%;
@@ -1496,8 +1495,6 @@
     /* sub-navigation panel */
 	width: 50%;
 	float: left;
-	padding-left: 0;
-	padding-right: 0;
   }
   nav.top *, nav.top *:before, nav.top *:after {
     box-sizing: inherit;
@@ -1626,7 +1623,7 @@
   }
 
   /* !---------- Content --------- */
-  header, nav.top, #content, footer {
+  header, #content, footer {
     *zoom: 1;
     padding-left: 8.47458%;
     padding-right: 8.47458%;

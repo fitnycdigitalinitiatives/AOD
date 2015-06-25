@@ -48,7 +48,7 @@
     <div id="wrap">
         <header role="banner">
             <div id="site-title">
-                <?php echo link_to_home_page('<img src="' . img('AOD_logo.png') . '" alt="Archive On Demand">'); ?>
+                <?php echo link_to_home_page('<img src="' . img('AOD_logo2.png') . '" alt="Archive On Demand">'); ?>
             </div>
 			<nav id="top-nav" class="top" role="navigation">
             <?php echo public_nav_main(); ?>

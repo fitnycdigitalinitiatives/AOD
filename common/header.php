@@ -48,7 +48,7 @@
     <div id="wrap">
         <header role="banner">
             <div id="site-title">
-                <?php echo link_to_home_page('<img src="' . img('AOD_logo.png') . '" alt="Archive On Demand"'); ?>
+                <?php echo link_to_home_page('<img src="/themes/AOD/images/AOD_logo.png" alt="Archive On Demand"'); ?>
             </div>
             <div id="search-container" role="search">
                 <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>

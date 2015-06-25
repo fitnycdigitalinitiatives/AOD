@@ -440,6 +440,11 @@
   }
 
   /* !---------- Header ---------- */
+  header {
+	background-image: url("../images/egg-shell.png");
+	background-repeat: repeat;
+	background-color: #3c3c3c;
+  }
   #site-title {
     font-size: 32px;
     line-height: 48px;
@@ -1465,9 +1470,9 @@
   }
 
   #site-title {
-    width: 66.10169%;
+    width: 30%;
+	padding: 0;
     float: left;
-    margin-right: 1.69492%;
     display: inline;
     text-align: left;
   }
@@ -1489,6 +1494,10 @@
     /* open state of first descendant link within a top level 
        navigation item */
     /* sub-navigation panel */
+	width: 50%;
+	float: left;
+	padding-left: 0;
+	padding-right: 0;
   }
   nav.top *, nav.top *:before, nav.top *:after {
     box-sizing: inherit;
@@ -1588,12 +1597,11 @@
   /* !---------- Search ---------- */
   #search-container {
     padding: 0;
-    width: 32.20339%;
+    width: 20%;
     float: right;
     margin-right: 0;
     *margin-left: -1em;
     display: inline;
-    margin-top: 1.875em;
   }
   #search-container input {
     padding: 0.46875em 8px;

@@ -1468,7 +1468,7 @@
   #site-title {
     width: auto;
 	height: 5.2em;
-	padding: 0.4em 0;
+	padding: 1.2em 0;
     float: left;
     display: inline;
     text-align: left;
@@ -1529,7 +1529,7 @@
   nav.top .nav-item > a:focus,
   nav.top .nav-item > a:hover,
   nav.top .nav-item > a.open {
-    background-color: rgba(0, 0, 0, 0.15);
+    background: #0067ac;
   }
   nav.top .nav-item > a.open {
     border-bottom: none;
@@ -1537,9 +1537,7 @@
   nav.top .sub-nav {
     position: absolute;
     display: none;
-    background-image: url("../images/egg-shell.png");
-	background-repeat: repeat;
-	background-color: #3c3c3c;
+    background: #0067ac;
     min-width: 200px;
   }
   nav.top .sub-nav.open {
@@ -1572,7 +1570,6 @@
     padding: 0;
   }
   nav.top .sub-nav a:focus, nav.top .sub-nav a:hover {
-    background-color: rgba(0, 0, 0, 0.15);
     display: block;
   }
   nav.top [aria-haspopup="true"]:after {

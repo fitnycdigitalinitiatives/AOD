@@ -1456,6 +1456,8 @@
   }
   header {
     *zoom: 1;
+	padding-top: 0;
+	padding-bottom: 0;
   }
   header:after {
     content: "";
@@ -1570,7 +1572,7 @@
     padding: 0;
   }
   nav.top .sub-nav a:focus, nav.top .sub-nav a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.15);
     display: block;
   }
   nav.top [aria-haspopup="true"]:after {
@@ -1628,7 +1630,12 @@
   /* !---------- Content --------- */
   header, #content, footer {
     *zoom: 1;
-    padding: 1em 8.47458%;
+    padding-left: 8.47458%;
+	padding-right: 8.47458%;
+  }
+  #content, footer {
+    padding-top: 1em;
+	padding-bottom: 1em;
   }
   header:after, nav.top:after, #content:after, footer:after {
     content: "";

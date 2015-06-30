@@ -119,7 +119,7 @@
 
   input[type=text], input[type=password],
   input[type=submit], button, .button {
-    height: 2.2em;
+    height: 2em;
   }
 
   input[type=text], input[type=password], textarea {
@@ -1467,8 +1467,8 @@
 
   #site-title {
     width: auto;
-	height: 5.2em;
-	padding: 1.2em 0;
+	height: 5em;
+	padding: 1.1em 0;
     float: left;
     display: inline;
     text-align: left;
@@ -1519,6 +1519,7 @@
   }
   nav.top .nav-item a {
     padding: 2em 0.75em;
+	line-height: 1em;
 	color: white;
 	font-weight: bold;
   }

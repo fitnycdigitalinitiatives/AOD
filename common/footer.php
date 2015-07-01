@@ -27,6 +27,11 @@ jQuery(document).ready(function () {
     Seasons.mobileSelectNav();
 });
 </script>
+<script>
+$(document).ready(function() {
+	$("#featured-carousel").owlCarousel();
+});
+</script>
 
 </body>
 

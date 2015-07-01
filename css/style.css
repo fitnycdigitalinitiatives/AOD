@@ -800,7 +800,7 @@
   #home .logo img {
 	width: 100%;
   }
-  #home #featured-carousel {
+  #home #content #featured-carousel {
 	width: 100%;
   }
 
@@ -1617,6 +1617,12 @@
   }
   #home .logo {
 	display: block;
+  }
+  #home #content #featured-carousel {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width:100%
   }
 
   /* !---------- Items --------- */

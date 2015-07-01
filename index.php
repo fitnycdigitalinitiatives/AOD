@@ -8,14 +8,14 @@
 
 <!-- Featured Items -->
 <div class="featured-videos">
+<h2>Featured Videos</h2>
 <div class="customNavigation prev">
   <a class="btn prev">Previous</a>
 </div>
-<h2>Featured Videos</h2>
+<?php echo carousel(); ?>
 <div class="customNavigation next">
   <a class="btn next">Next</a>
 </div>
-<?php echo carousel(); ?>
 </div>
 <!--end featured-items-->
 

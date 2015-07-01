@@ -455,7 +455,7 @@
   }
 
   #search-container {
-    padding: 0 16px 1.5em;
+    padding: 16px 1.5em;
   }
   #search-container:after {
     content: "";
@@ -781,79 +781,10 @@
   }
 
   /* !---------- Home ---------- */
-  #home #content div#recent-items .item {
-    margin-left: -16px;
-    padding-left: 16px;
-    margin-right: -16px;
-    padding-right: 16px;
-    border-top: 1px solid #dfe2e2;
-  }
-  #home #content div#recent-items .item:first-of-type {
-    border-top: 0;
-  }
-  #home #content div#recent-items .item:first-of-type h3 {
-    margin-top: 0em;
-  }
-  #home #content div#recent-items .item h3 {
-    margin-top: 0.75em;
-  }
-  #home #content div .items-list {
-    margin: 0 -16px;
-  }
-  #home #content div .items-list .item-description {
-    margin: 0.75em 0 0;
-  }
   #home #content div h3, #home #content div h4, #home #content div h5, #home #content div h6,
   #home #content div p, #home #content div input, #home #content div textarea {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
-  }
-  #home #content div h3 {
-    margin-top: 0;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-  #home #content div img {
-    border: 1px solid #dfe2e2;
-    display: block;
-    max-height: 100%;
-    width: auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    *behavior: url("../javascripts/boxsizing.htc");
-  }
-  #home #content div .show {
-    display: block;
-    text-transform: capitalize;
-  }
-  #home #content div .show:before {
-    content: "(";
-  }
-  #home #content div .show:after {
-    content: "...)";
-  }
-  #home #content div .view-items-link {
-    border-top: 1px solid #dfe2e2;
-  }
-  #home #content div .item-img {
-    display: inline;
-  }
-  #home #content div .item-description {
-    margin-top: 0;
-    padding-top: 0;
-  }
-  #home #intro {
-    margin-bottom: 1.5em;
-  }
-  #home #featured-item p {
-    clear: both;
-  }
-  #home #featured-item img {
-    margin-bottom: 0;
-  }
-  #home #recent-items h2 {
-    padding-bottom: 0.75em;
   }
 
   /* !---------- Items ---------- */
@@ -1660,33 +1591,9 @@
   -o-background-size: cover;
   background-size: cover;
   }
-  #home #content #intro {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 1.125em;
-  }
-  #home #content #intro p {
-    margin: 0;
-  }
-  #home #content #featured-item {
-    margin-bottom: 1.5em;
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline;
-  }
-  #home #content #featured-item .image {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-  }
-  #home #content #featured-item img {
-    width: 100%;
-    height: auto;
-  }
   #home #content > div {
     width: 66.10169%;
-    float: right;
+    float: left;
     margin-right: 0;
     *margin-left: -1em;
     display: inline;

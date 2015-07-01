@@ -1468,7 +1468,7 @@
   #site-title {
     width: auto;
 	height: 5em;
-	padding: 1.1em 0;
+	padding: 0.8em 0;
     float: left;
     display: inline;
     text-align: left;
@@ -1600,6 +1600,7 @@
     width: 20%;
     float: right;
     margin-right: 0;
+	margin-left: 1.5em;
     *margin-left: -1em;
     display: inline;
   }

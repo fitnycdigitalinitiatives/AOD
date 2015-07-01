@@ -800,7 +800,7 @@
   #home .logo img {
 	width: 100%;
   }
-  #home #content #featured-carousel {
+  #home #content .featured-videos {
 	width: 100%;
   }
 
@@ -1618,7 +1618,7 @@
   #home .logo {
 	display: block;
   }
-  #home #content #featured-carousel {
+  #home #content .featured-videos {
 	position:fixed;
 	left:0px;
 	bottom:0px;

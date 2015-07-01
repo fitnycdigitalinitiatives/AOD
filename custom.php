@@ -17,7 +17,7 @@ function carousel()
 {
 	$items = get_records('Item', array('featured' => 1, 'sort_field' => 'random'), 20);
 	if ($items) {
-        $html = '<div id="featured-carousel" class="owl-carousel">';
+        $html = '<div id="featured-carousel" class="owl-carousel"><h2>Featured Videos</h2>';
         foreach ($items as $item) {
 			$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 			$html .= '<div class="item"><img src="' . $src . '"></div>';

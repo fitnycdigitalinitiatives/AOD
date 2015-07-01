@@ -829,6 +829,24 @@
 	overflow: hidden;
 	font-weight: bold;
   }
+  #featured-carousel .customNavigation.prev {
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+  }
+  #featured-carousel .customNavigation.next {
+	position: absolute;
+	right: 0;
+	bottom: 50%;
+  }
+  #featured-carousel .customNavigation a{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
   /* !---------- Home ---------- */
   #home .logo {

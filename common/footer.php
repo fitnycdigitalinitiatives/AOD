@@ -31,7 +31,7 @@ jQuery(document).ready(function () {
 jQuery(document).ready(function($) {
 	var owl = $("#featured-carousel");
 	owl.owlCarousel({
-		pagination : false,
+		pagination : true,
 		items : 8, //8 items above 1000px browser width
 		itemsDesktop : [1199,6], //5 items between 1000px and 901px
 		itemsDesktopSmall : [979,3], // betweem 900px and 601px

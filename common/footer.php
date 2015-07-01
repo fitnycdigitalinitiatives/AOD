@@ -28,7 +28,7 @@ jQuery(document).ready(function () {
 });
 </script>
 <script>
-$(document).ready(function() {
+$jQuery(document).ready(function() {
 	$("#featured-carousel").owlCarousel();
 });
 </script>

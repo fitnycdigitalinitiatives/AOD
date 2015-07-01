@@ -823,18 +823,18 @@
 	right: 0;
 	padding: 2%;
   }
-  #featured-carousel .carousel-item .title p {
+  #featured-videos .carousel-item .title p {
 	margin: 0;
 	height: 2.4em;
 	overflow: hidden;
 	font-weight: bold;
   }
-  #featured-carousel .customNavigation.prev {
+  #featured-videos .customNavigation.prev {
 	position: absolute;
 	left: 0;
 	bottom: 50%;
   }
-  #featured-carousel .customNavigation.next {
+  #featured-videos .customNavigation.next {
 	position: absolute;
 	right: 0;
 	bottom: 50%;

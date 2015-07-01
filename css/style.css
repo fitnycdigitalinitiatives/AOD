@@ -800,6 +800,9 @@
   #home .logo img {
 	width: 100%;
   }
+  #home #featured-carousel {
+	width: 100%;
+  }
 
   /* !---------- Items ---------- */
   .items.show h3 {

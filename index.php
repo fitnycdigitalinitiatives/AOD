@@ -7,8 +7,8 @@
 <?php if (get_theme_option('Display Featured Item') !== '0'): ?>
 <!-- Featured Item -->
 <div id="featured-item">
-    <h2><?php echo __('Featured Item'); ?></h2>
-    <?php echo random_featured_items(1); ?>
+    <h2><?php echo __('Carousel'); ?></h2>
+    <?php echo carousel(); ?>
 </div><!--end featured-item-->
 <?php endif; ?>
 

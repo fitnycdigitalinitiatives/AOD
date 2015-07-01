@@ -823,23 +823,23 @@
 	right: 0;
 	padding: 2%;
   }
-  #featured-videos .carousel-item .title p {
+  #featured-carousel .carousel-item .title p {
 	margin: 0;
 	height: 2.4em;
 	overflow: hidden;
 	font-weight: bold;
   }
-  #featured-videos .customNavigation.prev {
+  .featured-videos .customNavigation.prev {
 	position: absolute;
 	left: 0;
 	bottom: 50%;
   }
-  #featured-videos .customNavigation.next {
+  .featured-videos .customNavigation.next {
 	position: absolute;
 	right: 0;
 	bottom: 50%;
   }
-  #featured-carousel .customNavigation a{
+  .featured-videos .customNavigation a{
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;

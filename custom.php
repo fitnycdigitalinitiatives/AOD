@@ -16,9 +16,10 @@ function YouTube_thumbnail()
 function carousel()
 {
 	$items = get_records('Item', array('featured' => 1, 'sort_field' => 'random'), 20);
+	set_loop_records('items', $items);
 	if ($items) {
         $html = '<div id="featured-carousel" class="owl-carousel">';
-        foreach ($items as $item) {
+        foreach (loop('items') as $item) {
 			$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 			$html .= '<div class="item">' . link_to_item('<img src="' . $src . '">', array('class'=>'permalink')) . '</div>';
 		}

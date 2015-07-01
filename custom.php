@@ -20,7 +20,7 @@ function carousel()
         $html = '<div id="featured-carousel" class="owl-carousel">';
         foreach ($items as $item) {
 			$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
-			$html .= '<div><img src="' . $src . '"></div>';
+			$html .= '<div class="item"><img src="' . $src . '"></div>';
 		}
 		$html .= '</div>';
 		return $html;

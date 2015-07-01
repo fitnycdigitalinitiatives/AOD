@@ -779,12 +779,26 @@
   #primary > ul, #primary > ol {
     padding-left: 1.5em;
   }
+  #featured-carousel .item{
+	margin: 1em;
+  }
+  #featured-carousel .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+  }
 
   /* !---------- Home ---------- */
   #home #content div h3, #home #content div h4, #home #content div h5, #home #content div h6,
   #home #content div p, #home #content div input, #home #content div textarea {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
+  }
+  #home .logo {
+	display: none;
+  }
+  #home .logo img {
+	width: 100%;
   }
 
   /* !---------- Items ---------- */
@@ -1597,6 +1611,9 @@
     margin-right: 0;
     *margin-left: -1em;
     display: inline;
+  }
+  #home .logo {
+	display: block;
   }
 
   /* !---------- Items --------- */

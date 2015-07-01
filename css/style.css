@@ -833,11 +833,13 @@
 	position: absolute;
 	left: 0;
 	bottom: 50%;
+	z-index: 1;
   }
   .featured-videos .customNavigation.next {
 	position: absolute;
 	right: 0;
 	bottom: 50%;
+	z-index: 1;
   }
   .featured-videos .customNavigation a{
 	-webkit-user-select: none;

@@ -14,7 +14,7 @@
 </div>
 <?php echo carousel(); ?>
 <div class="customNavigation next">
-  <a class="btn next">Next</a>
+  <a class="btn next">Next</a><i class="icon-camera-retro"></i>
 </div>
 </div>
 <!--end featured-items-->

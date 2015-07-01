@@ -1648,15 +1648,11 @@
   -o-background-size: cover;
   background-size: cover;
   }
-  #home #content > div {
+  #home .logo {
     width: 66.10169%;
     float: left;
-    margin-right: 0;
-    *margin-left: -1em;
-    display: inline;
-  }
-  #home .logo {
-	display: block;
+    display: block;
+	margin-top: 3em;
   }
   #home #content .featured-videos {
 	position:fixed;
@@ -1693,7 +1689,13 @@
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
 	color: #0c6fab;
-}
+  }
+  .featured-videos .owl-pagination {
+	display: none;
+  }
+  #home footer {
+	display: none;
+  }
 
   /* !---------- Items --------- */
   

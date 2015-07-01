@@ -7,7 +7,10 @@
 <!--end Homepage Logo-->
 
 <!-- Featured Items -->
+<div class="featured-videos">
+<h2>Featured Videos</h2>
 <?php echo carousel(); ?>
+</div>
 <!--end featured-items-->
 
 <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>

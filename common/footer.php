@@ -29,7 +29,8 @@ jQuery(document).ready(function () {
 </script>
 <script>
 jQuery(document).ready(function($) {
-	$("#featured-carousel").owlCarousel({
+	var owl = $("#featured-carousel");
+	owl.owlCarousel({
 		pagination : false,
 		items : 8, //8 items above 1000px browser width
 		itemsDesktop : [1199,6], //5 items between 1000px and 901px
@@ -37,6 +38,13 @@ jQuery(document).ready(function($) {
 		itemsTablet: [768,2], //2 items between 600 and 0
 		itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
 	});
+	// Custom Navigation Events
+	$(".next").click(function(){
+		owl.trigger('owl.next');
+	})
+	$(".prev").click(function(){
+		owl.trigger('owl.prev');
+	})
 });
 </script>
 

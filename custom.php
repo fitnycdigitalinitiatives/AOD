@@ -24,7 +24,7 @@ function carousel()
 			$img = link_to_item('<img src="' . $src . '">', array('class'=>'permalink'));
 			$overlay = link_to_item('<div class="overlay"></div>', array('class'=>'permalink'));
 			$description = link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div>', array('class'=>'permalink'));
-			$html .= '<div class="item">' . $img . $overlay . $description. '</div>';
+			$html .= '<div class="carousel-item">' . $img . $overlay . $description. '</div>';
 		}
 		$html .= '</div>';
 		return $html;

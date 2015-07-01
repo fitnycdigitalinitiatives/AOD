@@ -779,13 +779,54 @@
   #primary > ul, #primary > ol {
     padding-left: 1.5em;
   }
-  #featured-carousel .item{
+  #featured-carousel .carousel-item{
 	margin: 1em;
+	position: relative;
   }
-  #featured-carousel .item img{
+  #featured-carousel .carousel-item img{
 	display: block;
 	width: 100%;
 	height: auto;
+  }
+  #featured-carousel .carousel-item .overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.5);
+	background-image: url("../images/play2.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 25%;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+  }
+  #featured-carousel .carousel-item:hover .overlay {
+	opacity: 1;
+  }
+  #featured-carousel .carousel-item .title {
+	width: 100%;
+	height: 25%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url("../images/egg-shell.png");
+	background-repeat: repeat;
+	color: white;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 2%;
+  }
+  #featured-carousel .carousel-item .title p {
+	margin: 0;
+	height: 2.4em;
+	overflow: hidden;
+	font-weight: bold;
   }
 
   /* !---------- Home ---------- */

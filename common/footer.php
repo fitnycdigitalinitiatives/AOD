@@ -29,7 +29,9 @@ jQuery(document).ready(function () {
 </script>
 <script>
 jQuery(document).ready(function($) {
-	$("#featured-carousel").owlCarousel();
+	$("#featured-carousel").owlCarousel({
+		navigation : true
+	});
 });
 </script>
 

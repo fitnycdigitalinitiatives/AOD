@@ -10,11 +10,11 @@
 <div class="featured-videos">
 <h2>Featured Videos</h2>
 <div class="customNavigation prev">
-  <a class="btn prev"><i class="fa fa-backward"></i></a>
+  <a class="btn prev"><i class="fa fa-backward fa-3x"></i></a>
 </div>
 <?php echo carousel(); ?>
 <div class="customNavigation next">
-  <a class="btn next"><i class="fa fa-forward"></i></a>
+  <a class="btn next"><i class="fa fa-forward fa-3x"></i></a>
 </div>
 </div>
 <!--end featured-items-->

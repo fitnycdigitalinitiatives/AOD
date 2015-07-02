@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
 	owl.owlCarousel({
 		pagination : true,
 		items : 7,
-		itemsDesktop : [1199,5],
+		itemsDesktop : [1399,5],
 		itemsDesktopSmall : [979,3],
 		itemsTablet: [768,2],
 		itemsMobile : false

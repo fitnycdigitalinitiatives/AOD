@@ -32,11 +32,11 @@ jQuery(document).ready(function($) {
 	var owl = $("#featured-carousel");
 	owl.owlCarousel({
 		pagination : true,
-		items : 8, //8 items above 1000px browser width
-		itemsDesktop : [1600,6], //5 items between 1000px and 901px
-		itemsDesktopSmall : [979,3], // betweem 900px and 601px
-		itemsTablet: [768,2], //2 items between 600 and 0
-		itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+		items : 7,
+		itemsDesktop : [1199,5],
+		itemsDesktopSmall : [979,3],
+		itemsTablet: [768,2],
+		itemsMobile : false
 	});
 	// Custom Navigation Events
 	$(".next").click(function(){

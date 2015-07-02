@@ -1639,6 +1639,9 @@
     float: right;
     text-align: center;
   }
+  div#content:focus {
+	outline: none;
+  }
 
   /* !---------- Home ---------- */
   body#home {
@@ -1667,6 +1670,7 @@
 	margin-bottom: 0;
 	margin-top: 1rem;
 	margin-left: 1rem;
+	padding-bottom: 0;
 	color: white;
 	line-height: 1em;
   }

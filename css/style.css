@@ -1518,7 +1518,7 @@
   nav.top .nav-item > a:focus,
   nav.top .nav-item > a:hover,
   nav.top .nav-item > a.open {
-    background: #0067ac;
+    background: #0c6fab;
   }
   nav.top .nav-item > a.open {
     border-bottom: none;
@@ -1526,7 +1526,7 @@
   nav.top .sub-nav {
     position: absolute;
     display: none;
-    background: #0067ac;
+    background: #0c6fab;
     min-width: 200px;
   }
   nav.top .sub-nav.open {

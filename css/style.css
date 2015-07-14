@@ -747,6 +747,9 @@
     margin: 0 4px;
     zoom: 1;
   }
+  #content #sort-links span {
+	margin-left: 0;
+  }
   #content #sort-links li a {
 	display: inline-block;
   }
@@ -1666,9 +1669,13 @@
 	padding-top: 0;
 	padding-bottom: 0;
   }
-  .sub-header h1, .sub-header .pagination-nav, .sub-header #sort-links, .sub-header #item-filters {
+  .sub-header h1,  .sub-header #sort-links {
 	float: left;
 	margin-right: 1rem;
+  }
+  .sub-header .pagination-nav, .sub-header #item-filters {
+	float: right;
+	margin-left: 1rem;
   }
 
   /* !---------- Home ---------- */

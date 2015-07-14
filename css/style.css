@@ -97,7 +97,7 @@
   }
 
   ul {
-    list-style-type: disc;
+    list-style-type: none;
     padding-left: 1.5em;
   }
 
@@ -665,21 +665,15 @@
     padding-bottom: 0.375em;
   }
   #content #search-filters, #content #item-filters {
-    background-color: transparent;
-    border-top: 0;
-    -moz-box-shadow: transparent 0 0 0;
-    -webkit-box-shadow: transparent 0 0 0;
-    box-shadow: transparent 0 0 0;
-    padding: 0;
+    padding: 10px 0;
 	color: white;
   }
   #content #search-filters > ul, #content #item-filters > ul {
     padding-left: 0;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-bottom: 0;
+	margin-top: 0;
   }
   #content #search-filters li, #content #item-filters li {
-    overflow: auto;
     padding: 7px;
 	line-height: 14px;
     background-color: #0c6fab;

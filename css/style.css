@@ -1829,10 +1829,18 @@
 	font-size: 12px;
   }
   .item.tile {
-	width: 24%;
+	width: 32.33333%;
   }
 }
 @media screen and (min-width: 1200px) {
+  body {
+	font-size: 13px;
+  }
+  .item.tile {
+	width: 24%;
+  }
+}
+@media screen and (min-width: 1400px) {
   body {
 	font-size: 13px;
   }

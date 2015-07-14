@@ -273,7 +273,7 @@
   }
 
   .top {
-    padding: 0 16px;
+    padding: 0;
   }
   .top ul {
     display: none;
@@ -455,14 +455,14 @@
   #site-title {
     text-align: center;
     margin: 0;
-    padding: 0.75em 16px;
+    padding: 0.75em 0;
   }
   #site-title img {
 	width: 100%;
   }
 
   #search-container {
-    padding: 16px 1.5em;
+    padding: 16px 0;
   }
   #search-container:after {
     content: "";
@@ -674,7 +674,6 @@
 	color: white;
   }
   #content #search-filters > ul, #content #item-filters > ul {
-    float: left;
     padding-left: 0;
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -739,7 +738,7 @@
   }
   #content #sort-links {
     border-top: 0;
-    padding: 17px 12px;
+    padding: 17px 0;
 	color: white;
 	line-height: 14px;
   }

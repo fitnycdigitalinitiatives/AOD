@@ -1,5 +1,5 @@
 <?php
-$pageTitle = __('Browse Items');
+$pageTitle = __('Browse Videos');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 <div class="sub-header">
@@ -23,35 +23,35 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 	<?php endif; ?>
 </div>
 <div class="grid">
-<?php foreach (loop('items') as $item): ?>
-<div class="item tile">
+	<?php foreach (loop('items') as $item): ?>
+	<div class="item tile">
 
-	<?php if (metadata('item', 'item_type_name') == "Moving Image"): ?>
-		<div class="item-thumb">
-        <?php echo link_to_item(YouTube_thumbnail(), array('class'=>'permalink')); ?>
-		<?php echo link_to_item('<div class="overlay"></div>'); ?>
-		<?php echo link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div>'); ?>
-		</div>
-    <?php elseif (metadata('item', 'has files')): ?>
-		<div class="item-thumb">
-        <?php echo link_to_item(item_image('square_thumbnail')); ?>
-		<?php echo link_to_item('<div class="overlay"></div>'); ?>
-		<?php echo link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div>'); ?>
-		</div>
-    <?php endif; ?>
+		<?php if (metadata('item', 'item_type_name') == "Moving Image"): ?>
+			<div class="item-thumb">
+			<?php echo link_to_item(YouTube_thumbnail(), array('class'=>'permalink')); ?>
+			<?php echo link_to_item('<div class="overlay"></div>'); ?>
+			<?php echo link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div>'); ?>
+			</div>
+		<?php elseif (metadata('item', 'has files')): ?>
+			<div class="item-thumb">
+			<?php echo link_to_item(item_image('square_thumbnail')); ?>
+			<?php echo link_to_item('<div class="overlay"></div>'); ?>
+			<?php echo link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div>'); ?>
+			</div>
+		<?php endif; ?>
 
-    <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
+		<?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
 
-</div><!-- end class="item tile" -->
-<?php endforeach; ?>
+	</div><!-- end class="item tile" -->
+	<?php endforeach; ?>
 </div>
-<?php echo pagination_links(); ?>
+<div class="pre-footer">
+	<?php echo pagination_links(); ?>
+	<div id="outputs">
+		<span class="outputs-label"><?php echo __('Output Formats'); ?></span>
+		<?php echo output_format_list(false); ?>
+	</div>
 
-<div id="outputs">
-    <span class="outputs-label"><?php echo __('Output Formats'); ?></span>
-    <?php echo output_format_list(false); ?>
+	<?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
 </div>
-
-<?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
-
 <?php echo foot(); ?>

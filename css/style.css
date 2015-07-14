@@ -606,13 +606,21 @@
     display: table;
     clear: both;
   }
-  #content > h1 {
+  #content > h1, .sub-header > h1 {
     font-size: 24px;
     line-height: 48px;
     text-transform: uppercase;
     border-top: 0;
     padding: 0 0 0.75em;
     margin: 0;
+	color: white;
+  }
+    #content .sub-header {
+	background-image: url("../images/egg-shell.png");
+	background-repeat: repeat;
+	background-color: #3c3c3c;
+	border-top: 1px solid #505050;
+	margin-bottom: 
   }
   #content > h2:first-child, #content > div > h2:first-child,
   #content #primary > h2:first-child, #content #primary > div > h2:first-child,
@@ -1616,14 +1624,17 @@
   }
 
   /* !---------- Content --------- */
-  header, #content, footer {
+  header, footer, .sub-header, .grid, .pre-footer {
     *zoom: 1;
     padding-left: 8.47458%;
 	padding-right: 8.47458%;
   }
-  #content, footer {
+  footer {
     padding-top: 1em;
 	padding-bottom: 1em;
+  }
+  #content {
+	padding: 0;
   }
   header:after, nav.top:after, #content:after, footer:after {
     content: "";
@@ -1642,6 +1653,9 @@
   }
   div#content:focus {
 	outline: none;
+  }
+  .sub-header h1, .sub-header .pagination-nav, .sub-header #sort-links {
+	float: left;
   }
 
   /* !---------- Home ---------- */

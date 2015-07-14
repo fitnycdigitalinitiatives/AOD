@@ -1758,7 +1758,7 @@
     display: inline;
   }
   .item.tile {
-	width: 24%;
+	width: 32.33333%;
   }
 
   /* !---------- Collections ---------- */
@@ -1826,15 +1826,12 @@
 }
 @media screen and (min-width: 1024px) {
   body {
-	font-size: 12px;
-  }
-  .item.tile {
-	width: 32.33333%;
+	font-size: 11px;
   }
 }
 @media screen and (min-width: 1200px) {
   body {
-	font-size: 13px;
+	font-size: 12px;
   }
   .item.tile {
 	width: 24%;
@@ -1842,16 +1839,13 @@
 }
 @media screen and (min-width: 1400px) {
   body {
-	font-size: 13px;
+	font-size: 12px;
   }
   .item.tile {
 	width: 15.666666%;
   }
 }
 @media screen and (min-width: 1800px) {
-  body {
-	font-size: 14px;
-  }
   .item.tile {
 	width: 11.5%;
   }

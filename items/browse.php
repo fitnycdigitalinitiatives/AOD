@@ -2,29 +2,26 @@
 $pageTitle = __('Browse Items');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
+<div class="sub-header">
+	<h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
 
-<h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
+	<?php echo item_search_filters(); ?>
 
-<nav class="items-nav navigation secondary-nav">
-    <?php echo public_nav_items(); ?>
-</nav>
+	<?php echo pagination_links(); ?>
 
-<?php echo item_search_filters(); ?>
+	<?php if ($total_results > 0): ?>
 
-<?php echo pagination_links(); ?>
+	<?php
+	$sortLinks[__('Title')] = 'Dublin Core,Title';
+	$sortLinks[__('Creator')] = 'Dublin Core,Creator';
+	$sortLinks[__('Date Added')] = 'added';
+	?>
+	<div id="sort-links">
+		<span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+	</div>
 
-<?php if ($total_results > 0): ?>
-
-<?php
-$sortLinks[__('Title')] = 'Dublin Core,Title';
-$sortLinks[__('Creator')] = 'Dublin Core,Creator';
-$sortLinks[__('Date Added')] = 'added';
-?>
-<div id="sort-links">
-    <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+	<?php endif; ?>
 </div>
-
-<?php endif; ?>
 <div class="grid">
 <?php foreach (loop('items') as $item): ?>
 <div class="item tile">

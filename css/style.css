@@ -318,6 +318,8 @@
     padding-left: 0;
     margin: 0 0 1.5em;
 	color: white;
+	padding-bottom: 12px;
+	padding-top: 12px;
   }
   .pagination li {
     display: inline-block;
@@ -325,7 +327,7 @@
     vertical-align: top;
   }
   .pagination input[type=text] {
-    width: 50px;
+    width: 2.25em;
     text-align: right;
     margin-right: 10px;
     padding-left: 5px !important;
@@ -336,7 +338,6 @@
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    margin-bottom: 1.5em;
   }
 
   nav.pagination {
@@ -1656,8 +1657,13 @@
   div#content:focus {
 	outline: none;
   }
+  .sub-header {
+	padding-top: 0;
+	padding-bottom: 0;
+  }
   .sub-header h1, .sub-header .pagination-nav, .sub-header #sort-links {
 	float: left;
+	margin-right: 1rem;
   }
 
   /* !---------- Home ---------- */

@@ -38,6 +38,7 @@
 
   a {
     text-decoration: none;
+	color: #0c6fab;
   }
 
   #skipnav {
@@ -316,7 +317,6 @@
   .pagination {
     list-style-type: none;
     padding-left: 0;
-    margin: 0 0 1.5em;
 	color: white;
 	padding-bottom: 12px;
 	padding-top: 12px;
@@ -325,6 +325,7 @@
     display: inline-block;
     margin-right: 5px;
     vertical-align: top;
+	height: 24px;
   }
   .pagination input[type=text] {
     width: 2.25em;
@@ -338,6 +339,7 @@
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+	height: 24px;
   }
 
   nav.pagination {
@@ -394,13 +396,12 @@
   }
 
   .pagination_previous a, .pagination_next a {
-    width: 2.25em;
-    height: 2.25em;
+    width: 24px;
+    height: 24px;
     display: inline-block;
     text-indent: -9999px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    background-color: #0c6fab;
+	color: #fff;
     position: relative;
   }
   .pagination_previous a:after, .pagination_next a:after {
@@ -409,9 +410,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 2.25em;
+    width: 24px;
     text-align: center;
-    line-height: 2.25em;
+    line-height: 24px;
   }
 
   .pagination_previous a:after {
@@ -670,18 +671,19 @@
     -webkit-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
     padding: 0;
-    margin-bottom: 1.5em;
+	color: white;
   }
   #content #search-filters > ul, #content #item-filters > ul {
     float: left;
     padding-left: 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
   }
   #content #search-filters li, #content #item-filters li {
     overflow: auto;
-    padding: 0.375em 8px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    padding: 7px;
+	line-height: 14px
+    background-color: #0c6fab;
   }
   #content #search-filters li li, #content #item-filters li li {
     display: inline;
@@ -690,6 +692,7 @@
     -moz-box-shadow: transparent 0 0 0;
     -webkit-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
+	display: inline-block;
   }
   #content #search-filters li li:last-of-type:after, #content #item-filters li li:last-of-type:after {
     content: "";
@@ -736,14 +739,17 @@
   }
   #content #sort-links {
     border-top: 0;
-    padding: 0.375em 12px;
+    padding: 17px 12px;
 	color: white;
+	line-height: 14px;
   }
   #content #sort-links span, #content #sort-links ul, #content #sort-links li {
     display: inline-block;
     margin: 0 4px;
     zoom: 1;
-    display: inline;
+  }
+  #content #sort-links li a {
+	display: inline-block;
   }
   #content #sort-links-list {
     padding-left: 0;
@@ -1661,7 +1667,7 @@
 	padding-top: 0;
 	padding-bottom: 0;
   }
-  .sub-header h1, .sub-header .pagination-nav, .sub-header #sort-links {
+  .sub-header h1, .sub-header .pagination-nav, .sub-header #sort-links, .sub-header #item-filters {
 	float: left;
 	margin-right: 1rem;
   }

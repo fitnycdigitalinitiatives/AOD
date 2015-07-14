@@ -451,6 +451,7 @@
 	background-image: url("../images/egg-shell.png");
 	background-repeat: repeat;
 	background-color: #3c3c3c;
+	border-bottom: 1px solid #0F0F0F;
   }
   #site-title {
     text-align: center;
@@ -624,7 +625,7 @@
 	background-image: url("../images/egg-shell.png");
 	background-repeat: repeat;
 	background-color: #3c3c3c;
-	border-top: 1px solid #505050;
+	border-top: 1px solid #5C5C5C;
 	margin-bottom: 3%;
   }
   #content > h2:first-child, #content > div > h2:first-child,

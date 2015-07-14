@@ -1669,11 +1669,11 @@
 	padding-top: 0;
 	padding-bottom: 0;
   }
-  .sub-header h1,  .sub-header #sort-links {
+  .sub-header h1,  .sub-header #item-filters {
 	float: left;
 	margin-right: 1rem;
   }
-  .sub-header .pagination-nav, .sub-header #item-filters {
+  .sub-header .pagination-nav, .sub-header #sort-links {
 	float: right;
 	margin-left: 1rem;
   }

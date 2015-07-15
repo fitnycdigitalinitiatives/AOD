@@ -51,7 +51,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 	<p>Your search returned no results. Please try another keyword. Or try our <a href="/items/search">Advanced Search</a>.</p>
 	</div>
 <?php endif; ?>
-<?php if pagination_links(): ?>
+<?php if (pagination_links()): ?>
 	<div class="pre-footer">
 		<?php echo pagination_links(); ?>
 

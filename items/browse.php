@@ -51,9 +51,11 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 	<p>Your search returned no results. Please try another keyword. Or try our <a href="/items/search">Advanced Search</a>.</p>
 	</div>
 <?php endif; ?>
-<div class="pre-footer">
-	<?php echo pagination_links(); ?>
+<?php if ($total_results > 0): ?>
+	<div class="pre-footer">
+		<?php echo pagination_links(); ?>
 
-	<?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
-</div>
+		<?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
+	</div>
+<?php endif; ?>
 <?php echo foot(); ?>

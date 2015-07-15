@@ -598,8 +598,11 @@
 	border-top: 1px solid #0F0F0F;
 	color: #fff;
   }
-  footer p {
-    padding-bottom: 1.5em;
+  footer #social-media li {
+	display: inline-block;
+  }
+  footer #social-media li a {
+	color: #fff;
   }
   footer:empty {
     display: none;
@@ -1499,6 +1502,21 @@
     clear: both;
   }
 
+  /* !---------- Footer ---------- */
+  footer {
+    padding-top: 1em;
+	padding-bottom: 1em;
+  }
+  footer #info {
+	float: left;
+  }
+  footer #social-media {
+	float: right;
+  }
+  footer #social-media ul {
+	float: right;
+  }
+  
   /* !---------- Navigation --------- */
   nav.top {
     /* mega menu list */
@@ -1642,10 +1660,6 @@
     *zoom: 1;
     padding-left: 8.47458%;
 	padding-right: 8.47458%;
-  }
-  footer {
-    padding-top: 1em;
-	padding-bottom: 1em;
   }
   #content {
 	padding: 0;

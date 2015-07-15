@@ -7,13 +7,13 @@
 			<p id="address">Seventh Avenue at 27 Street<br>New York City 10001-5992<br>212 217.7999</p>
 			<p id="omeka">Proudly powered by <a href="http://omeka.org">Omeka</a></p>
         </div>
-		<div id="social-meda">
-			<span>Archive on Demand is an initiative of the <a href="http://www.fitnyc.edu/library.asp">FIT Library</a>.</span>
+		<div id="social-media">
+			<p>Archive on Demand is an initiative of the <a href="http://www.fitnyc.edu/library.asp">FIT Library</a>.</p>
 			<ul>
-				<li><a href="https://www.facebook.com/FITLibrary"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="https://twitter.com/FITLibrary"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="http://pinterest.com/fitlibrary/"><i class="fa fa-pinterest-p"></i></a></li>
-				<li><a href="http://instagram.com/fashioninstitutelibrary"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://www.facebook.com/FITLibrary"><i class="fa fa-facebook fa-3x"></i></a></li>
+				<li><a href="https://twitter.com/FITLibrary"><i class="fa fa-twitter fa-3x"></i></a></li>
+				<li><a href="http://pinterest.com/fitlibrary/"><i class="fa fa-pinterest-p fa-3x"></i></a></li>
+				<li><a href="http://instagram.com/fashioninstitutelibrary"><i class="fa fa-instagram fa-3x"></i></a></li>
 			</ul>
 		</div>
 

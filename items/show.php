@@ -2,7 +2,7 @@
 <div class="sub-header">
 	<h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
 </div>
-<div id="show-container">
+<div class="show-container">
 	<div id="primary">
 		<!-- Returns embedded video and then metadata -->
 		<?php echo video_embed(); ?>

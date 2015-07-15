@@ -182,7 +182,7 @@
   }
 
   /* !---------- Global classes ---------- */
-  header, footer, .sub-header, .grid, .pre-footer {
+  header, footer, .sub-header, .grid, .show-container, .pre-footer {
 	padding: 1.5em 16px;
   }
   .container {
@@ -1635,7 +1635,7 @@
   }
 
   /* !---------- Content --------- */
-  header, footer, .sub-header, .grid, .pre-footer {
+  header, footer, .sub-header, .grid, .show-container, .pre-footer {
     *zoom: 1;
     padding-left: 8.47458%;
 	padding-right: 8.47458%;

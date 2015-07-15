@@ -600,6 +600,10 @@
   }
   footer #social-media li {
 	display: inline-block;
+	margin-right: 3em;
+  }
+  footer #social-media li:last-child {
+	margin-right: 0;
   }
   footer #social-media li a {
 	color: #fff;
@@ -1860,7 +1864,7 @@
 }
 @media screen and (min-width: 1400px) {
   body {
-	font-size: 12px;
+	font-size: 13px;
   }
   .item.tile {
 	width: 15.666666%;

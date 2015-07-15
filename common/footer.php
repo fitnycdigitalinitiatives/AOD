@@ -5,10 +5,9 @@
         <div id="info">
             <p id="copyright">©2015  <a href="/">FIT Archive On Demand</a></br>All rights reserved.</p>
 			<p id="address">Seventh Avenue at 27 Street<br>New York City 10001-5992<br>212 217.7999</p>
-			<p id="omeka">Proudly powered by <a href="http://omeka.org">Omeka</a></p>
         </div>
 		<div id="social-media">
-			<p>Archive on Demand is an initiative of the <a href="http://www.fitnyc.edu/library.asp">FIT Library</a>.</p>
+			<p>Archive on Demand is an initiative of the <a href="http://www.fitnyc.edu/library.asp">FIT Library</a></p>
 			<ul>
 				<li><a href="https://www.facebook.com/FITLibrary"><i class="fa fa-facebook fa-3x"></i></a></li>
 				<li><a href="https://twitter.com/FITLibrary"><i class="fa fa-twitter fa-3x"></i></a></li>

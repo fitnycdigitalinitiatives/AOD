@@ -47,7 +47,9 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 		<?php endforeach; ?>
 	</div>
 <?php else: ?>
+	<div id="null-results">
 	<p>Your search returned no results. Please try another keyword. Or try our <a href="/items/search">Advanced Search</a>.</p>
+	</div>
 <?php endif; ?>
 <div class="pre-footer">
 	<?php echo pagination_links(); ?>

@@ -1478,6 +1478,16 @@
   -- Collections
   -- ExhibitBuilder
   */
+  /* !---------- General ---------- */
+  html {
+	position: relative;
+	min-height: 100%;
+}
+  body {
+	font-size: 11px;
+	/* Sum of fixed height footer and pre-footer */
+	margin-bottom: 200.5px;
+  }
   /* !---------- Header ---------- */
   body {
 	font-size: 11px;
@@ -1513,6 +1523,13 @@
   }
 
   /* !---------- Footer ---------- */
+  footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 160.5px;
+  }
   footer #info {
 	float: left;
   }
@@ -1698,6 +1715,14 @@
   .sub-header .pagination-nav, .pre-footer .pagination-nav, .sub-header #sort-links {
 	float: right;
 	margin-left: 1rem;
+  }
+  #content .pre-footer {
+	position: absolute;
+	/* Set at the top of the footer */
+	bottom: 160.5px;
+	width: 100%;
+	/* Set the fixed height of the pre-footer here */
+	height: 49px;
   }
 
   /* !---------- Home ---------- */

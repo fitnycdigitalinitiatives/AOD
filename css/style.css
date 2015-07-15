@@ -591,7 +591,7 @@
 
   /* !---------- Footer ---------- */
   footer {
-    padding: 0 16px;
+    padding: 1em 16px 3em;
 	background-image: url("../images/egg-shell.png");
 	background-repeat: repeat;
 	background-color: #3c3c3c;
@@ -607,6 +607,9 @@
   }
   footer #social-media li a {
 	color: #fff;
+  }
+  footer #social-media ul {
+	padding-left: 0;
   }
   footer:empty {
     display: none;
@@ -645,6 +648,9 @@
 	background-color: #3c3c3c;
 	border-bottom: 1px solid #5C5C5C;
 	color: #fff;
+  }
+  #content .pre-footer:empty {
+	display: none;
   }
   #content > h2:first-child, #content > div > h2:first-child,
   #content #primary > h2:first-child, #content #primary > div > h2:first-child,
@@ -1507,10 +1513,6 @@
   }
 
   /* !---------- Footer ---------- */
-  footer {
-    padding-top: 1em;
-	padding-bottom: 1em;
-  }
   footer #info {
 	float: left;
   }

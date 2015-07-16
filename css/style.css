@@ -918,14 +918,12 @@
   #sidebar .related-thumb {
 	width: 33%;
 	float: left;
+	position: relative;
   }
   #sidebar .related-item {
 	width: 100%;
 	display: inline-block;
 	margin-bottom: 1em;
-  }
-  #sidebar .related-item a {
-	display: block;
   }
   #sidebar .related-item .description {
 	width: 67%;
@@ -969,7 +967,7 @@
     display: block;
 	width: 100%;
   }
-  .item .overlay {
+  .related-items .overlay, .item .overlay {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -986,7 +984,7 @@
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
   }
-  .item.tile:hover .overlay {
+  .related-thumb:hover .overlay, .item.tile:hover .overlay {
 	opacity: 1;
   }
   .item.tile .title {

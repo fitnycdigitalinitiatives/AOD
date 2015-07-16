@@ -35,18 +35,16 @@ function related_items($current_item)
 {
 	if (metadata($current_item, 'has tags')) {
 		$tags = get_current_record($current_item)->Tags;
-		$items = get_records('Item', array('tags' => $tags[0], 'sort_field' => 'random'), 5);
+		$items = get_records('Item', array('tags' => $tags[0], 'sort_field' => 'random'), 4);
 		set_loop_records('items', $items);
 		if ($items) {
 			$html = '<div class="related_items"><h2>Related Videos</h2>';
 			foreach (loop('items') as $item) {
-				if ($item != $current_item) {
-					$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
-					$img = '<img src="' . $src . '">';
-					$overlay = '<div class="overlay"></div>';
-					$description = '<div class="description"><h4>' . metadata('item', array('Dublin Core', 'Title')) . '</h4></div>';
-					$html .= link_to_item('<div class="related-item"><div class="related-thumb">' . $img . $overlay . '</div>' . $description . '</div>', array('class'=>'permalink'));
-				}
+				$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+				$img = '<img src="' . $src . '">';
+				$overlay = '<div class="overlay"></div>';
+				$description = '<div class="description"><h4>' . metadata('item', array('Dublin Core', 'Title')) . '</h4></div>';
+				$html .= link_to_item('<div class="related-item"><div class="related-thumb">' . $img . $overlay . '</div>' . $description . '</div>', array('class'=>'permalink'));
 			}
 			$html .= '</div>';
 			return $html;

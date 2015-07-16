@@ -36,7 +36,7 @@ function related_items($current_item)
 	if (metadata($current_item, 'has tags')) {
 		$tags = get_current_record($current_item)->Tags;
 		$youTubeID = metadata($current_item, array('Item Type Metadata', 'Identifier.YouTube'));
-		$items = get_records('Item', array('tags' => $tags[0], 'sort_field' => 'random', 'advanced' => array(array('element_id' => '53', 'type' => 'does not contain', 'terms' => $youTubeID))), 4);
+		$items = get_records('Item', array('tags' => $tags[0], 'sort_field' => 'random', 'advanced' => array(array('element_id' => '53', 'type' => 'does not contain', 'terms' => $youTubeID))), 7);
 		set_loop_records('items', $items);
 		if ($items) {
 			$html = '<div class="related_items"><h2>Related Videos</h2>';

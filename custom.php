@@ -42,7 +42,7 @@ function related_items($current_item)
 			foreach (loop('items') as $item) {
 				$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 				$img = '<img src="' . $src . '">';
-				$overlay = link_to_item('<div class="overlay"></div>', array('class'=>'permalink'));
+				$overlay = '<div class="overlay"></div>';
 				$description = '<div class="description"><h4>' . metadata('item', array('Dublin Core', 'Title')) . '</h4></div>';
 				$html .= link_to_item('<div class="related-item"><div class="related-thumb">' . $img . $overlay . '</div>' . $description . '</div>', array('class'=>'permalink'));
 			}

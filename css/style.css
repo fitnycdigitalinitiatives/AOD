@@ -913,7 +913,7 @@
 	padding-bottom: 1em;
 	border-bottom: 1px solid #e1e2e3;
   }
-  #sidebar .related-item:last-of-type {
+  .related-items .related-item:last-of-type {
 	padding-bottom: 0;
 	border-bottom: 0;
   }

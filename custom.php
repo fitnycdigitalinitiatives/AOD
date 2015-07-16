@@ -41,15 +41,16 @@ function related_items($current_item)
 			$html = '<div class="related_items"><h2>Related Videos</h2>';
 			foreach (loop('items') as $item) {
 				$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
-				$img = link_to_item('<img src="' . $src . '">', array('class'=>'permalink'));
+				$img = '<img src="' . $src . '">';
 				$overlay = link_to_item('<div class="overlay"></div>', array('class'=>'permalink'));
-				$description = link_to_item('<div class="description"><h4>' . metadata('item', array('Dublin Core', 'Title')) . '</h4></div>', array('class'=>'permalink'));
-				$html .= '<div class="related-item"><div class="related-thumb">' . $img . $overlay . '</div>' . $description . '</div>';
+				$description = '<div class="description"><h4>' . metadata('item', array('Dublin Core', 'Title')) . '</h4></div>';
+				$html .= link_to_item('<div class="related-item"><div class="related-thumb">' . $img . $overlay . '</div>' . $description . '</div>', array('class'=>'permalink'));
 			}
 			$html .= '</div>';
 			return $html;
 		}
 	}
 }
+
 
 ; ?>

@@ -34,14 +34,13 @@ function carousel()
 function related_items($current_item)
 {
 	if (metadata($current_item, 'has tags')) {
-		$current_record = get_current_record($current_item);
-		$tags = $current_record->Tags;
+		$tags = get_current_record($current_item)->Tags;
 		$items = get_records('Item', array('tags' => $tags[0], 'sort_field' => 'random'), 5);
 		set_loop_records('items', $items);
 		if ($items) {
 			$html = '<div class="related_items"><h2>Related Videos</h2>';
 			foreach (loop('items') as $item) {
-				if ($item != $current_record) {
+				if ($item != $current_item) {
 					$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 					$img = '<img src="' . $src . '">';
 					$overlay = '<div class="overlay"></div>';

@@ -915,6 +915,10 @@
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+  #sidebar .related-thumb {
+	width: 33%;
+	float: left;
+  }
 
   #content #outputs {
     background-color: transparent;
@@ -946,7 +950,7 @@
 	overflow: hidden;
 	width: 100%;
   }
-  .item img {
+  .item-thumb img, .item img {
     display: block;
 	width: 100%;
   }

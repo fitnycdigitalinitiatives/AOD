@@ -34,7 +34,7 @@ function carousel()
 function related_items($current_item)
 {
 	if (metadata($current_item, 'has tags')) {
-		$tags = $current_item->Tags;
+		$tags = get_current_record($current_item)->Tags;
 		$items = get_records('Item', array('tags' => $tags[0], 'sort_field' => 'random'), 4);
 		set_loop_records('items', $items);
 		if ($items) {

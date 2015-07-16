@@ -913,10 +913,6 @@
 	padding-bottom: 1em;
 	border-bottom: 1px solid #e1e2e3;
   }
-  .related-items .related-item:last-of-type {
-	padding-bottom: 0;
-	border-bottom: 0;
-  }
   #sidebar .related-item .description {
 	width: 67%;
 	float: right;

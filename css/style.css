@@ -950,7 +950,7 @@
 	overflow: hidden;
 	width: 100%;
   }
-  .item-thumb img, .item img {
+  .related-thumb img, .item img {
     display: block;
 	width: 100%;
   }

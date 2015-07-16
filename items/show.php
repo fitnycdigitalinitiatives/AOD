@@ -10,6 +10,8 @@
 	</div><!-- end primary -->
 
 	<aside id="sidebar">
+		<!-- List related items based on 1st tag -->
+		<?php echo related_items('item'); ?>
 		<!-- If the item belongs to a collection, the following creates a link to that collection. -->
 		<?php if (metadata('item', 'Collection Name')): ?>
 		<div id="collection" class="element">

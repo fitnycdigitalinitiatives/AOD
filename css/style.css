@@ -930,8 +930,9 @@
   #sidebar .related-item .description {
 	width: 67%;
 	float: right;
+	padding-left: 1em;
   }
-  #sidebar .related-item .description h3 {
+  #sidebar .related-item .description h4 {
 	margin: 0;
   }
   #content #outputs {

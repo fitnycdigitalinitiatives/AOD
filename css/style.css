@@ -919,7 +919,21 @@
 	width: 33%;
 	float: left;
   }
-
+  #sidebar .related-item {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 1em;
+  }
+  #sidebar .related-item a {
+	display: block;
+  }
+  #sidebar .related-item .description {
+	width: 67%;
+	float: right;
+  }
+  #sidebar .related-item .description h3 {
+	margin: 0;
+  }
   #content #outputs {
     background-color: transparent;
     border-top: 0;

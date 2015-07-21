@@ -9,5 +9,5 @@
         <?php endforeach; ?>
     </div><!-- end element -->
     <?php endforeach; ?>
-<?php endforeach;
+<?php endforeach; ?>
 </div><!-- end element-set -->

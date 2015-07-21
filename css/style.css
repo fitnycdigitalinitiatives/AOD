@@ -901,6 +901,9 @@
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+  .element-set .element {
+	border-bottom: 1px solid #e1e2e3;
+  }
   #sidebar .related-thumb {
 	width: 33%;
 	float: left;
@@ -912,6 +915,11 @@
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid #e1e2e3;
+  }
+  #sidebar .related-item:last-of-type {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
   }
   #sidebar .related-item .description {
 	width: 67%;

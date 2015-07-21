@@ -3,7 +3,7 @@ $pageTitle = __('Browse Collections');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 
-<h1><?php echo $pageTitle; ?> <?php echo __('(%s total)', $total_results); ?></h1>
+<h1><?php echo $pageTitle; ?><?php echo __('(%s total)', $total_results); ?></h1>
 <?php echo pagination_links(); ?>
 
 <?php
@@ -19,11 +19,11 @@ $sortLinks[__('Date Added')] = 'added';
 <div class="collection-videos">
 <h2><?php echo link_to_items_browse(strip_formatting(metadata('collection', array('Dublin Core', 'Title'))), array('collection' => metadata($collection, 'id'))); ?></h2>
 <div class="customNavigation prev">
-  <a class="btn prev"><i class="fa fa-chevron-left fa-3x"></i></a>
+  <a class="btn prev-<?php echo $number; ?>"><i class="fa fa-chevron-left fa-3x"></i></a>
 </div>
 <?php echo collection_carousel($collection, $number); ?>
 <div class="customNavigation next">
-  <a class="btn next"><i class="fa fa-chevron-right fa-3x"></i></a>
+  <a class="btn next-<?php echo $number; ?>"><i class="fa fa-chevron-right fa-3x"></i></a>
 </div>
 </div>
 <?php echo '<script>
@@ -38,10 +38,10 @@ jQuery(document).ready(function($) {
 		itemsMobile : false
 	});
 	// Custom Navigation Events
-	$(".next").click(function(){
+	$(".next-' . $number . '").click(function(){
 		owl.trigger("owl.next");
 	})
-	$(".prev").click(function(){
+	$(".prev-' . $number . '").click(function(){
 		owl.trigger("owl.prev");
 	})
 });

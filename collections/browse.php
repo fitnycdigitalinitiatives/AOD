@@ -28,7 +28,7 @@ $sortLinks[__('Date Added')] = 'added';
 </div>
 <?php echo '<script>
 jQuery(document).ready(function($) {
-	var owl = $("#collection-carousel' . $number . '");
+	var owl = $("#collection-carousel-' . $number . '");
 	owl.owlCarousel({
 		pagination : true,
 		items : 7,

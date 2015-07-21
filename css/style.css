@@ -787,6 +787,9 @@
   #primary > ul, #primary > ol {
     padding-left: 1.5em;
   }
+  .featured-videos, .collection-videos {
+	width: 100%;
+  }
   #featured-carousel .carousel-item, .collection-videos .collection-carousel-item {
 	margin: 1em;
 	position: relative;
@@ -844,9 +847,6 @@
 	display: none;
   }
   #home .logo img {
-	width: 100%;
-  }
-  #home #content .featured-videos {
 	width: 100%;
   }
 
@@ -1812,6 +1812,43 @@
   }
   .collections.show .item-img {
     margin-left: 0;
+  }
+  .collection-videos {
+	border-top: 1px solid #e1e2e3;
+	border-bottom: 1px solid #e1e2e3;
+	width:100%;
+	background-color: #F9F9F9;
+  }
+  .collection-videos h2 {
+	margin-bottom: 0;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	padding-bottom: 0;
+	color: #fff;
+	line-height: 1em;
+  }
+  .collection-videos .customNavigation {
+	display: block;
+  }
+  .collection-videos .customNavigation.prev {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 1;
+  }
+  .collection-videos .customNavigation.next {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	z-index: 1;
+  }
+  .collection-videos .customNavigation a{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+	color: #0c6fab;
+  }
+  .collection-videos .owl-pagination {
+	display: none;
   }
 
   /* !---------- ExhibitBuilder ---------- */

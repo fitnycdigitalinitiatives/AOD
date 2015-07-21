@@ -16,7 +16,9 @@
 		<?php if (metadata('item', 'Collection Name')): ?>
 		<div id="collection" class="element">
 			<h2><?php echo __('Collection'); ?></h2>
-			<div class="element-text"><p><?php echo link_to_collection_for_item(); ?></p></div>
+			<div class="element-text">
+				<?php echo link_to_items_browse(metadata('item', 'Collection Name'), array('collection' => 'item'->collection_id)); ?>
+			</div>
 		</div>
 		<?php endif; ?>
 

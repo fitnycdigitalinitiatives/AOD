@@ -39,10 +39,10 @@ jQuery(document).ready(function($) {
 	});
 	// Custom Navigation Events
 	$(".next").click(function(){
-		owl.trigger('owl.next');
+		owl.trigger("owl.next");
 	})
 	$(".prev").click(function(){
-		owl.trigger('owl.prev');
+		owl.trigger("owl.prev");
 	})
 });
 </script>' ; ?>

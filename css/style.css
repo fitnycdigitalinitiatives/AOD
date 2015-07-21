@@ -787,17 +787,17 @@
   #primary > ul, #primary > ol {
     padding-left: 1.5em;
   }
-  #featured-carousel .carousel-item{
+  #featured-carousel .carousel-item, .collection-videos .collection-carousel-item {
 	margin: 1em;
 	position: relative;
 	overflow: hidden;
   }
-  #featured-carousel .carousel-item img{
+  #featured-carousel .carousel-item img, .collection-videos .collection-carousel-item img {
 	display: block;
 	width: 100%;
 	height: auto;
   }
-  #featured-carousel .carousel-item .overlay {
+  #featured-carousel .carousel-item .overlay, .collection-videos .collection-carousel-item .overlay {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -814,10 +814,10 @@
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
   }
-  #featured-carousel .carousel-item:hover .overlay {
+  #featured-carousel .carousel-item:hover .overlay, .collection-videos .collection-carousel-item:hover .overlay {
 	opacity: 1;
   }
-  #featured-carousel .carousel-item .title {
+  #featured-carousel .carousel-item .title, .collection-videos .collection-carousel-item .title {
 	width: 100%;
 	height: 25%;
 	position: absolute;
@@ -829,13 +829,13 @@
 	right: 0;
 	padding: 2%;
   }
-  #featured-carousel .carousel-item .title p {
+  #featured-carousel .carousel-item .title p, .collection-videos .collection-carousel-item .title p {
 	margin: 0;
 	height: 2.4em;
 	overflow: hidden;
 	font-weight: bold;
   }
-  .featured-videos .customNavigation {
+  .featured-videos .customNavigation, .collection-videos .customNavigation {
 	display: none;
   }
 

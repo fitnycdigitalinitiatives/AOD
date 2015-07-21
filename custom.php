@@ -45,7 +45,7 @@ function related_items($current_item)
 				$img = '<img src="' . $src . '">';
 				$overlay = '<div class="overlay"></div>';
 				$description = '<div class="description"><h4>' . metadata('item', array('Dublin Core', 'Title')) . '</h4></div>';
-				$html .= link_to_item('<div class="related-item"><div class="related-thumb">' . $img . $overlay . '</div>' . $description . '</div>', array('class'=>'permalink'));
+				$html .= '<div class="related-item">' . link_to_item('<div class="related-thumb">' . $img . $overlay . '</div>' . $description, array('class'=>'permalink')) . '</div>';
 			}
 			$html .= '</div>';
 			return $html;

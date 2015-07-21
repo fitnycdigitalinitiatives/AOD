@@ -7,6 +7,10 @@
 		<!-- Returns embedded video and then metadata -->
 		<?php echo video_embed(); ?>
 		<?php echo all_element_texts('item'); ?>
+		<div id="item-output-formats" class="element">
+			<h3><?php echo __('Export Metadata'); ?></h3>
+		<div class="element-text"><?php echo output_format_list(); ?></div>
+</div>
 	</div><!-- end primary -->
 
 	<aside id="sidebar">

@@ -31,18 +31,18 @@ function carousel()
 	}
 }
 
-function collection_carousel($collection)
+function collection_carousel($collection, $number)
 {
 	$items = get_records('Item', array('collection' => metadata('collection', 'id')), 20);
 	set_loop_records('items', $items);
 	if ($items) {
-        $html = '<div id="featured-carousel" class="owl-carousel">';
+        $html = '<div id="collection-carousel-' . $number . '" class="owl-carousel">';
         foreach (loop('items') as $item) {
 			$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 			$img = link_to_item('<img src="' . $src . '">', array('class'=>'permalink'));
 			$overlay = link_to_item('<div class="overlay"></div>', array('class'=>'permalink'));
 			$description = link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div>', array('class'=>'permalink'));
-			$html .= '<div class="carousel-item">' . $img . $overlay . $description . '</div>';
+			$html .= '<div class="collection-carousel-item">' . $img . $overlay . $description . '</div>';
 		}
 		$html .= '</div>';
 		return $html;

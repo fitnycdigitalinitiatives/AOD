@@ -25,7 +25,7 @@
 		<!-- The following prints a list of all tags associated with the item -->
 		<?php if (metadata('item', 'has tags')): ?>
 		<div id="item-tags" class="element">
-			<h2><?php echo __('Tags'); ?></h2>
+			<h2><?php echo __('Categories'); ?></h2>
 			<div class="element-text"><?php echo tag_string('item'); ?></div>
 		</div>
 		<?php endif;?>

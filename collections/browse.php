@@ -16,34 +16,16 @@ $sortLinks[__('Date Added')] = 'added';
 
 <?php foreach (loop('collections') as $collection): ?>
 
-<div class="collection">
-
-    <h2><?php echo link_to_collection(); ?></h2>
-
-    <?php if ($collectionImage = record_image('collection', 'square_thumbnail')): ?>
-        <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>
-    <?php endif; ?>
-
-    <?php if (metadata('collection', array('Dublin Core', 'Description'))): ?>
-    <div class="collection-description">
-        <?php echo text_to_paragraphs(metadata('collection', array('Dublin Core', 'Description'), array('snippet'=>150))); ?>
-    </div>
-    <?php endif; ?>
-
-    <?php if ($collection->hasContributor()): ?>
-    <div class="collection-contributors">
-        <p>
-        <strong><?php echo __('Contributors'); ?>:</strong>
-        <?php echo metadata('collection', array('Dublin Core', 'Contributor'), array('all'=>true, 'delimiter'=>', ')); ?>
-        </p>
-    </div>
-    <?php endif; ?>
-
-    <p class="view-items-link"><?php echo link_to_items_browse(__('View the items in %s', metadata('collection', array('Dublin Core', 'Title'))), array('collection' => metadata('collection', 'id'))); ?></p>
-
-    <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
-
-</div><!-- end class="collection" -->
+<div class="featured-videos">
+<h2><?php echo link_to_items_browse(strip_formatting(metadata('collection', array('Dublin Core', 'Title'))), array('collection' => metadata($collection, 'id'))); ?></h2>
+<div class="customNavigation prev">
+  <a class="btn prev"><i class="fa fa-chevron-left fa-3x"></i></a>
+</div>
+<?php echo collection_carousel($collection); ?>
+<div class="customNavigation next">
+  <a class="btn next"><i class="fa fa-chevron-right fa-3x"></i></a>
+</div>
+</div>
 
 <?php endforeach; ?>
 

@@ -7,7 +7,6 @@
 		<!-- Returns embedded video and then metadata -->
 		<?php echo video_embed(); ?>
 		<?php echo all_element_texts('item'); ?>
-</div>
 	</div><!-- end primary -->
 
 	<aside id="sidebar">

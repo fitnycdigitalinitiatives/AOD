@@ -71,5 +71,22 @@ function related_items($current_item)
 	}
 }
 
+function recent_sidebar()
+{
+	$items = get_recent_items($num = 5);
+	set_loop_records('items', $items);
+	if ($items) {
+		$html = '<div class="recent_items"><h2>Recently Added Videos</h2>';
+		foreach (loop('items') as $item) {
+			$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+			$img = '<img src="' . $src . '">';
+			$overlay = '<div class="overlay"></div>';
+			$description = '<div class="description"><h4>' . metadata('item', array('Dublin Core', 'Title')) . '</h4></div>';
+			$html .= '<div class="recent-item">' . link_to_item('<div class="recent-thumb">' . $img . $overlay . '</div>' . $description, array('class'=>'permalink')) . '</div>';
+		}
+		$html .= '</div>';
+		return $html;
+	}
+}
 
 ; ?>

@@ -1,9 +1,9 @@
 <?php
-$pageTitle = __('Browse Collections');
+$pageTitle = __('Channels');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 <div class="sub-header">
-	<h1><?php echo $pageTitle; ?><?php echo __('(%s total)', $total_results); ?></h1>
+	<h1><?php echo $pageTitle; ?> <?php echo __('(%s total)', $total_results); ?></h1>
 	<?php echo pagination_links(); ?>
 
 	<?php

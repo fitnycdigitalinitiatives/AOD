@@ -1168,10 +1168,6 @@
   }
 
   /* !---------- Collections ---------- */
-  .collections:only-of-type, .collections:last-of-type {
-    border-bottom: 0;
-    margin-bottom: 0;
-  }
   .collections #content .element-set .element {
     margin-bottom: 1.5em;
   }

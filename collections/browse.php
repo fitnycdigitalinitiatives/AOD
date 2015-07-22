@@ -2,16 +2,17 @@
 $pageTitle = __('Browse Collections');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
+<div class="sub-header">
+	<h1><?php echo $pageTitle; ?><?php echo __('(%s total)', $total_results); ?></h1>
+	<?php echo pagination_links(); ?>
 
-<h1><?php echo $pageTitle; ?><?php echo __('(%s total)', $total_results); ?></h1>
-<?php echo pagination_links(); ?>
-
-<?php
-$sortLinks[__('Title')] = 'Dublin Core,Title';
-$sortLinks[__('Date Added')] = 'added';
-?>
-<div id="sort-links">
-    <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+	<?php
+	$sortLinks[__('Title')] = 'Dublin Core,Title';
+	$sortLinks[__('Date Added')] = 'added';
+	?>
+	<div id="sort-links">
+		<span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+	</div>
 </div>
 <?php $number = 0; ?>
 <?php foreach (loop('collections') as $collection): ?>
@@ -48,9 +49,12 @@ jQuery(document).ready(function($) {
 </script>' ; ?>
 
 <?php endforeach; ?>
+<?php if (pagination_links()): ?>
+	<div class="pre-footer">
+		<?php echo pagination_links(); ?>
+		<?php fire_plugin_hook('public_collections_browse', array('collections'=>$collections, 'view' => $this)); ?>
+	</div>
+<?php endif; ?>
 
-<?php echo pagination_links(); ?>
-
-<?php fire_plugin_hook('public_collections_browse', array('collections'=>$collections, 'view' => $this)); ?>
 
 <?php echo foot(); ?>

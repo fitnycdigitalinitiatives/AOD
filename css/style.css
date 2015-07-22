@@ -1441,6 +1441,19 @@
     font-weight: bold;
     margin-bottom: 1.5em;
   }
+  .simple-page .form-container {
+	position: relative;
+	padding-bottom: 129.605263%;
+	height: 0;
+	overflow: hidden;
+  }
+  .simple-page .form-container iframe {
+	position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
   /* !---------- Other Plugin Styles ---------- */
   #recaptcha_area input {
@@ -1721,6 +1734,7 @@
     float: left;
     display: block;
 	margin-top: 3em;
+	margin-left: 8.47458%;
   }
   #home #content .featured-videos {
 	position:fixed;

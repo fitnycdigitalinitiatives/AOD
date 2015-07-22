@@ -1814,6 +1814,7 @@
     margin-left: 0;
   }
   .collection-videos {
+	position: relative;
 	border-top: 1px solid #e1e2e3;
 	border-bottom: 1px solid #e1e2e3;
 	width:100%;

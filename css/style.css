@@ -1441,6 +1441,15 @@
     font-weight: bold;
     margin-bottom: 1.5em;
   }
+  .simple-page #primary {
+	padding-left: 8.47458%;
+	padding-right: 8.47458%;
+  }
+  .simple-page .form-box {
+	max-width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+  }
   .simple-page .form-container {
 	position: relative;
 	padding-bottom: 129.605263%;

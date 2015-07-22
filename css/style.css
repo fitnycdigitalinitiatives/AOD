@@ -841,6 +841,9 @@
   .featured-videos .customNavigation, .collection-videos .customNavigation {
 	display: none;
   }
+  .collection-videos h2 span {
+	font-size: .5em;
+  }
 
   /* !---------- Home ---------- */
   #home .logo {

@@ -913,29 +913,29 @@
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-  #sidebar .related-thumb {
+  #sidebar .item-link-thumb {
 	width: 33%;
 	float: left;
 	position: relative;
   }
-  #sidebar .related-item {
+  #sidebar .item-link {
 	width: 100%;
 	display: inline-block;
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid #e1e2e3;
   }
-  #sidebar .related-item:last-of-type {
+  #sidebar .item-link:last-of-type {
 	border-bottom: 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
   }
-  #sidebar .related-item .description {
+  #sidebar .item-link .description {
 	width: 67%;
 	float: right;
 	padding-left: 1em;
   }
-  #sidebar .related-item .description h4 {
+  #sidebar .item-link .description h4 {
 	margin: 0;
   }
   #content #outputs {
@@ -968,11 +968,11 @@
 	overflow: hidden;
 	width: 100%;
   }
-  .related-thumb img, .item img {
+  .item-link-thumb img, .item img {
     display: block;
 	width: 100%;
   }
-  .related-thumb .overlay, .item .overlay {
+  .item-link-thumb .overlay, .item .overlay {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -989,7 +989,7 @@
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
   }
-  .related-thumb:hover .overlay, .item.tile:hover .overlay {
+  .item-link-thumb:hover .overlay, .item.tile:hover .overlay {
 	opacity: 1;
   }
   .item.tile .title {

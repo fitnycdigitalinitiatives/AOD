@@ -60,6 +60,7 @@ function related_items($current_item)
 			$html = '<div class="related_items"><h2>Related Videos</h2>';
 			foreach (loop('items') as $item) {
 				$html .= get_view()->partial('items/single.php', array('item' => $item));
+				release_object($item);
 			}
 			$html .= '</div>';
 			return $html;

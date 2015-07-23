@@ -18,7 +18,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 <?php foreach (loop('collections') as $collection): ?>
 <?php ++$number; ?>
 <div class="collection-videos">
-<h2><?php echo link_to_items_browse(strip_formatting(metadata('collection', array('Dublin Core', 'Title'))) . '<span> (' . metadata("collection", "total_items") ', view all)</span>', array('collection' => metadata($collection, 'id'))); ?></h2>
+<h2><?php echo link_to_items_browse(strip_formatting(metadata('collection', array('Dublin Core', 'Title'))) . '<span> (view all)</span>', array('collection' => metadata($collection, 'id'))); ?></h2>
 <div class="customNavigation prev">
   <a class="btn prev-<?php echo $number; ?>"><i class="fa fa-chevron-left fa-3x"></i></a>
 </div>

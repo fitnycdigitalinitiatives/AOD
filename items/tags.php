@@ -4,6 +4,7 @@ echo head(array('title'=>$pageTitle, 'bodyclass'=>'items tags'));
 ?>
 <div class="sub-header">
 	<h1><?php echo $pageTitle; ?></h1>
+	<?php echo pagination_links(); ?>
 </div>
 
 <?php $number = 0; ?>

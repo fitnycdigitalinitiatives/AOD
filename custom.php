@@ -59,7 +59,7 @@ function related_items($current_item)
 		if ($items) {
 			$html = '<div class="related_items"><h2>Related Videos</h2>';
 			foreach (loop('items') as $item) {
-				$html .= $view->partial('items/single.php', array('item' => $item));
+				$html .= $view->partial('items/single.php');
 			}
 			$html .= '</div>';
 			return $html;

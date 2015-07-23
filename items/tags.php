@@ -14,7 +14,7 @@ echo head(array('title'=>$pageTitle, 'bodyclass'=>'items tags'));
 <div class="customNavigation prev">
   <a class="btn prev-<?php echo $number; ?>"><i class="fa fa-chevron-left fa-3x"></i></a>
 </div>
-<?php echo collection_carousel($tag, $number); ?>
+<?php echo tag_carousel($tag, $number); ?>
 <div class="customNavigation next">
   <a class="btn next-<?php echo $number; ?>"><i class="fa fa-chevron-right fa-3x"></i></a>
 </div>

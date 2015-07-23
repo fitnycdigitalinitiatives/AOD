@@ -7,9 +7,9 @@ function video_embed()
 	return '<div class="videoWrapper"><iframe width="560" height="349" src="' . $src . '?rel=0&autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe></div><div class="drive-link"><a href="' . $href . '">Download Original File (Requires valid fitnyc.edu email)</a></div>'; 
 }
 
-function YouTube_thumbnail()
+function YouTube_thumbnail($item)
 {
-	$src = 'http://img.youtube.com/vi/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+	$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 	return '<img src="' . $src . '">';
 }
 

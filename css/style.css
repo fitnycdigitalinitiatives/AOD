@@ -790,6 +790,9 @@
   .featured-videos, .collection-videos {
 	width: 100%;
   }
+  .featured-videos h2 span {
+	font-size: .5em;
+  }
   #featured-carousel .carousel-item, .collection-videos .collection-carousel-item {
 	margin: 1em;
 	position: relative;

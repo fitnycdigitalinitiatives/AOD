@@ -8,7 +8,7 @@
 
 <!-- Featured Items -->
 <div class="featured-videos">
-<h2>Featured Videos</h2>
+<h2><?php echo link_to_items_browse('Featured Videos <span>(see all)</span>', array('featured' => 1)); ?></h2>
 <div class="customNavigation prev">
   <a class="btn prev"><i class="fa fa-chevron-left fa-3x"></i></a>
 </div>

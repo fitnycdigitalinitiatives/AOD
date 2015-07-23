@@ -59,11 +59,7 @@ function related_items($current_item)
 		if ($items) {
 			$html = '<div class="related_items"><h2>Related Videos</h2>';
 			foreach (loop('items') as $item) {
-				$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
-				$img = '<img src="' . $src . '">';
-				$overlay = '<div class="overlay"></div>';
-				$description = '<div class="description"><h4>' . metadata('item', array('Dublin Core', 'Title')) . '</h4></div>';
-				$html .= '<div class="item-link">' . link_to_item('<div class="item-link-thumb">' . $img . $overlay . '</div>' . $description, array('class'=>'permalink')) . '</div>';
+				$html .= $view->partial('items/single.php', array('item' => $item));
 			}
 			$html .= '</div>';
 			return $html;

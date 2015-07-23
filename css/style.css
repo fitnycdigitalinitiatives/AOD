@@ -1442,8 +1442,19 @@
     margin-bottom: 1.5em;
   }
   .simple-page #primary {
-	padding-left: 8.47458%;
-	padding-right: 8.47458%;
+	padding: 1.5em 16px;
+  }
+  .simple-page .main {
+	padding: 1em;
+	margin-bottom: 1em;
+	border: 1px solid #e1e2e3;
+	background-color: #F9F9F9;
+  }
+  .simple-page #sidebar > div {
+	padding: 1em;
+	margin-bottom: 1em;
+	border: 1px solid #e1e2e3;
+	background-color: #F9F9F9;
   }
   .simple-page .form-box {
 	max-width: 760px;
@@ -1920,6 +1931,23 @@
   }
   .exhibits.show #content #exhibit-page-navigation a, .exhibits.show #content #exhibit-page-navigation span {
     width: 100%;
+  }
+  /* !---------- SimplePages ---------- */
+  .simple-page #primary {
+	padding-left: 8.47458%;
+	padding-right: 8.47458%;
+  }
+  .simple-page .main {
+	width: 66.5%;
+	float: left;
+	margin-right: 1%;
+	display: inline;
+  }
+  .simple-page #sidebar {
+	width: 32.5%;
+	float: right;
+	margin-right: 0;
+	display: inline;
   }
 }
 @media screen and (min-width: 1024px) {

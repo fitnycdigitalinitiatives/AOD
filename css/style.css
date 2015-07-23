@@ -704,29 +704,6 @@
   #content #search-filters li li:after, #content #item-filters li li:after {
     content: ", ";
   }
-  #content div.hTagcloud {
-    border: 0;
-    background-color: transparent;
-    -moz-box-shadow: transparent 0 0 0;
-    -webkit-box-shadow: transparent 0 0 0;
-    box-shadow: transparent 0 0 0;
-    padding: 0;
-  }
-  #content div.hTagcloud ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  #content div.hTagcloud ul li {
-    display: inline-block;
-    zoom: 1;
-    background-color: #fff;
-    margin: 0 8px 0.75em 0;
-    padding: 0.375em 8px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-  }
   #content .view-items-link {
     border-top: 1px solid #dfe2e2 !important;
     margin: 0.75em 0 0 -16px !important;
@@ -790,7 +767,7 @@
   .featured-videos, .collection-videos {
 	width: 100%;
   }
-  #home #content .featured-videos h2, .collection-videos h2 {
+  #home #content .featured-videos h2, #content div.collection-videos h2 {
 	margin-bottom: 0;
 	margin-top: 1rem;
 	margin-left: 1rem;
@@ -1831,7 +1808,7 @@
 	width: 32.33333%;
   }
 
-  /* !---------- Collections ---------- */
+  /* !---------- Collections/Tags ---------- */
   .collections.show #primary .element-set {
     width: 61.53846%;
     float: left;
@@ -1849,7 +1826,7 @@
   .collections.show .item-img {
     margin-left: 0;
   }
-  .collections #content .collection-videos {
+  #content .collection-videos {
 	position: relative;
 	border-top: 1px solid #e1e2e3;
 	border-bottom: 1px solid #e1e2e3;
@@ -1857,38 +1834,30 @@
 	background-color: #F9F9F9;
 	margin-bottom: 3em;
   }
-  .collections #content .collection-videos:last-of-type {
+  #content .collection-videos:last-of-type {
 	margin-bottom: 0;
   }
-  .collections #content .collection-videos h2 {
-	margin-bottom: 0;
-	margin-top: 1rem;
-	margin-left: 1rem;
-	padding-bottom: 0;
-	color: #fff;
-	line-height: 1em;
-  }
-  .collections #content .collection-videos .customNavigation {
+  #content .collection-videos .customNavigation {
 	display: block;
   }
-  .collections #content .collection-videos .customNavigation.prev {
+  #content .collection-videos .customNavigation.prev {
 	position: absolute;
 	left: 0;
 	top: 50%;
 	z-index: 1;
   }
-  .collections #content .collection-videos .customNavigation.next {
+  #content .collection-videos .customNavigation.next {
 	position: absolute;
 	right: 0;
 	top: 50%;
 	z-index: 1;
   }
-  .collections #content .collection-videos .customNavigation a{
+  #content .collection-videos .customNavigation a{
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
 	color: #0c6fab;
   }
-  .collections #content .collection-videos .owl-pagination {
+  #content .collection-videos .owl-pagination {
 	display: none;
   }
 

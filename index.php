@@ -17,6 +17,26 @@
   <a class="btn next"><i class="fa fa-chevron-right fa-3x"></i></a>
 </div>
 </div>
+<?php echo '<script>
+jQuery(document).ready(function($) {
+	var owl = $("#featured-carousel");
+	owl.owlCarousel({
+		pagination : true,
+		items : 7,
+		itemsDesktop : [1399,5],
+		itemsDesktopSmall : [979,3],
+		itemsTablet: [768,2],
+		itemsMobile : false
+	});
+	// Custom Navigation Events
+	$(".next").click(function(){
+		owl.trigger("owl.next"");
+	})
+	$(".prev").click(function(){
+		owl.trigger("owl.prev"");
+	})
+});
+</script>' ; ?>
 <!--end featured-items-->
 
 <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>

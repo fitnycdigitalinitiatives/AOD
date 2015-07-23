@@ -30,26 +30,6 @@ jQuery(document).ready(function () {
     Seasons.mobileSelectNav();
 });
 </script>
-<script>
-jQuery(document).ready(function($) {
-	var owl = $("#featured-carousel");
-	owl.owlCarousel({
-		pagination : true,
-		items : 7,
-		itemsDesktop : [1399,5],
-		itemsDesktopSmall : [979,3],
-		itemsTablet: [768,2],
-		itemsMobile : false
-	});
-	// Custom Navigation Events
-	$(".next").click(function(){
-		owl.trigger('owl.next');
-	})
-	$(".prev").click(function(){
-		owl.trigger('owl.prev');
-	})
-});
-</script>
 
 </body>
 

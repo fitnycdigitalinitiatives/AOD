@@ -182,7 +182,7 @@
   }
 
   /* !---------- Global classes ---------- */
-  header, footer, .sub-header, .grid, .show-container, .pre-footer, #null-results {
+  header, footer, .sub-header, .grid, .show-container, .pre-footer, #null-results, .advanced-search-container {
 	padding: 1.5em 16px;
   }
   .container {
@@ -1049,26 +1049,17 @@
 
   /* !---------- Advanced Search ---------- */
   .advanced-search #content form > div {
-    background-color: #fff;
-    border-style: solid;
-    border-width: 10px 0 0 0;
-    overflow: visible;
-    padding: 0 16px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    *behavior: url("../javascripts/boxsizing.htc");
-    margin-bottom: 1.125em;
-    *zoom: 1;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #e1e2e3;
+    background-color: #F9F9F9;
   }
   .advanced-search #content form > div:last-of-type {
     padding: 0;
   }
   .advanced-search #content form > div input {
     margin-bottom: 1.5em;
+	border: 1px solid #e1e2e3;
   }
   .advanced-search #content form > div .label {
     margin-bottom: 0.75em;
@@ -1114,6 +1105,7 @@
   .advanced-search button {
     display: inline-block;
     margin: 0 0 1.5em;
+	background-color: #0c6fab;
   }
   .advanced-search #advanced-search-form > div:last-of-type {
     border: 0;
@@ -1128,6 +1120,7 @@
   }
   .advanced-search #submit_search_advanced {
     margin-bottom: 0 !important;
+	background-color: #0c6fab;
   }
 
   /* !---------- File Pages ---------- */
@@ -1793,9 +1786,9 @@
   /* !---------- Items --------- */
   
   .items #advanced-search-form > div {
-    width: 61.53846%;
+    width: 66.5%;
     float: left;
-    margin-right: 2.5641%;
+    margin-right: 1%;
     display: inline;
     clear: both;
   }

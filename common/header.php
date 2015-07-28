@@ -52,19 +52,12 @@
                 <?php echo link_to_home_page('<img src="' . img('AOD_logo2.png') . '" alt="FIT Archive On Demand">'); ?>
             </div>
             <div id="search-container" role="search">
-				<form <?php echo tag_attributes($formAttributes); ?>>
-					<div class="inputs">
-						<?php
-							echo $this->formText(
-								'search',
-								@$_REQUEST['search'],
-								array('id' => 'keyword-search', 'size' => '40')
-							);
-						?>
-						<?php echo $this->formButton('submit_search', $options['submit_value'], array('type' => 'submit')); ?>
-					</div>
-				</form>
-			</div>
+                <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
+                <?php echo search_form(array('show_advanced' => true)); ?>
+                <?php else: ?>
+                <?Php echo search_form(); ?>
+                <?php endif; ?>
+            </div>
 			<nav id="top-nav" class="top" role="navigation">
             <?php echo public_nav_main(); ?>
 			</nav>

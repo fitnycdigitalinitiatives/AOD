@@ -53,9 +53,9 @@
             </div>
             <div id="search-container" role="search">
                 <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
-                <?php echo search_form(array('show_advanced' => false, 'form_attributes' => array('action' => '/'items/browse))); ?>
+                <?php echo search_form(array('show_advanced' => false, 'form_attributes' => array('action' => '/items/browse'))); ?>
                 <?php else: ?>
-                <?php echo search_form(array('show_advanced' => false, 'form_attributes' => array('action' => '/'items/browse))); ?>
+                <?php echo search_form(array('show_advanced' => false, 'form_attributes' => array('action' => '/items/browse'))); ?>
                 <?php endif; ?>
             </div>
 			<nav id="top-nav" class="top" role="navigation">

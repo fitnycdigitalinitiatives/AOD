@@ -1785,11 +1785,13 @@
 
   /* !---------- Items --------- */
   
+  .items .advanced-search-container {
+	width: 66.5%;
+	margin-left: auto;
+	margin-left: auto;
+  }
   .items #advanced-search-form > div {
-    width: 66.5%;
-    float: left;
-    margin-right: 1%;
-    display: inline;
+    width: 100%;
     clear: both;
   }
   .items #advanced-search-form > div:last-of-type {

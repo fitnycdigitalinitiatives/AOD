@@ -48,7 +48,15 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 	</div>
 <?php else: ?>
 	<div id="null-results">
-	<p>Your search returned no results. Please try another keyword. Or try our <a href="/items/search">Advanced Search</a>.</p>
+		<div id="primary">
+			<p>Your search returned no results. Please try another keyword. Or try our <a href="/items/search">Advanced Search</a>.</p>
+		</div>
+		<div id="sidebar">
+			<div class="recent_items">
+				<h2>Recently Added Videos</h2>
+				<?php echo recent_items(5); ?>
+			</div>
+		</div>
 	</div>
 <?php endif; ?>
 <?php if (pagination_links()): ?>

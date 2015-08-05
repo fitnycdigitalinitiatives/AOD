@@ -1,10 +1,23 @@
 <?php
 
-function video_embed()
+function youTube_embed()
 {
-	$src = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
-	$href = 'https://drive.google.com/uc?export=download&id=' . metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'));
-	return '<div class="videoWrapper"><iframe width="560" height="349" src="' . $src . '?rel=0&autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe></div><div class="drive-link"><a href="' . $href . '">Download Original File (Requires valid fitnyc.edu email)</a></div>'; 
+	$html = '';
+	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
+		$src = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
+		$html .= '<div class="videoWrapper"><iframe width="560" height="349" src="' . $src . '?rel=0&autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
+	}
+	return $html;
+}
+
+function gDrive_link() 
+{
+	$html = '';
+	if (metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'))) {
+		$href = 'https://drive.google.com/uc?export=download&id=' . metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'));
+		$html .= '<div class="drive-link"><a href="' . $href . '">Download Original File (Requires valid fitnyc.edu email)</a></div>'; 
+	}
+	return $html;
 }
 
 function YouTube_thumbnail($item)

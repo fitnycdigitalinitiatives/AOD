@@ -5,7 +5,8 @@
 <div class="show-container">
 	<div id="primary">
 		<!-- Returns embedded video and then metadata -->
-		<?php echo video_embed(); ?>
+		<?php echo youTube_embed(); ?>
+		<?php echo gDrive_link(); ?>
 		<?php echo all_element_texts('item'); ?>
 	</div><!-- end primary -->
 

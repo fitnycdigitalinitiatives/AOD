@@ -6,6 +6,11 @@
 	<div id="primary">
 		<!-- Returns embedded video and then metadata -->
 		<?php echo youTube_embed(); ?>
+		<div class="social">
+			<h2>Share</h2>
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<div class="addthis_sharing_toolbox"></div>			
+		</div>
 		<?php echo gDrive_link(); ?>
 		<?php echo all_element_texts('item'); ?>
 	</div><!-- end primary -->
@@ -41,4 +46,7 @@
 
 	</aside>
 </div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55c8b7772f2446eb" async="async"></script>
+
 <?php echo foot(); ?>

@@ -898,6 +898,24 @@
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+  .items.show .social ul {
+	padding-left: 0;
+	margin-bottom: 0;
+  }
+  .items.show .social li {
+	display: inline-block;
+	margin-right: 1em;
+  }
+  .items.show .social li:last-of-type {
+	margin-right: 0;
+  }
+  .items.show .social h2 {
+	padding: 0 0 0.375em;
+    margin: 0;
+  }
+  .items.show .social textarea {
+	resize: none;
+  }
   #sidebar .item-link-thumb {
 	width: 33%;
 	float: left;

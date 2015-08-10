@@ -29,7 +29,7 @@ function youTube_embed_code()
 	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
 		$src = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
 		$iframe = '<iframe width="560" height="315" src="' . $src . '" frameborder="0" allowfullscreen></iframe>';
-		$html .= '<textarea rows="1">' . $iframe . '</textarea>';
+		$html .= '<textarea rows="1" readonly>' . $iframe . '</textarea>';
 	}
 	return $html;
 }

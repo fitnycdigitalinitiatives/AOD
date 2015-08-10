@@ -18,7 +18,7 @@ function gDrive_link()
 		$html .= '<div id="download" class="drive-link"><a href="' . $href . '">Download Original File (Requires valid fitnyc.edu email)</a></div>'; 
 	}
 	else {
-		$html .= '<div class="drive-link">Not available for download at this time.</div>'; 
+		$html .= '<div id="download" class="drive-link">Not available for download at this time.</div>'; 
 	}
 	return $html;
 }

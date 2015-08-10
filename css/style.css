@@ -913,8 +913,13 @@
 	padding: 0 0 0.375em;
     margin: 0;
   }
+  .items.show .social h2 a {
+	color: #3c3c3c;
+  }
   .items.show .social textarea {
 	resize: none;
+	white-space: nowrap;
+	overflow: hidden;
   }
   #sidebar .item-link-thumb {
 	width: 33%;

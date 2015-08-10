@@ -5,7 +5,7 @@ function youTube_embed()
 	$html = '';
 	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
 		$src = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
-		$html .= '<div class="videoWrapper"><iframe width="560" height="349" src="' . $src . '?rel=0&autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
+		$html .= '<div class="videoWrapper"><iframe width="560" height="315" src="' . $src . '?rel=0&autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
 	}
 	return $html;
 }
@@ -15,7 +15,21 @@ function gDrive_link()
 	$html = '';
 	if (metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'))) {
 		$href = 'https://drive.google.com/uc?export=download&id=' . metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'));
-		$html .= '<div class="drive-link"><a href="' . $href . '">Download Original File (Requires valid fitnyc.edu email)</a></div>'; 
+		$html .= '<div id="download" class="drive-link"><a href="' . $href . '">Download Original File (Requires valid fitnyc.edu email)</a></div>'; 
+	}
+	else {
+		$html .= '<div class="drive-link">Not available for download at this time.</div>'; 
+	}
+	return $html;
+}
+
+function youTube_embed_code()
+{
+	$html = '';
+	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
+		$src = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
+		$iframe = '<iframe width="560" height="315" src="' . $src . '" frameborder="0" allowfullscreen></iframe>';
+		$html .= '<input type="text" name="embed-code" value="' . $iframe . '" readonly>';
 	}
 	return $html;
 }

@@ -10,11 +10,11 @@
 		<!-- Returns embedded video and then metadata -->
 		<?php echo youTube_embed(); ?>
 		<div class="social">
-			<h2>Share</h2>
+			<h2>Share</h2><h2>Download</h2>
 			<!-- Go to www.addthis.com/dashboard to customize your tools -->
 			<div class="addthis_sharing_toolbox"></div>			
+			<?php echo gDrive_link(); ?>
 		</div>
-		<?php echo gDrive_link(); ?>
 		<?php echo all_element_texts('item'); ?>
 	</div><!-- end primary -->
 

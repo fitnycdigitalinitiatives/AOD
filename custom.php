@@ -121,7 +121,7 @@ function social_tags($bodyclass) {
 	if ($bodyclass == "items show" ) {
 		$item = get_current_record('item');
 		$title = metadata($item, array('Dublin Core', 'Title'));
-		$url = record_url($item);
+		$url = record_url($item, true);
 		$image = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 		$description = metadata($item, array('Dublin Core', 'Description'));
 		$video = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));

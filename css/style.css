@@ -915,11 +915,16 @@
   }
   .items.show .social h2 a {
 	color: #3c3c3c;
+	opacity: 0.5;
+  }
+  .items.show .social h2 a.active, .items.show .social h2 a:hover {
+	opacity: 1;
   }
   .items.show .social textarea {
 	resize: none;
 	white-space: nowrap;
 	overflow: hidden;
+	border: 1px solid #e1e2e3;
   }
   #sidebar .item-link-thumb {
 	width: 33%;

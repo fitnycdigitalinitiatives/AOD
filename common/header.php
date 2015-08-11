@@ -6,6 +6,7 @@
     <?php if ($description = option('description')): ?>
     <meta name="description" content="<?php echo $description; ?>">
     <?php endif; ?>
+	<?php echo social_tags($bodyclass); ?>
 
     <?php
     if (isset($title)) {

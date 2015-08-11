@@ -116,4 +116,24 @@ function related_items($current_item)
 	}
 }
 
+function social_tags($bodyclass) {
+	$html = '';
+	if ($bodyclass == "items show" ) {
+		$item = get_current_record('item');
+		$title = metadata($item, array('Dublin Core', 'Title'));
+		$url = record_url($item);
+		$image = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+		$description = metadata($item, array('Dublin Core', 'Description'));
+		$video = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
+		$html .= '<!-- Open Graph data -->';
+		$html .= '<meta property="og:title" content="' . $title . '" />';
+		$html .= '<meta property="og:type" content="video" />';
+		$html .= '<meta property="og:url" content="' . $url . '" />';
+		$html .= '<meta property="og:image" content="' . $image . '" />';
+		$html .= '<meta property="og:description" content="' . $description . '" />';
+		$html .= '<meta property="og:video" content="' . $video . '" />';
+	}
+	return $html;
+}
+
 ; ?>

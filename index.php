@@ -1,4 +1,4 @@
-<?php echo head(array('bodyid'=>'home')); ?>
+<?php echo head(array('bodyid'=>'home', 'bodyclass'=>'home')); ?>
 
 <!-- Homepage Logo -->
 <div class="logo">

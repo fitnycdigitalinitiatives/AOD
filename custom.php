@@ -125,6 +125,7 @@ function social_tags($bodyclass) {
 		$image = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 		$description = metadata($item, array('Dublin Core', 'Description'));
 		$video = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
+		$html .= '<meta name="description" content="' . $description . '" />';
 		$html .= '<!-- Open Graph data -->';
 		$html .= '<meta property="og:title" content="' . $title . '" />';
 		$html .= '<meta property="og:type" content="video" />';
@@ -132,6 +133,20 @@ function social_tags($bodyclass) {
 		$html .= '<meta property="og:image" content="' . $image . '" />';
 		$html .= '<meta property="og:description" content="' . $description . '" />';
 		$html .= '<meta property="og:video" content="' . $video . '" />';
+		$html .= '<!-- Twitter Card data -->';
+		$html .= '<meta name="twitter:card" content="player">';
+		$html .= '<meta name="twitter:title" content="' . $title . '" />';
+		$html .= '<meta name="twitter:site" content="@FITLibrary">';
+		$html .= '<meta name="twitter:description" content="' . $description . '" />';
+		$html .= '<meta name="twitter:player" content="' . $video . '" />';
+		$html .= '<meta name="twitter:player:width" content="560">';
+		$html .= '<meta name="twitter:player:height" content="315">';
+		$html .= '<meta name="twitter:image" content="' . $image . '" />';
+	}
+	else {
+		if ($site_description = option('description')) {
+			$html .= '<meta name="description" content="' . $site_description . '" />';
+		}
 	}
 	return $html;
 }

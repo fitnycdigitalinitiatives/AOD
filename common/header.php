@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<?php echo social_tags($bodyclass); ?>
+	<?php echo social_tags(@$bodyclass); ?>
 
     <?php
     if (isset($title)) {

@@ -157,7 +157,7 @@ function heading_links($elementName, $text) {
 	$advanced[] = array('element_id' => $id, 'terms' => $text, 'type' => 'is exactly');
 	$paramArray = array('search' => '', 'advanced' => $advanced);
 	$params = http_build_query($paramArray);
-	$url = 'items/browse?' . $params;
+	$url = '/items/browse?' . $params;
 	$html = '<a href="';
 	$html .= $url;
 	$html .= '">';

@@ -151,4 +151,19 @@ function social_tags($bodyclass) {
 	return $html;
 }
 
+function heading_links($elementName, $text) {
+	$element = get_db()->getTable('Element')->findByElementSetNameAndElementName('Dublin Core', $elementName);
+	$id = $element->id;
+	$advanced[] = array('element_id' => $id, 'terms' => $text, 'type' => 'is exactly');
+	$paramArray = array('search' => '', 'advanced' => $advanced);
+	$params = http_build_query($paramArray);
+	$url = 'items/browse?' . $params;
+	$html = '<a href="';
+	$html .= $url;
+	$html .= '">';
+	$html .= $text;
+	$html .= '</a>';
+	return $html;
+}
+
 ; ?>

@@ -2,7 +2,7 @@
 <h2>Metadata</h2>
 <?php foreach ($elementsForDisplay as $setName => $setElements): ?>
     <?php foreach ($setElements as $elementName => $elementInfo): ?>
-	<?php if ($setName == "Dublin Core"): ?>
+	<?php if (($setName == "Dublin Core") and (($elementName == "Subject") or ($elementName == "Contributor") or ($elementName == "Spatial Coverage") or ($elementName == "Temporal Coverage"))): ?>
 		<div id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element">
 			<h3><?php echo html_escape(__($elementName)); ?></h3>
 			<?php foreach ($elementInfo['texts'] as $text): ?>

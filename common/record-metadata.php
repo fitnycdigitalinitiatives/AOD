@@ -12,8 +12,9 @@
 					$advanced[] = array('element_id' => $id, 'terms' => $text, 'type' => 'is exactly');
 					$paramArray = array('search' => '', 'advanced' => $advanced);
 					$params = http_build_query($paramArray);
+					$this->_helper->redirector->gotoUrl('items/browse?' . $params );
 					?>
-					<div class="element-text"><?php echo $params; ?></div>
+					<div class="element-text"><?php echo $this; ?></div>
 				<?php endforeach; ?>
 			</div><!-- end element -->
 		<?php else: ?>

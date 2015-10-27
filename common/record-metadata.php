@@ -22,12 +22,3 @@
 	<?php endforeach; ?>
 <?php endforeach; ?>
 </div><!-- end element-set -->
-
-
-
-
-link_to_items_browse($text, array('element_id' => $id, 'terms' => $term, 'type' => 'is exactly'))
-
-
-$element = get_db()->getTable('Element')->findByElementSetNameAndElementName('Dublin Core', $elementName);
-$id = $element->id;

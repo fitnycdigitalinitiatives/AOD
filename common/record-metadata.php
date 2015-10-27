@@ -8,7 +8,12 @@
 			<div id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element">
 				<h3><?php echo html_escape(__($elementName)); ?></h3>
 				<?php foreach ($elementInfo['texts'] as $text): ?>
-					<div class="element-text"><?php echo link_to_items_browse($text, array('element_id' => $id, 'terms' => $text, 'type' => 'is exactly')); ?></div>
+					<?php 
+					$advanced[] = array('element_id' => $id, 'terms' => $text, 'type' => 'is exactly');
+					$paramArray = array('search' => '', 'advanced' => $advanced);
+					$params = http_build_query($paramArray);
+					?>
+					<div class="element-text"><?php echo $params; ?></div>
 				<?php endforeach; ?>
 			</div><!-- end element -->
 		<?php else: ?>

@@ -28,6 +28,7 @@
 	<aside id="sidebar">
 		<!-- List related items based on 1st tag -->
 		<?php echo related_items('item'); ?>
+		
 		<!-- If the item belongs to a collection, the following creates a link to that collection. -->
 		<?php if (metadata('item', 'Collection Name')): ?>
 		<div id="collection" class="element">
@@ -38,6 +39,16 @@
 		</div>
 		<?php endif; ?>
 
+		<!-- If the item belongs to a series, the following creates a link to that series. -->
+		<?php if (metadata('item', array('Dublin Core', 'Is Part Of'))): ?>
+		<div id="series" class="element">
+			<h2><?php echo __('Series'); ?></h2>
+			<div class="element-text">
+				<?php echo heading_links('Is Part Of', metadata('item', array('Dublin Core', 'Is Part Of'))); ?>
+			</div>
+		</div>
+		<?php endif; ?>
+		
 		<!-- The following prints a list of all tags associated with the item -->
 		<?php if (metadata('item', 'has tags')): ?>
 		<div id="item-tags" class="element">

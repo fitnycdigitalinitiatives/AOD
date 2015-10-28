@@ -12,12 +12,12 @@
 		<div class="social">
 			<ul class='tabs'>
 				<li><h2><a href='#share'>Share</a></h2></li>
+				<li><h2><a href='#embed'>Embed</a></h2></li>
 				<!-- Only displays for registered users -->
 				<?php $user=current_user(); ?>
 				<?php if ($user): ?>
 				<li><h2><a href='#download'>Download</h2></a></h2></li>
 				<?php endif; ?>
-				<li><h2><a href='#embed'>Embed</a></h2></li>
 			</ul>
 			<!-- Go to www.addthis.com/dashboard to customize your tools -->
 			<div id="share" class="addthis_sharing_toolbox"></div>

@@ -16,8 +16,7 @@ function gDrive_link()
 	if ((metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'))) or (metadata('item', array('Item Type Metadata', 'Identifier.GoogleDriveForm')))) {
 		$href = 'https://drive.google.com/uc?export=download&id=' . metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'));
 		$form_href = 'https://drive.google.com/uc?export=download&id=' . metadata('item', array('Item Type Metadata', 'Identifier.GoogleDriveForm'));
-		$html .= '<div id="download" class="drive-link"><a href="' . $href . '">Download Original File (Requires valid fitnyc.edu email)</a></div>';
-		$html .= '<div id="download" class="drive-link"><a href="' . $form_href . '">Download Video Release Form (Requires valid fitnyc.edu email)</a></div>';
+		$html .= '<div id="download" class="drive-link"><a href="' . $href . '">Download Original File (Requires valid fitnyc.edu email)</a></br><a href="' . $form_href . '">Download Video Release Form (Requires valid fitnyc.edu email)</a></div>';
 	}
 	else {
 		$html .= '<div id="download" class="drive-link">Not available for download at this time.</div>'; 

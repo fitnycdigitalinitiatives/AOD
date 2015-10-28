@@ -103,11 +103,12 @@ function related_items($current_item)
 		$tags = get_current_record($current_item)->Tags;
 		$youTubeID = metadata($current_item, array('Item Type Metadata', 'Identifier.YouTube'));
 		$items = get_records('Item', array('tags' => $tags[0], 'sort_field' => 'random', 'advanced' => array(array('element_id' => '53', 'type' => 'does not contain', 'terms' => $youTubeID))), 7);
-		set_loop_records('items', $items);
 		if ($items) {
 			$html = '<div class="related_items"><h2>Related Videos</h2>';
-			foreach (loop('items') as $item) {
-				$html .= get_view()->partial('items/single.php', array('item' => $item));
+			foreach ($items as $item) {
+				$html .= '<div class="item-link">';
+				$html .= link_to_item('<div class="item-link-thumb">' . YouTube_thumbnail($item) . '<div class="overlay"></div></div><div class="description"><h4>' . metadata($item, array('Dublin Core', 'Title')) . '</h4></div>', array('class'=>'permalink'), 'show', $item);
+				$html .= '</div>';
 				release_object($item);
 			}
 			$html .= '</div>';

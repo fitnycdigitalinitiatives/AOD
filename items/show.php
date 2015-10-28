@@ -43,9 +43,12 @@
 		<?php if (metadata('item', array('Dublin Core', 'Is Part Of'))): ?>
 		<div id="series" class="element">
 			<h2><?php echo __('Series'); ?></h2>
+			<?php $IsPartOf = metadata('item', array('Dublin Core', 'Is Part Of'), array ('all' => true)) ?>
+			<?php foreach ($IsPartOf as $series): ?>
 			<div class="element-text">
-				<?php echo heading_links('Is Part Of', metadata('item', array('Dublin Core', 'Is Part Of'))); ?>
+				<?php echo heading_links('Is Part Of', $series); ?>
 			</div>
+			<?php endforeach; ?>
 		</div>
 		<?php endif; ?>
 		

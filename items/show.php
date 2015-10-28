@@ -69,7 +69,10 @@
 		<?php if (metadata('item', 'has tags')): ?>
 		<div id="item-tags" class="element">
 			<h2><?php echo __('Categories'); ?></h2>
-			<div class="element-text"><?php echo tag_string('item', 'items/browse', '</br>'); ?></div>
+			<?php $tags = get_current_record('item')->Tags; ?>
+			<?php foreach ($tags as $tag): ?>
+			<div class="element-text"><?php echo link_to_items_browse($tag['name'], array('tags' => $tag['name'])); ?></div>
+			<?php endforeach; ?>
 		</div>
 		<?php endif;?>
 

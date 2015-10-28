@@ -52,6 +52,19 @@
 		</div>
 		<?php endif; ?>
 		
+		<!-- If the item has related parts, the following creates a link to those titles. -->
+		<?php if (metadata('item', array('Dublin Core', 'Relation'))): ?>
+		<div id="relation" class="element">
+			<h2><?php echo __('Related Parts'); ?></h2>
+			<?php $relation = metadata('item', array('Dublin Core', 'relation'), array ('all' => true)) ?>
+			<?php foreach ($relation as $part): ?>
+			<div class="element-text">
+				<?php echo heading_links('Is Part Of', $part); ?>
+			</div>
+			<?php endforeach; ?>
+		</div>
+		<?php endif; ?>
+		
 		<!-- The following prints a list of all tags associated with the item -->
 		<?php if (metadata('item', 'has tags')): ?>
 		<div id="item-tags" class="element">

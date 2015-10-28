@@ -119,10 +119,12 @@ function related_items($current_item)
 
 function related_parts($part)
 {
-	$part_item = get_record('Item', array('advanced' => array(array('element_id' => '50', 'type' => 'is exactly', 'terms' => $part))));
-		if ($part_item) {
-			$html = link_to_item($part, array('class'=>'permalink'), 'show', $part_item[0]);
-			release_object($part_item);
+	$part_items = get_records('Item', array('sort_field' => 'random', 'advanced' => array(array('element_id' => '50', 'type' => 'is exactly', 'terms' => $part))), 1);
+		if ($part_items) {
+			foreach ($part_items as $part_item) {
+				$html = link_to_item($part, array('class'=>'permalink'), 'show', $part_item);
+				release_object($part_item);
+			}
 			return $html;
 		}
 }

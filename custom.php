@@ -122,7 +122,7 @@ function related_parts($part)
 	$part_items = get_records('Item', array('sort_field' => 'random', 'advanced' => array(array('element_id' => '50', 'type' => 'is exactly', 'terms' => $part))), 1);
 		if ($part_items) {
 			foreach ($part_items as $part_item) {
-				$html .= link_to_item($part, array('class'=>'permalink'), 'show', $part_item);
+				$html = link_to_item($part, array('class'=>'permalink'), 'show', $part_item);
 				release_object($part_item);
 			}
 			return $html;

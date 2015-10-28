@@ -69,7 +69,7 @@
 		<?php if (metadata('item', 'has tags')): ?>
 		<div id="item-tags" class="element">
 			<h2><?php echo __('Categories'); ?></h2>
-			<div class="element-text"><?php echo tag_string('item', $delimiter = '</br>'); ?></div>
+			<div class="element-text"><?php echo tag_string('item', 'items/browse', '</br>'); ?></div>
 		</div>
 		<?php endif;?>
 

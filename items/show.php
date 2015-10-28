@@ -56,7 +56,7 @@
 		<?php if (metadata('item', array('Dublin Core', 'Relation'))): ?>
 		<div id="relation" class="element">
 			<h2><?php echo __('Related Parts'); ?></h2>
-			<?php $relation = metadata('item', array('Dublin Core', 'relation'), array ('all' => true)) ?>
+			<?php $relation = metadata('item', array('Dublin Core', 'Relation'), array ('all' => true)) ?>
 			<?php foreach ($relation as $part): ?>
 			<div class="element-text">
 				<?php echo heading_links('Is Part Of', $part); ?>

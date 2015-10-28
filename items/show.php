@@ -59,7 +59,7 @@
 			<?php $relation = metadata('item', array('Dublin Core', 'Relation'), array ('all' => true)) ?>
 			<?php foreach ($relation as $part): ?>
 			<div class="element-text">
-				<?php echo heading_links('Is Part Of', $part); ?>
+				<?php echo heading_links('Relation', $part); ?>
 			</div>
 			<?php endforeach; ?>
 		</div>

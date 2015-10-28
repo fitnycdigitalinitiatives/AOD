@@ -58,12 +58,9 @@
 			<h2><?php echo __('Related Parts'); ?></h2>
 			<?php $relation = metadata('item', array('Dublin Core', 'Relation'), array ('all' => true)) ?>
 			<?php foreach ($relation as $part): ?>
-			<?php $part_items = get_records('Item', array('advanced' => array(array('element_id' => '50', 'type' => 'is exactly', 'terms' => 'Fashion Culture: Future Fakes'))), 1); ?>
-			<?php foreach ($part_items as $part_item): ?>
 			<div class="element-text">
-				<?php echo link_to_item($part, 'show', $part_item); ?>
+				<?php echo heading_links('Title', $part); ?>
 			</div>
-			<?php endforeach; ?>
 			<?php endforeach; ?>
 		</div>
 		<?php endif; ?>

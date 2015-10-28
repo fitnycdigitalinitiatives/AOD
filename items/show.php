@@ -59,7 +59,7 @@
 			<?php $relation = metadata('item', array('Dublin Core', 'Relation'), array ('all' => true)) ?>
 			<?php foreach ($relation as $part): ?>
 			<div class="element-text">
-				<?php echo heading_links('Title', $part); ?>
+				<?php echo link_to_item($part, 'show', get_record('Item', array('advanced' => array(array('element_id' => '50', 'type' => 'is exactly', 'terms' => $part))))); ?>
 			</div>
 			<?php endforeach; ?>
 		</div>

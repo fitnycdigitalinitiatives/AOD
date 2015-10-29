@@ -24,7 +24,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 		<?php $item = get_records('Item', array('collection' => metadata($collection, 'id')), 1); ?>
 		<?php echo link_to_items_browse(YouTube_thumbnail($item[0]), array('collection' => metadata($collection, 'id'))); ?>
 		<?php echo link_to_items_browse('<div class="overlay"></div>', array('collection' => metadata($collection, 'id'))); ?>
-		<h2><?php echo link_to_items_browse(strip_formatting(metadata('collection', array('Dublin Core', 'Title'))), array('collection' => metadata($collection, 'id'))); ?></h2>
+		<?php echo link_to_items_browse('<div class="title"><h2>' . metadata('collection', array('Dublin Core', 'Title')) . '</h2></div>', array('collection' => metadata($collection, 'id'))); ?>
 	</div>
 </div>
 <?php endforeach; ?>

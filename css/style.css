@@ -1228,7 +1228,7 @@
 	overflow: hidden;
 	margin-left: -1%;
   }
-  .collection.tile {
+  .collection-tile {
 	overflow: hidden;
 	float: left;
 	width: 49%;
@@ -1261,10 +1261,10 @@
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
   }
-  .collection.tile:hover .overlay {
+  .collection-tile:hover .overlay {
 	opacity: 1;
   }
-  .collection.tile .title {
+  .collection-tile .title {
 	width: 100%;
 	height: 25%;
 	position: absolute;
@@ -1276,7 +1276,7 @@
 	right: 0;
 	padding: 2%;
   }
-  .collection.tile .title p {
+  .collection-tile .title p {
 	margin: 0;
 	height: 2.4em;
 	overflow: hidden;
@@ -1927,7 +1927,7 @@
   .collections.show .item-img {
     margin-left: 0;
   }
-  .collection.tile {
+  .collection-tile {
 	width: 32.33333%;
   }
 

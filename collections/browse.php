@@ -14,14 +14,18 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 		<span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
 	</div>
 </div>
+<div class="grid">
 <?php $number = 0; ?>
 <?php foreach (loop('collections') as $collection): ?>
 <?php ++$number; ?>
 <?php $collectionCount = metadata('collection', 'total_items'); ?>
-<div class="collection-videos">
-<h2><?php echo link_to_items_browse(strip_formatting(metadata('collection', array('Dublin Core', 'Title'))), array('collection' => metadata($collection, 'id'))); ?></h2>
-<?php $item = get_records('Item', array('collection' => metadata($collection, 'id')), 1); ?>
-<?php echo YouTube_thumbnail($item[0]); ?>
+<div class="collection-tile">
+	<div class="collection-thumb">
+		<?php $item = get_records('Item', array('collection' => metadata($collection, 'id')), 1); ?>
+		<?php echo link_to_items_browse(YouTube_thumbnail($item[0]), array('collection' => metadata($collection, 'id'))); ?>
+		<?php echo link_to_items_browse('<div class="overlay"></div>', array('collection' => metadata($collection, 'id'))); ?>
+		<h2><?php echo link_to_items_browse(strip_formatting(metadata('collection', array('Dublin Core', 'Title'))), array('collection' => metadata($collection, 'id'))); ?></h2>
+	</div>
 </div>
 <?php endforeach; ?>
 <?php if (pagination_links()): ?>
@@ -30,6 +34,6 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 		<?php fire_plugin_hook('public_collections_browse', array('collections'=>$collections, 'view' => $this)); ?>
 	</div>
 <?php endif; ?>
-
+</div>
 
 <?php echo foot(); ?>

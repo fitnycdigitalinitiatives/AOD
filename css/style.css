@@ -1231,7 +1231,7 @@
   .collection.tile {
 	overflow: hidden;
 	float: left;
-	width: 32.3333333%;
+	width: 49%;
 	margin-left: 1%;
 	margin-bottom: 3%;
   }
@@ -1926,6 +1926,9 @@
   }
   .collections.show .item-img {
     margin-left: 0;
+  }
+  .collection.tile {
+	width: 32.33333%;
   }
 
   /* !---------- ExhibitBuilder ---------- */

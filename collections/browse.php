@@ -19,36 +19,10 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 <?php ++$number; ?>
 <?php $collectionCount = metadata('collection', 'total_items'); ?>
 <div class="collection-videos">
-<h2><?php echo link_to_items_browse(strip_formatting(metadata('collection', array('Dublin Core', 'Title'))) . '<span> (' . $collectionCount . ', view all)</span>', array('collection' => metadata($collection, 'id'))); ?></h2>
-<div class="customNavigation prev">
-  <a class="btn prev-<?php echo $number; ?>"><i class="fa fa-chevron-left fa-3x"></i></a>
+<h2><?php echo link_to_items_browse(strip_formatting(metadata('collection', array('Dublin Core', 'Title'))), array('collection' => metadata($collection, 'id'))); ?></h2>
+<?php $item = get_records('Item', array('collection' => metadata($collection, 'id')), 1); ?>
+<?php echo YouTube_thumbnail($item[0]); ?>
 </div>
-<?php echo collection_carousel($collection, $number); ?>
-<div class="customNavigation next">
-  <a class="btn next-<?php echo $number; ?>"><i class="fa fa-chevron-right fa-3x"></i></a>
-</div>
-</div>
-<?php echo '<script>
-jQuery(document).ready(function($) {
-	var owl = $("#collection-carousel-' . $number . '");
-	owl.owlCarousel({
-		pagination : true,
-		items : 7,
-		itemsDesktop : [1399,5],
-		itemsDesktopSmall : [979,3],
-		itemsTablet: [768,2],
-		itemsMobile : false
-	});
-	// Custom Navigation Events
-	$(".next-' . $number . '").click(function(){
-		owl.trigger("owl.next");
-	})
-	$(".prev-' . $number . '").click(function(){
-		owl.trigger("owl.prev");
-	})
-});
-</script>' ; ?>
-
 <?php endforeach; ?>
 <?php if (pagination_links()): ?>
 	<div class="pre-footer">

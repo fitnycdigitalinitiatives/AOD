@@ -1937,9 +1937,6 @@
   .collection-tile {
 	width: 30.33333%;
   }
-  .collection-tile .title h2 {
-	font-size: 3em;
-  }
 
   /* !---------- ExhibitBuilder ---------- */
   .exhibits #primary,
@@ -2005,6 +2002,9 @@
 @media screen and (min-width: 1024px) {
   body {
 	font-size: 11px;
+  }
+  .collection-tile .title h2 {
+	font-size: 3em;
   }
 }
 @media screen and (min-width: 1200px) {

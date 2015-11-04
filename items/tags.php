@@ -8,8 +8,8 @@ echo head(array('title'=>$pageTitle, 'bodyclass'=>'items tags'));
 
 <div class="grid">
 <?php foreach ($tags as $tag): ?>
-<div class="collection-tile">
-	<div class="collection-thumb">
+<div class="tags-tile">
+	<div class="tags-thumb">
 		<?php $item = get_records('Item', array('tags' => $tag['name']), 1); ?>
 		<?php echo link_to_items_browse(YouTube_thumbnail($item[0]), array('tags' => $tag['name'])); ?>
 		<?php echo link_to_items_browse('<div class="overlay"></div>', array('tags' => $tag['name'])); ?>

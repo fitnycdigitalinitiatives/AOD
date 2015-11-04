@@ -1258,7 +1258,7 @@
 	transition: all 0.3s ease-out;
   }
   .collection-tile:hover .overlay {
-	opacity: 0;
+	background: rgba(255, 255, 255, 0.85);
   }
   .collection-tile .title {
 	width: 100%;
@@ -1269,9 +1269,11 @@
 	left: 0;
 	right: 0;
   }
+  .collection-tile:hover .title {
+	color: #0c6fab;
+  }
   .collection-tile .title h2 {
 	margin: 0;
-	height: 2.4em;
 	overflow: hidden;
   }
 

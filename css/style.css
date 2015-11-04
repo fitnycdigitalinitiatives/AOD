@@ -789,6 +789,13 @@
 	margin: 1em;
 	position: relative;
 	overflow: hidden;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+  }
+  #featured-carousel .carousel-item:hover {
+	margin: 0;
   }
   #featured-carousel .carousel-item img {
 	display: block;

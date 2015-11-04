@@ -1286,6 +1286,8 @@
 	vertical-align: middle;
 	margin: 0;
 	overflow: hidden;
+	font-size: 2em;
+	line-height: 1.2em;
   }
 
   /* !---------- ExhibitBuilder ---------- */
@@ -1935,6 +1937,9 @@
   .collection-tile {
 	width: 30.33333%;
   }
+  .collection-tile .title h2 {
+	font-size: 3em;
+  }
 
   /* !---------- ExhibitBuilder ---------- */
   .exhibits #primary,
@@ -2009,6 +2014,9 @@
   .item.tile {
 	width: 24%;
   }
+  .collection-tile .title h2 {
+	font-size: 3.5em;
+  }
 }
 @media screen and (min-width: 1400px) {
   body {
@@ -2021,5 +2029,8 @@
 @media screen and (min-width: 1800px) {
   .item.tile {
 	width: 11.5%;
+  }
+  .collection-tile .title h2 {
+	font-size: 4em;
   }
 }

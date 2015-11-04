@@ -1265,14 +1265,23 @@
 	position: absolute;
 	color: #fff;
 	text-align: center;
-	top: 45%;
+	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
+  }
+  .collection-tile .title:before {
+	content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
   }
   .collection-tile:hover .title {
 	color: #0c6fab;
   }
   .collection-tile .title h2 {
+	display: inline-block;
+	vertical-align: middle;
 	margin: 0;
 	overflow: hidden;
   }

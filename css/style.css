@@ -1289,6 +1289,11 @@
 	font-size: 2em;
 	line-height: 1.2em;
   }
+  .collection-tile .video-count, .tags-tile .video-count {
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+  }
 
   /* !---------- ExhibitBuilder ---------- */
   .exhibits #content .navigation {

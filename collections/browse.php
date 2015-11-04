@@ -15,10 +15,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 	</div>
 </div>
 <div class="grid">
-<?php $number = 0; ?>
 <?php foreach (loop('collections') as $collection): ?>
-<?php ++$number; ?>
-<?php $collectionCount = metadata('collection', 'total_items'); ?>
 <div class="collection-tile">
 	<div class="collection-thumb">
 		<?php $item = get_records('Item', array('collection' => metadata($collection, 'id')), 1); ?>
@@ -28,12 +25,12 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 	</div>
 </div>
 <?php endforeach; ?>
+</div>
 <?php if (pagination_links()): ?>
 	<div class="pre-footer">
 		<?php echo pagination_links(); ?>
 		<?php fire_plugin_hook('public_collections_browse', array('collections'=>$collections, 'view' => $this)); ?>
 	</div>
 <?php endif; ?>
-</div>
 
 <?php echo foot(); ?>

@@ -1269,6 +1269,8 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	padding-left: 4%;
+	padding-right: 4%;
   }
   .collection-tile .title:before {
 	content: ' ';

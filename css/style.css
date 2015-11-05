@@ -1049,6 +1049,13 @@
 	overflow: hidden;
 	font-weight: bold;
   }
+  .item.tile .extent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	padding: 2%;
+  }
 
   /* !---------- Search ---------- */
   #search-results {

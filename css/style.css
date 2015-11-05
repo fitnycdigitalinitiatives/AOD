@@ -976,6 +976,8 @@
   }
   #sidebar .item-link .description h4 {
 	margin: 0;
+	font-size: 1.5em;
+	line-height: 1.2em;
   }
   #content #outputs {
     background-color: transparent;

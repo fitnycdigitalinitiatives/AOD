@@ -1016,6 +1016,9 @@
 	margin-left: 1%;
 	margin-bottom: 3%;
   }
+  .item.tile:nth-child(odd) {
+	clear: left;
+  }
   .item-thumb {
 	position: relative;
 	overflow: hidden;
@@ -1954,6 +1957,12 @@
   .item.tile {
 	width: 32.33333%;
   }
+  .item.tile:nth-child(3n+1) {
+	clear: left;
+  }
+  .item.tile:nth-child(odd) {
+	clear: none;
+  }
 
   /* !---------- Collections/Tags ---------- */
   .collections.show #primary .element-set {
@@ -2053,6 +2062,12 @@
   .item.tile {
 	width: 24%;
   }
+  .item.tile:nth-child(4n+1) {
+	clear: left;
+  }
+  .item.tile:nth-child(3n+1) {
+	clear: none;
+  }
   .collection-tile .title h2, .tags-tile .title h2 {
 	font-size: 3.5em;
   }
@@ -2065,6 +2080,12 @@
 @media screen and (min-width: 1800px) {
   .item.tile {
 	width: 15.666666%;
+  }
+  .item.tile:nth-child(6n+1) {
+	clear: left;
+  }
+  .item.tile:nth-child(5n+1) {
+	clear: none;
   }
   .collection-tile .title h2, .tags-tile .title h2 {
 	font-size: 4em;

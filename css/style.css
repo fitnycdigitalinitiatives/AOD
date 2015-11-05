@@ -2087,6 +2087,9 @@
   .item.tile:nth-child(5n+1) {
 	clear: none;
   }
+  .item.tile:nth-child(4n+1) {
+	clear: none;
+  }
   .collection-tile .title h2, .tags-tile .title h2 {
 	font-size: 4em;
   }

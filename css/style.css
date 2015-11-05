@@ -840,6 +840,18 @@
 	overflow: hidden;
 	font-weight: bold;
   }
+  #featured-carousel .carousel-item .extent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	padding: 2%;
+	opacity: 0;
+	font-weight: bold;
+  }
+  #featured-carousel .carousel-item:hover .extent {
+	opacity: 1;
+  }
   .featured-videos .customNavigation {
 	display: none;
   }

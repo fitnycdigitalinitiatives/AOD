@@ -2035,13 +2035,10 @@
   body {
 	font-size: 13px;
   }
-  .item.tile {
-	width: 15.666666%;
-  }
 }
 @media screen and (min-width: 1800px) {
   .item.tile {
-	width: 11.5%;
+	width: 15.666666%;
   }
   .collection-tile .title h2, .tags-tile .title h2 {
 	font-size: 4em;

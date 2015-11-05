@@ -115,7 +115,7 @@ function related_items($current_item)
 			$html = '<div class="related_items"><h2>Related Videos</h2>';
 			foreach ($items as $item) {
 				$html .= '<div class="item-link">';
-				$html .= link_to_item('<div class="item-link-thumb">' . YouTube_thumbnail($item) . '<div class="overlay"></div></div><div class="description"><h4>' . metadata($item, array('Dublin Core', 'Title')) . '</h4></div>', array('class'=>'permalink'), 'show', $item);
+				$html .= link_to_item('<div class="item-link-thumb">' . YouTube_thumbnail($item) . '<div class="overlay"></div><div class="extent"><i class="fa fa-clock-o"></i> ' . metadata('item', array('Dublin Core', 'Extent')) . '</div></div><div class="description"><h4>' . metadata($item, array('Dublin Core', 'Title')) . '</h4></div>', array('class'=>'permalink'), 'show', $item);
 				$html .= '</div>';
 				release_object($item);
 			}

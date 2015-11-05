@@ -1042,7 +1042,6 @@
 	left: 0;
 	right: 0;
 	padding: 2%;
-	opacity: 1;
   }
   .item.tile .title p {
 	margin: 0;
@@ -1050,16 +1049,14 @@
 	overflow: hidden;
 	font-weight: bold;
   }
-  .item.tile .extent {
+  .item-link-thumb .extent, .item.tile .extent {
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	right: 0;
 	color: #fff;
 	padding: 2%;
 	opacity: 0;
-  }
-  .item-link-thumb:hover .title, .item.tile:hover .title {
-	opacity: 0;
+	font-weight: bold;
   }
   .item-link-thumb:hover .extent, .item.tile:hover .extent {
 	opacity: 1;

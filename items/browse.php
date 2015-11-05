@@ -37,7 +37,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 				<div class="item-thumb">
 				<?php echo link_to_item(item_image('square_thumbnail')); ?>
 				<?php echo link_to_item('<div class="overlay"></div>'); ?>
-				<?php echo link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div>'); ?>
+				<?php echo link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div><div class="extent">' . metadata('item', array('Dublin Core', 'Extent')) . '</div>'); ?>
 				</div>
 			<?php endif; ?>
 

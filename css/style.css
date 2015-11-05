@@ -1055,6 +1055,10 @@
 	right: 0;
 	color: #fff;
 	padding: 2%;
+	opacity: 0;
+  }
+  .item-link-thumb:hover .extent, .item.tile:hover .extent {
+	opacity: 1;
   }
 
   /* !---------- Search ---------- */

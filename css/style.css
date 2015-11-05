@@ -1841,12 +1841,6 @@
     display: table;
     clear: both;
   }
-
-  .page #primary {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-
   #content #sort-links {
     text-align: center;
   }

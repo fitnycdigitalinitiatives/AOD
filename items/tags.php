@@ -6,41 +6,17 @@ echo head(array('title'=>$pageTitle, 'bodyclass'=>'items tags'));
 	<h1><?php echo $pageTitle; ?></h1>
 </div>
 
-<?php $number = 0; ?>
+<div class="grid">
 <?php foreach ($tags as $tag): ?>
-<?php ++$number; ?>
-<?php $tagCount = $tag["tagCount"]; ?>
-<div class="collection-videos">
-<h2><?php echo link_to_items_browse($tag['name'] . '<span> (' . $tagCount . ', view all)</span>', array('tags' => $tag['name'])); ?></h2>
-<div class="customNavigation prev">
-  <a class="btn prev-<?php echo $number; ?>"><i class="fa fa-chevron-left fa-3x"></i></a>
+<div class="tags-tile">
+	<div class="tags-thumb">
+		<?php $item = get_records('Item', array('tags' => $tag['name']), 1); ?>
+		<?php echo link_to_items_browse(YouTube_thumbnail($item[0]), array('tags' => $tag['name'])); ?>
+		<?php echo link_to_items_browse('<div class="overlay"></div>', array('tags' => $tag['name'])); ?>
+		<?php echo link_to_items_browse('<div class="title"><h2>' . $tag['name'] . '</h2><div class="video-count">(' . $tag["tagCount"] . ' videos)</div></div>', array('tags' => $tag['name'])); ?>
+	</div>
 </div>
-<?php echo tag_carousel($tag, $number); ?>
-<div class="customNavigation next">
-  <a class="btn next-<?php echo $number; ?>"><i class="fa fa-chevron-right fa-3x"></i></a>
-</div>
-</div>
-<?php echo '<script>
-jQuery(document).ready(function($) {
-	var owl = $("#collection-carousel-' . $number . '");
-	owl.owlCarousel({
-		pagination : true,
-		items : 7,
-		itemsDesktop : [1399,5],
-		itemsDesktopSmall : [979,3],
-		itemsTablet: [768,2],
-		itemsMobile : false
-	});
-	// Custom Navigation Events
-	$(".next-' . $number . '").click(function(){
-		owl.trigger("owl.next");
-	})
-	$(".prev-' . $number . '").click(function(){
-		owl.trigger("owl.prev");
-	})
-});
-</script>' ; ?>
-
 <?php endforeach; ?>
+</div>
 
 <?php echo foot(); ?>

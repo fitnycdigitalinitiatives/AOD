@@ -50,7 +50,7 @@
                 <?php echo link_to_home_page('<img src="' . img('AOD_logo2.png') . '" alt="FIT Archive On Demand">'); ?>
             </div>
             <div id="search-container" role="search">
-				<form id="search-form" name="search-form" action="/items/browse" method="get">    
+				<form id="search-form" name="search-form" action="<?php echo url('/items/browse'); ?>" method="get">
 					<input type="text" name="search" id="keyword-search" value="" size="40" title="Search"> 
 					<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
 				</form>

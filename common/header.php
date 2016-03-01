@@ -47,7 +47,7 @@
     <div id="wrap">
         <header role="banner">
             <div id="site-title">
-                <?php echo link_to_home_page('<img src="' . img('AOD_logo2.png') . '" alt="FIT Archive On Demand">'); ?>
+                <?php echo link_to_home_page('<img src="' . img('AOD_logo2_white.png') . '" alt="FIT Archive On Demand">'); ?>
             </div>
             <div id="search-container" role="search">
 				<form id="search-form" name="search-form" action="<?php echo url('/items/browse'); ?>" method="get">

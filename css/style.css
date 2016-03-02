@@ -29,7 +29,7 @@
   body {
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: 300;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 120%;
 	color: #3c3c3c;
     word-wrap: break-word;
@@ -2046,17 +2046,11 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
-	font-size: 11px;
-  }
   .collection-tile .title h2, .tags-tile .title h2 {
 	font-size: 3em;
   }
 }
 @media screen and (min-width: 1200px) {
-  body {
-	font-size: 12px;
-  }
   .item.tile {
 	width: 24%;
   }
@@ -2070,11 +2064,7 @@
 	font-size: 3.5em;
   }
 }
-@media screen and (min-width: 1400px) {
-  body {
-	font-size: 13px;
-  }
-}
+
 @media screen and (min-width: 1800px) {
   .item.tile {
 	width: 15.666666%;

@@ -3,7 +3,7 @@
 <footer role="contentinfo">
 
         <div id="info">
-            <p id="copyright">©2015  <a href="/">FIT Archive On Demand</a></br>All rights reserved.</p>
+            <p id="copyright">©2016 <a href="/">FIT Archive On Demand</a></br>All rights reserved.</p>
 			<p id="address">Seventh Avenue at 27 Street<br>New York City 10001-5992<br>212 217.7999</p>
         </div>
 		<div id="social-media">

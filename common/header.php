@@ -33,7 +33,7 @@
         'vendor/jquery-accessibleMegaMenu',
         'vendor/respond',
         'jquery-extra-selectors',
-        'seasons',
+        'AOD',
         'globals',
 		'owl.carousel.min'
     )); 

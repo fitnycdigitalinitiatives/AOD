@@ -1633,14 +1633,10 @@
 	min-height: 100%;
 }
   body {
-	font-size: 11px;
 	/* Sum of fixed height footer and pre-footer */
 	margin-bottom: 200.5px;
   }
   /* !---------- Header ---------- */
-  body {
-	font-size: 11px;
-  }
   header {
     *zoom: 1;
 	padding-top: 0;

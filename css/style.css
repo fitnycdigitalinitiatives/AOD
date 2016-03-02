@@ -1914,7 +1914,7 @@
 	cursor: pointer;
 	color: #0c6fab;
   }
-  .featured-videos .owl-pagination {
+  .featured-videos .owl-controls {
 	display: none;
   }
   #home footer {

@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 		pagination : true,
 		items : 7,
 		itemsDesktop : [1399,5],
-		itemsDesktopSmall : [979,3],
+		itemsDesktopSmall : [979,4],
 		itemsTablet: [768,2],
 		itemsMobile : false
 	});

@@ -1782,7 +1782,7 @@
   nav.top [aria-haspopup="true"].open:after {
     content: "\f0d7";
   }
-  nav.top .mobile {
+  .mobile-nav {
     display: none;
   }
 

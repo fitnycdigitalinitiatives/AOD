@@ -5,7 +5,7 @@ if (!AOD) {
 (function ($) {    
     AOD.dropDown = function(){
         var dropdownMenu = $('#mobile-nav');
-        dropdownMenu.prepend('<a href="#" class="menu">Menu</a>');
+        dropdownMenu.prepend('<a href="#" class="menu"><i class="fa fa-bars  fa-3x"></i></a>');
         //Hide the rest of the menu
         $('#mobile-nav .navigation').hide();
 

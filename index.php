@@ -2,7 +2,7 @@
 
 <!-- Homepage Logo -->
 <div class="logo">
-	<?php echo '<img src="' . img('AOD_logo_white.png') . '" alt="FIT Archive On Demand">'; ?>
+	<?php echo '<img src="' . img('AOD_logo.png') . '" alt="FIT Archive On Demand">'; ?>
 </div>
 <!--end Homepage Logo-->
 

@@ -1914,7 +1914,7 @@
 	cursor: pointer;
 	color: #0c6fab;
   }
-  .featured-videos.owl-theme .owl-controls {
+  .featured-videos .owl-theme .owl-controls {
 	margin: 0;
   }
    .featured-videos .owl-pagination {

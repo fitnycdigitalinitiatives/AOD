@@ -1877,11 +1877,13 @@
   background-size: cover;
   }
   #home .logo {
-    width: 66.10169%;
+    width: 33%;
     float: left;
     display: block;
-	margin-top: 3em;
 	margin-left: 8.47458%;
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   #home #content .featured-videos {
 	position:fixed;

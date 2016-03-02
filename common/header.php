@@ -58,6 +58,9 @@
 			<nav id="top-nav" class="top" role="navigation">
             <?php echo public_nav_main(); ?>
 			</nav>
+			<div id="mobile-nav" role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
+				 <?php echo public_nav_main(); ?>
+			</div>
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
 

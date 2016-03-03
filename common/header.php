@@ -52,7 +52,7 @@
 			<div id="menu-button">
 				<a href="#" class="menu"><i class="fa fa-bars  fa-3x"></i></a>
 			</div>
-            <div id="search-container full" role="search">
+            <div id="search-container" class="desktop" role="search">
 				<form id="search-form" name="search-form" action="<?php echo url('/items/browse'); ?>" method="get">
 					<input type="text" name="search" id="keyword-search" value="" size="40" title="Search"> 
 					<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
@@ -63,7 +63,7 @@
 			</nav>
 			<div id="mobile-nav" role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
 				<?php echo public_nav_main(); ?>
-				<div id="search-container mobile" role="search">
+				<div id="search-container" class="mobile" role="search">
 					<form id="search-form" name="search-form" action="<?php echo url('/items/browse'); ?>" method="get">
 						<input type="text" name="search" id="keyword-search" value="" size="40" title="Search"> 
 						<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>

@@ -449,7 +449,9 @@
 	width: auto;
 	height: 100%;
   }
-
+  #search-container.desktop {
+	display: none;
+  }
   #search-container {
     padding: 16px 0;
   }

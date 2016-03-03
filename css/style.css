@@ -892,6 +892,13 @@
   }
 
   /* !---------- Home ---------- */
+  body#home {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/doonan.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }  
   #home .logo {
 	padding: 1.5em 16px;
   }
@@ -1903,13 +1910,6 @@
   }
 
   /* !---------- Home ---------- */
-  body#home {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/doonan.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  }
   #home .logo {
     width: 33%;
     float: left;

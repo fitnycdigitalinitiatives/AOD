@@ -4,9 +4,7 @@ if (!AOD) {
 
 (function ($) {    
     AOD.dropDown = function(){
-        var dropdownMenu = $('#site-title');
-        dropdownMenu.append('<a href="#" class="menu"><i class="fa fa-bars  fa-3x"></i></a>');
-        //Hide the rest of the menu
+        //Hide the menu
         $('#mobile-nav').hide();
 
         //function the will toggle the menu

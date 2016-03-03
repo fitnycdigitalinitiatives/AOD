@@ -50,7 +50,7 @@
                 <?php echo link_to_home_page('<img src="' . img('aod_brand.png') . '" alt="FIT Archive On Demand">'); ?>
             </div>
 			<div id="menu-button">
-				<a href="#" class="menu"><i class="fa fa-bars  fa-3x"></i></a>
+				<a href="#" class="menu"><i class="fa fa-bars  fa-2x"></i></a>
 			</div>
             <div id="search-container" class="desktop" role="search">
 				<form id="search-form" name="search-form" action="<?php echo url('/items/browse'); ?>" method="get">

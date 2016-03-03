@@ -440,14 +440,18 @@
 	border-bottom: 1px solid #0F0F0F;
   }
   #site-title {
-    text-align: center;
     margin: 0;
     padding: 0;
 	height: 2em;
+	display: inline-block;
   }
   #site-title img {
 	width: auto;
 	height: 100%;
+  }
+  #menu-button {
+	display: inline-block;
+	float: right;
   }
   #search-container.desktop {
 	display: none;
@@ -1799,7 +1803,7 @@
   }
 
   /* !---------- Search ---------- */
-  #search-container {
+  #search-container.desktop {
     padding: 1.5em 0;
     width: 20%;
     float: right;

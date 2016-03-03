@@ -61,18 +61,18 @@
 			<nav id="top-nav" class="top" role="navigation">
             <?php echo public_nav_main(); ?>
 			</nav>
-			<div id="mobile-nav" role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
-				<?php echo public_nav_main(); ?>
-				<div id="search-container" class="mobile" role="search">
-					<form id="search-form" name="search-form" action="<?php echo url('/items/browse'); ?>" method="get">
-						<input type="text" name="search" id="keyword-search" value="" size="40" title="Search"> 
-						<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
-					</form>
-				</div>
-			</div>
+			
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
-
+		<div id="mobile-nav" role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
+			<?php echo public_nav_main(); ?>
+			<div id="search-container" class="mobile" role="search">
+				<form id="search-form" name="search-form" action="<?php echo url('/items/browse'); ?>" method="get">
+					<input type="text" name="search" id="keyword-search" value="" size="40" title="Search"> 
+					<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
+				</form>
+			</div>
+		</div>
         <div id="content" role="main" tabindex="-1">
             <?php
                 if(! is_current_url(WEB_ROOT)) {

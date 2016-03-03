@@ -453,6 +453,21 @@
 	display: inline-block;
 	float: right;
   }
+  #mobile-nav {
+	background-color: #3c3c3c;
+    border-top: 1px solid #5C5C5C;
+    border-bottom: 1px solid #0F0F0F;
+	padding: 1.5em 16px;
+  }
+  #mobile-nav ul {
+	margin: 0;
+  }
+  #mobile-nav li {
+	padding: 0.5em 0;
+  }
+  #mobile-nav a {
+	color: #fff;
+  }
   #search-container.desktop {
 	display: none;
   }

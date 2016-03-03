@@ -465,9 +465,8 @@
   #mobile-nav li {
 	padding: 0.5em 0;
   }
-  #mobile-nav li > ul > li:before {
-	content: "\f0d7";
-	color: #fff;
+  #mobile-nav li > ul  {
+	padding-top: 0.5em;
   }
   #mobile-nav a {
 	color: #fff;

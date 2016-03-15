@@ -17,7 +17,11 @@
 
     <!-- Plugin Stuff -->
     <?php fire_plugin_hook('public_head', array('view'=>$this)); ?>
-
+	
+	<!-- Icon -->
+	<link rel="icon" href="https://www.fitnyc.edu/images/display/buttons/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="https://www.fitnyc.edu/images/display/buttons/favicon.ico" type="image/x-icon">
+	
     <!-- Stylesheets -->
     <?php
     queue_css_url('//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic');

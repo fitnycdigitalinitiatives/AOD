@@ -29,7 +29,7 @@
 				<?php echo youTube_embed_code(); ?>
 			</div>
 			<div id="citation" class="citation-link">
-				<textarea rows="1" readonly=""><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></textarea>
+				<?php echo metadata('item', 'citation', array('no_escape' => true)); ?>
 			</div>
 		</div>
 		<?php echo all_element_texts('item'); ?>

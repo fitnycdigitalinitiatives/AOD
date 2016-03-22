@@ -18,6 +18,7 @@
 				<?php if ($user): ?>
 				<li><h2><a href='#download'>Download</h2></a></h2></li>
 				<?php endif; ?>
+				<li><h2><a href='#citation'>Citation</a></h2></li>
 			</ul>
 			<!-- Go to www.addthis.com/dashboard to customize your tools -->
 			<div id="share" class="addthis_sharing_toolbox"></div>
@@ -26,6 +27,9 @@
 			<?php endif; ?>
 			<div id="embed" class="embed-link">
 				<?php echo youTube_embed_code(); ?>
+			</div>
+			<div id="citation" class="citation-link">
+				<textarea rows="1" readonly=""><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></textarea>
 			</div>
 		</div>
 		<?php echo all_element_texts('item'); ?>
@@ -81,12 +85,6 @@
 			<?php endforeach; ?>
 		</div>
 		<?php endif;?>
-
-		<!-- The following prints a citation for this item. -->
-		<div id="item-citation" class="element">
-			<h2><?php echo __('Citation'); ?></h2>
-			<div class="element-text"><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></div>
-		</div>
 		
 		<?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 

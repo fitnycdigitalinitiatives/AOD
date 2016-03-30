@@ -5,7 +5,7 @@ function youTube_embed()
 	$html = '';
 	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
 		$src = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
-		$html .= '<div class="videoWrapper"><iframe width="560" height="315" src="' . $src . '?rel=0&autoplay=1&showinfo=0" class="youtube-player" type="text/html" frameborder="0" allowfullscreen></iframe></div>';
+		$html .= '<div class="videoWrapper"><iframe id="ytplayer" type="text/html" width="560" height="315" src="' . $src . '?rel=0&autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
 	}
 	return $html;
 }
@@ -36,7 +36,7 @@ function youTube_embed_code()
 	$html = '';
 	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
 		$src = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
-		$iframe = '<iframe width="560" height="315" src="' . $src . '" frameborder="0" allowfullscreen></iframe>';
+		$iframe = '<iframe id="ytplayer" type="text/html" width="560" height="315" src="' . $src . '" frameborder="0" allowfullscreen></iframe>';
 		$html .= '<textarea rows="1" readonly>' . $iframe . '</textarea>';
 	}
 	return $html;

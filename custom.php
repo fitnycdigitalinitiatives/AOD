@@ -5,7 +5,7 @@ function youTube_embed()
 	$html = '';
 	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
 		$src = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
-		$html .= '<div class="videoWrapper"><iframe width="560" height="315" src="' . $src . '?rel=0&autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
+		$html .= '<div class="videoWrapper"><iframe width="560" height="315" src="' . $src . '?rel=0&autoplay=1&showinfo=0" class="youtube-player" type="text/html" frameborder="0" allowfullscreen></iframe></div>';
 	}
 	return $html;
 }

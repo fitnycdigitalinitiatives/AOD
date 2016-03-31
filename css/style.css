@@ -1362,8 +1362,8 @@
 	vertical-align: middle;
 	margin: 0;
 	overflow: hidden;
-	font-size: 2em;
-	line-height: 1.2em;
+	font-size: 1.2em;
+	line-height: 1em;
   }
   .collection-tile .video-count, .tags-tile .video-count {
 	position: absolute;
@@ -2006,6 +2006,9 @@
   .collection-tile, .tags-tile {
 	width: 30.33333%;
   }
+  .collection-tile .title h2, .tags-tile .title h2 {
+	font-size: 2em;
+  }
 
   /* !---------- ExhibitBuilder ---------- */
   .exhibits #primary,
@@ -2087,7 +2090,11 @@
 	font-size: 3.5em;
   }
 }
-
+@media screen and (min-width: 1400px) {
+  .collection-tile .title h2, .tags-tile .title h2 {
+	font-size: 3.5em;
+  }
+}
 @media screen and (min-width: 1800px) {
   .item.tile {
 	width: 15.666666%;

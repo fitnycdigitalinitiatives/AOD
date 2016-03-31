@@ -993,7 +993,7 @@
 	overflow: hidden;
 	border: 1px solid #e1e2e3;
   }
-  #sidebar .item-link-thumb {
+  #sidebar .item-link-thumb, .collection-link-thumb {
 	width: 33%;
 	float: left;
 	position: relative;

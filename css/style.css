@@ -998,24 +998,24 @@
 	float: left;
 	position: relative;
   }
-  #sidebar .item-link {
+  #sidebar .item-link, .collection-link {
 	width: 100%;
 	display: inline-block;
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid #e1e2e3;
   }
-  #sidebar .item-link:last-of-type {
+  #sidebar .item-link:last-of-type, .collection-link:last-of-type {
 	border-bottom: 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
   }
-  #sidebar .item-link .description {
+  #sidebar .item-link .description, .collection-link .description {
 	width: 67%;
 	float: right;
 	padding-left: 1em;
   }
-  #sidebar .item-link .description h4 {
+  #sidebar .item-link .description h4, .collection-link .description h4 {
 	margin: 0;
 	font-size: 1.5em;
 	line-height: 1.2em;
@@ -1065,7 +1065,7 @@
 	overflow: hidden;
 	width: 100%;
   }
-  .item-link-thumb img, .item img {
+  .item-link-thumb img, .item img, .collection-link-thumb img {
     display: block;
 	width: 100%;
   }

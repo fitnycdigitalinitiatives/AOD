@@ -2112,7 +2112,7 @@
 	font-size: 4em;
   }
 }
-@media screen and (orientation: landscape) {
+@media (max-width: 1024px) and (orientation: landscape) {
  #home #content .featured-videos {
 	display: none;
  }

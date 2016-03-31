@@ -2112,3 +2112,8 @@
 	font-size: 4em;
   }
 }
+@media screen and (orientation: landscape) {
+ #home #content .featured-videos {
+	display: none;
+ }
+}

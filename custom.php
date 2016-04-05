@@ -151,7 +151,9 @@ function social_tags($bodyclass) {
 		$html .= '<meta property="og:url" content="' . $url . '" />';
 		$html .= '<meta property="og:image" content="' . $image . '" />';
 		$html .= '<meta property="og:description" content="' . $description . '" />';
-		$html .= '<meta property="og:video" content="' . $video . '" />';
+		$html .= '<meta property="og:video:url" content="' . $video . '" />';
+		$html .= '<meta property="og:video:secure_url" content="' . $video . '" />';
+		$html .= '<meta property="og:video:type" content="text/html" />';
 		$html .= '<!-- Twitter Card data -->';
 		$html .= '<meta name="twitter:card" content="player">';
 		$html .= '<meta name="twitter:title" content="' . $title . '" />';

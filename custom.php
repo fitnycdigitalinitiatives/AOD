@@ -44,7 +44,7 @@ function youTube_embed_code()
 
 function YouTube_thumbnail($item)
 {
-	$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+	$src = 'https://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 	return '<img src="' . $src . '">';
 }
 

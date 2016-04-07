@@ -1,6 +1,4 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55c8b7772f2446eb" async="async"></script>
 
 <div class="sub-header">
 	<h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
@@ -130,4 +128,6 @@
 				});
 			});
 </script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55c8b7772f2446eb" async="async"></script>
 <?php echo foot(); ?>

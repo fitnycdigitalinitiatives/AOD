@@ -12,7 +12,7 @@
 				<li><a href="https://www.facebook.com/FITLibrary"><i class="fa fa-facebook fa-3x"></i></a></li>
 				<li><a href="https://twitter.com/FITLibrary"><i class="fa fa-twitter fa-3x"></i></a></li>
 				<li><a href="http://pinterest.com/fitlibrary/"><i class="fa fa-pinterest-p fa-3x"></i></a></li>
-				<li><a href="http://instagram.com/fashioninstitutelibrary"><i class="fa fa-instagram fa-3x"></i></a></li>
+				<li><a href="https://www.instagram.com/fitnyclibrary/"><i class="fa fa-instagram fa-3x"></i></a></li>
 			</ul>
 		</div>
 

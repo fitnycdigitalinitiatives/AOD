@@ -3,8 +3,8 @@
 <footer role="contentinfo">
 
         <div id="info">
-            <p id="copyright">©2016 <a href="http://www.fitnyc.edu/">Fashion Institute of Technology</a></br>All rights reserved.</p>
-			<p id="address">Seventh Avenue at 27 Street<br>New York City 10001-5992<br>212 217.7999</p>
+			<a href="http://www.fitnyc.edu/"><img src="<?php echo img('FITSUNY1_white.png'); ?>" alt="Fashion Institute of Technology - State University of New York"></a>
+            <p id="copyright">©2016 Fashion Institute of Technology</br>All rights reserved.</p>
         </div>
 		<div id="social-media">
 			<p>Archive on Demand is an initiative of the FIT Library</p>

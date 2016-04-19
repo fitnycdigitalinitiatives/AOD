@@ -612,6 +612,9 @@
   #home footer {
 	display: none;
   }
+  footer #info img {
+	height: 3.4em;
+  }
   footer #social-media li {
 	display: inline-block;
 	margin-right: 1.5em;

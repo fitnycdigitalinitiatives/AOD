@@ -615,6 +615,12 @@
   footer #info img {
 	height: 3.4em;
   }
+  footer #info p {
+	margin-left: 2.7em;
+  }
+  footer #social-media {
+	margin-left: 2.7em;
+  }
   footer #social-media li {
 	display: inline-block;
 	margin-right: 1.5em;

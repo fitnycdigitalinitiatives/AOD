@@ -1,5 +1,5 @@
 <?php
-
+// Creates iframe to embed YouTube player. Uses YouTube Identifier to create url.
 function youTube_embed()
 {
 	$html = '';
@@ -10,6 +10,7 @@ function youTube_embed()
 	return $html;
 }
 
+// Creates link to download link to Google Drive, either the master video file or supplemental file.
 function gDrive_link() 
 {
 	$html = '';
@@ -18,10 +19,10 @@ function gDrive_link()
 		$form_href = 'https://drive.google.com/uc?export=download&id=' . metadata('item', array('Item Type Metadata', 'Identifier.GoogleDriveForm'));
 		$html .= '<div id="download" class="drive-link">';
 		if (metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'))) {
-			$html .= '<a href="' . $href . '">Original Video File (Requires valid fitnyc.edu email)</a></br>';
+			$html .= '<a href="' . $href . '">Master Video File (Requires valid fitnyc.edu email)</a></br>';
 		}
 		if (metadata('item', array('Item Type Metadata', 'Identifier.GoogleDriveForm'))) {
-			$html .= '<a href="' . $form_href . '">Video Release Form (Requires valid fitnyc.edu email)</a>';
+			$html .= '<a href="' . $form_href . '">Supplementary file (Requires valid fitnyc.edu email)</a>';
 		}
 		$html .= '</div>';
 	}
@@ -31,6 +32,7 @@ function gDrive_link()
 	return $html;
 }
 
+// Creates embed code for end users to use.
 function youTube_embed_code()
 {
 	$html = '';
@@ -42,12 +44,14 @@ function youTube_embed_code()
 	return $html;
 }
 
+// Creates YouTube id to pull in YouTube generated thumbnails.
 function YouTube_thumbnail($item)
 {
 	$src = 'https://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 	return '<img src="' . $src . '">';
 }
 
+// Creates markup for OWL Carousel jQuery plugin for featured videos.
 function carousel()
 {
 	$items = get_records('Item', array('featured' => 1, 'sort_field' => 'random'), 20);
@@ -67,6 +71,7 @@ function carousel()
 	}
 }
 
+// Creates markup for OWL Carousel jQuery plugin for channels; not used.
 function collection_carousel($collection, $number)
 {
 	$items = get_records('Item', array('collection' => metadata('collection', 'id')), 20);
@@ -86,6 +91,7 @@ function collection_carousel($collection, $number)
 	}
 }
 
+// Creates markup for OWL Carousel jQuery plugin for categories; not used.
 function tag_carousel($tag, $number)
 {
 	$items = get_records('Item', array('tags' => $tag['name']), 20);
@@ -105,6 +111,7 @@ function tag_carousel($tag, $number)
 	}
 }
 
+// Returns related videos based on the category.
 function related_items($current_item)
 {
 	if (metadata($current_item, 'has tags')) {
@@ -125,6 +132,7 @@ function related_items($current_item)
 	}
 }
 
+//Returns links related parts, i.e. the second of a two-part video.
 function related_parts($part)
 {
 	$part_item = get_records('Item', array('sort_field' => 'random', 'advanced' => array(array('element_id' => '50', 'type' => 'is exactly', 'terms' => $part))), 1);
@@ -135,6 +143,7 @@ function related_parts($part)
 		}
 }
 
+// Creates social media tags for a video, following Twitter and Facebook standards.
 function social_tags($bodyclass) {
 	$html = '';
 	if ($bodyclass == "items show" ) {
@@ -172,6 +181,7 @@ function social_tags($bodyclass) {
 	return $html;
 }
 
+// Given an metadata element and term, returns a search of all videos that match that term.
 function heading_links($elementName, $text) {
 	$element = get_db()->getTable('Element')->findByElementSetNameAndElementName('Dublin Core', $elementName);
 	$id = $element->id;

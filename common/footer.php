@@ -24,11 +24,9 @@
 </div><!--end wrap-->
 
 <script type="text/javascript">
-jQuery(document).ready(function () {
     Omeka.skipNav();
     Omeka.megaMenu("#top-nav");
     AOD.dropDown();
-});
 </script>
 <?php if (@$bodyclass == "items show"): ?>
 <?php echo '<!-- Go to www.addthis.com/dashboard to customize your tools -->'; ?>

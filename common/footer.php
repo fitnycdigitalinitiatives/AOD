@@ -29,6 +29,7 @@ jQuery(document).ready(function () {
     Omeka.skipNav();
     Omeka.megaMenu("#top-nav");
     AOD.dropDown();
+	loadAddThis();
 });
 </script>
 <?php if (@$bodyclass == "items show"): ?>

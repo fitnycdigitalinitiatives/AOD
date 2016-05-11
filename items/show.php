@@ -129,4 +129,4 @@
 			});
 </script>
 
-<?php echo foot(); ?>
+<?php echo foot(array('bodyclass' => 'items show')); ?>

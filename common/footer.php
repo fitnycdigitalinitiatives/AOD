@@ -25,23 +25,14 @@
 
 <script type="text/javascript">
 jQuery(document).ready(function () {
-    Omeka.showAdvancedForm();
     Omeka.skipNav();
     Omeka.megaMenu("#top-nav");
     AOD.dropDown();
-	loadAddThis();
 });
 </script>
 <?php if (@$bodyclass == "items show"): ?>
 <?php echo '<!-- Go to www.addthis.com/dashboard to customize your tools -->'; ?>
-<?php echo '<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#async=1#pubid=ra-55c8b7772f2446eb"></script>'; ?>
-<?php echo 
-'<script type="text/javascript">
-    // Call this function once the rest of the document is loaded
-    function loadAddThis() {
-        addthis.init()
-    }
-</script>'; ?>
+<?php echo '<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55c8b7772f2446eb"></script>'; ?>
 <?php endif; ?>
 
 </body>

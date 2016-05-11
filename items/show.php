@@ -89,7 +89,6 @@
 	</aside>
 </div>
 <script>
-			// Wait until the DOM has loaded before querying the document
 			jQuery(function($){
 				$('ul.tabs').each(function(){
 					// For each set of tabs, we want to keep track of

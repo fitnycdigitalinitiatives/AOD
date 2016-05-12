@@ -59,7 +59,7 @@ function carousel()
 	if ($items) {
         $html = '<div id="featured-carousel" class="owl-carousel">';
         foreach (loop('items') as $item) {
-			$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+			$src = 'https://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 			$img = link_to_item('<img src="' . $src . '">', array('class'=>'permalink'));
 			$overlay = link_to_item('<div class="overlay"></div>', array('class'=>'permalink'));
 			$description = link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div><div class="extent"><i class="fa fa-clock-o"></i> ' . metadata('item', array('Dublin Core', 'Extent')) . '</div>', array('class'=>'permalink'));
@@ -79,7 +79,7 @@ function collection_carousel($collection, $number)
 	if ($items) {
         $html = '<div id="collection-carousel-' . $number . '" class="owl-carousel">';
         foreach (loop('items') as $item) {
-			$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+			$src = 'https://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 			$img = link_to_item('<img src="' . $src . '">', array('class'=>'permalink'));
 			$overlay = link_to_item('<div class="overlay"></div>', array('class'=>'permalink'));
 			$description = link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div>', array('class'=>'permalink'));
@@ -99,7 +99,7 @@ function tag_carousel($tag, $number)
 	if ($items) {
         $html = '<div id="collection-carousel-' . $number . '" class="owl-carousel">';
         foreach (loop('items') as $item) {
-			$src = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+			$src = 'https://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 			$img = link_to_item('<img src="' . $src . '">', array('class'=>'permalink'));
 			$overlay = link_to_item('<div class="overlay"></div>', array('class'=>'permalink'));
 			$description = link_to_item('<div class="title"><p>' . metadata('item', array('Dublin Core', 'Title')) . '</p></div>', array('class'=>'permalink'));
@@ -150,7 +150,7 @@ function social_tags($bodyclass) {
 		$item = get_current_record('item');
 		$title = metadata($item, array('Dublin Core', 'Title'));
 		$url = record_url($item, null, true);
-		$image = 'http://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+		$image = 'https://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 		$description = metadata($item, array('Dublin Core', 'Description'));
 		$video = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
 		$html .= '<meta name="description" content="' . $description . '" />';

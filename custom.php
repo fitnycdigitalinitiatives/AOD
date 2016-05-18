@@ -5,7 +5,19 @@ function youTube_embed()
 	$html = '';
 	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
 		$src = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
-		$html .= '<div class="videoWrapper"><iframe id="ytplayer" type="text/html" width="560" height="315" src="' . $src . '?rel=0&autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
+		$title = metadata('item', array('Dublin Core', 'Title'));
+		$description = metadata('item', array('Dublin Core', 'Description'));
+		$image = 'https://img.youtube.com/vi/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+		$video = 'https://www.youtube.com/embed/' . metadata('item', array('Item Type Metadata', 'Identifier.YouTube'));
+		$html .= '<div class="videoWrapper" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">';
+		$html .= '<!-- schema.org data -->';
+		$html .= '<meta itemprop="name" content="' . $title . '" />';
+		$html .= '<meta itemprop="description" content="' . $description . '" />';
+		$html .= '<meta itemprop="thumbnailUrl" content="' . $image . '" />';
+		$html .= '<meta itemprop="embedURL" content="' . $video . '" />';
+		$html .= '<!-- YouTube iFrame -->';
+		$html .= '<iframe id="ytplayer" type="text/html" width="560" height="315" src="' . $src . '?rel=0&autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe>';
+		$html .= '</div>';
 	}
 	return $html;
 }

@@ -172,6 +172,12 @@ function social_tags($bodyclass) {
 		$html .= '<meta name="twitter:player:width" content="560">';
 		$html .= '<meta name="twitter:player:height" content="315">';
 		$html .= '<meta name="twitter:image" content="' . $image . '" />';
+		$html .= '<!-- schema.org data -->';
+		$html .= '<meta itemprop="video" itemscope itemtype="http://schema.org/VideoObject">';
+		$html .= '<meta itemprop="name" content="' . $title . '" />';
+		$html .= '<meta itemprop="description" content="' . $description . '" />';
+		$html .= '<meta itemprop="thumbnailUrl" content="' . $image . '" />';
+		$html .= '<meta itemprop="embedURL" content="' . $video . '" />';
 	}
 	else {
 		if ($site_description = option('description')) {

@@ -13,7 +13,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
 		<?php
 		$sortLinks[__('Title')] = 'Dublin Core,Title';
-		$sortLinks[__('Creator')] = 'Dublin Core,Creator';
+		$sortLinks[__('Date Created')] = 'Dublin Core,Date Created';
 		$sortLinks[__('Date Added')] = 'added';
 		?>
 		<div id="sort-links">

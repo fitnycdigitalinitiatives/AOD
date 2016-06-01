@@ -64,7 +64,7 @@
 		<?php if (metadata('item', array('Dublin Core', 'Relation'))): ?>
 		<div id="relation" class="element">
 			<h2><?php echo __('Related Parts'); ?></h2>
-			<?php $relation = metadata('item', array('Dublin Core', 'Relation'), array ('all' => true, 'no_filter' => true)) ?>
+			<?php $relation = metadata('item', array('Dublin Core', 'Relation'), array ('all' => true, 'no_escape' => true)) ?>
 			<?php foreach ($relation as $part): ?>
 			<div class="element-text">
 				<?php echo related_parts($part); ?>

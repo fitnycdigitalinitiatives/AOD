@@ -199,7 +199,7 @@ function social_tags($bodyclass) {
 function heading_links($elementName, $text) {
 	$element = get_db()->getTable('Element')->findByElementSetNameAndElementName('Dublin Core', $elementName);
 	$id = $element->id;
-	$advanced[] = array('element_id' => $id, 'terms' => $text, 'type' => 'is exactly');
+	$advanced[] = array('element_id' => $id, 'terms' => htmlspecialchars_decode($text, ENT_QUOTES), 'type' => 'is exactly');
 	$paramArray = array('search' => '', 'advanced' => $advanced);
 	$params = http_build_query($paramArray);
 	$url = url('/items/browse?') . $params;

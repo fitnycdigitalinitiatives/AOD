@@ -149,7 +149,7 @@ function related_items($current_item)
 //Returns links related parts, i.e. the second of a two-part video.
 function related_parts($part)
 {
-	$part_item = get_records('Item', array('sort_field' => 'random', 'advanced' => array(array('element_id' => '50', 'type' => 'is exactly', 'terms' => $part))), 1);
+	$part_item = get_records('Item', array('sort_field' => 'random', 'advanced' => array(array('element_id' => '50', 'type' => 'is exactly', 'terms' => html_escape($part)))), 1);
 		if ($part_item) {
 			$html = link_to_item($part, array('class'=>'permalink'), 'show', $part_item[0]);
 			release_object($part_item);

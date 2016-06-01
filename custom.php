@@ -151,7 +151,7 @@ function related_parts($part)
 {
 	$part_item = get_records('Item', array('sort_field' => 'random', 'advanced' => array(array('element_id' => '50', 'type' => 'is exactly', 'terms' => $part))), 1);
 		if ($part_item) {
-			$html = link_to_item($part, array('class'=>'permalink'), 'show', $part_item[0]);
+			$html = link_to_item(html_escape($part), array('class'=>'permalink'), 'show', $part_item[0]);
 			release_object($part_item);
 			return $html;
 		}

@@ -75,12 +75,12 @@ function youTube_embed_code()
 // Creates YouTube id to pull in YouTube generated thumbnails.
 function video_thumbnail($item)
 {
-	if (metadata($item, array('Item Type Metadata', 'Identifier.YouTube'))) {
+	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
 		$src = 'https://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
 		return '<img src="' . $src . '">';
 	}
-	elseif ((metadata($item, array('Item Type Metadata', 'Identifier.GoogleDrive'))) {
-		$src = 'https://drive.google.com/thumbnail?authuser=0&sz=w320&id=' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube'));
+	elseif (metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'))) {
+		$src = 'https://drive.google.com/thumbnail?authuser=0&sz=w320&id=' . metadata($item, array('Item Type Metadata', 'Identifier.GoogleDrive'));
 		return '<img src="' . $src . '">';
 	}
 }

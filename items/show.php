@@ -6,7 +6,7 @@
 <div class="show-container">
 	<div id="primary">
 		<!-- Returns embedded video and then metadata -->
-		<?php echo youTube_embed(); ?>
+		<?php echo video_embed(); ?>
 		<div class="social">
 			<ul class='tabs'>
 				<li><h2><a href='#share'>Share</a></h2></li>

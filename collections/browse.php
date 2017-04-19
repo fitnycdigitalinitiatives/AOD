@@ -19,7 +19,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 <div class="collection-tile">
 	<div class="collection-thumb">
 		<?php $item = get_records('Item', array('collection' => metadata($collection, 'id')), 1); ?>
-		<?php echo link_to_items_browse(YouTube_thumbnail($item[0]), array('collection' => metadata($collection, 'id'))); ?>
+		<?php echo link_to_items_browse(video_thumbnail($item[0]), array('collection' => metadata($collection, 'id'))); ?>
 		<?php echo link_to_items_browse('<div class="overlay"></div>', array('collection' => metadata($collection, 'id'))); ?>
 		<?php echo link_to_items_browse('<div class="title"><h2>' . metadata('collection', array('Dublin Core', 'Title')) . '</h2><div class="video-count">(' . metadata('collection', 'total_items') . ' videos)</div></div>', array('collection' => metadata($collection, 'id'))); ?>
 	</div>

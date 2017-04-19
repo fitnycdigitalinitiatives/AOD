@@ -1,6 +1,6 @@
 <?php
 // Creates iframe to embed YouTube player. Uses YouTube Identifier to create url.
-function youTube_embed()
+function video_embed()
 {
 	$html = '';
 	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
@@ -73,10 +73,16 @@ function youTube_embed_code()
 }
 
 // Creates YouTube id to pull in YouTube generated thumbnails.
-function YouTube_thumbnail($item)
+function video_thumbnail($item)
 {
-	$src = 'https://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
-	return '<img src="' . $src . '">';
+	if (metadata('item', array('Item Type Metadata', 'Identifier.YouTube'))) {
+		$src = 'https://img.youtube.com/vi/' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube')) . '/hqdefault.jpg';
+		return '<img src="' . $src . '">';
+	}
+	elseif ((metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'))) {
+		$src = 'https://drive.google.com/thumbnail?authuser=0&sz=w320&id=' . metadata($item, array('Item Type Metadata', 'Identifier.YouTube'));
+		return '<img src="' . $src . '">';
+	}
 }
 
 // Creates markup for OWL Carousel jQuery plugin for featured videos.
@@ -150,7 +156,7 @@ function related_items($current_item)
 			$html = '<div class="related_items"><h2>Related Videos</h2>';
 			foreach ($items as $item) {
 				$html .= '<div class="item-link">';
-				$html .= link_to_item('<div class="item-link-thumb">' . YouTube_thumbnail($item) . '<div class="overlay"></div><div class="extent"><i class="fa fa-clock-o"></i> ' . metadata('item', array('Dublin Core', 'Extent')) . '</div></div><div class="description"><h4>' . metadata($item, array('Dublin Core', 'Title')) . '</h4></div>', array('class'=>'permalink'), 'show', $item);
+				$html .= link_to_item('<div class="item-link-thumb">' . video_thumbnail($item) . '<div class="overlay"></div><div class="extent"><i class="fa fa-clock-o"></i> ' . metadata('item', array('Dublin Core', 'Extent')) . '</div></div><div class="description"><h4>' . metadata($item, array('Dublin Core', 'Title')) . '</h4></div>', array('class'=>'permalink'), 'show', $item);
 				$html .= '</div>';
 				release_object($item);
 			}

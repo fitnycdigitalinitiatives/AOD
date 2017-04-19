@@ -21,11 +21,25 @@ function youTube_embed()
 		$html .= '<iframe id="ytplayer" type="text/html" width="560" height="315" src="' . $src . '?rel=0&autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe>';
 		$html .= '</div>';
 	}
+	elseif (metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'))) {
+		$src = 'https://drive.google.com/file/d/' . metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive')) . '/preview';
+		$title = metadata('item', array('Dublin Core', 'Title'));
+		$description = metadata('item', array('Dublin Core', 'Description'));
+		$uploadDate = metadata('item', 'added');
+		$html .= '<div class="videoWrapper" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">';
+		$html .= '<!-- schema.org data -->';
+		$html .= '<meta itemprop="name" content="' . $title . '" />';
+		$html .= '<meta itemprop="description" content="' . $description . '" />';
+		$html .= '<meta itemprop="uploadDate" content="' . $uploadDate . '" />';
+		$html .= '<!-- Google Drive iFrame -->';
+		$html .= '<iframe type="text/html" width="560" height="315" src="' . $src . '?start=1&autoplay=1" frameborder="0" allowfullscreen></iframe>';
+		$html .= '</div>';
+	}
 	return $html;
 }
 
 // Creates link to download link to Google Drive, either the master video file or supplemental file.
-function gDrive_link() 
+function gDrive_link()
 {
 	$html = '';
 	if ((metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'))) or (metadata('item', array('Item Type Metadata', 'Identifier.GoogleDriveForm')))) {
@@ -41,7 +55,7 @@ function gDrive_link()
 		$html .= '</div>';
 	}
 	else {
-		$html .= '<div id="download" class="drive-link">Not available for download at this time.</div>'; 
+		$html .= '<div id="download" class="drive-link">Not available for download at this time.</div>';
 	}
 	return $html;
 }

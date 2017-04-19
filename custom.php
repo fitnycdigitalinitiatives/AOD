@@ -82,7 +82,7 @@ function video_thumbnail($item)
 	}
 	elseif (metadata('item', array('Item Type Metadata', 'Identifier.GoogleDrive'))) {
 		$src = 'https://drive.google.com/thumbnail?authuser=0&sz=w320&id=' . metadata($item, array('Item Type Metadata', 'Identifier.GoogleDrive'));
-		$html .= '<img src="' . $src . '">';
+		$html .= '<img src="' . $src . '" onerror="this.src=\'https://img.youtube.com/vi/\'">';
 	}
 	return $html;
 }

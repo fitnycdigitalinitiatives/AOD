@@ -127,5 +127,12 @@
 				});
 			});
 </script>
+<script>
+	function hideiFrame() {
+		jQuery(function($){
+			$(".videoWrapper").css("background-color","black");
+		});
+	}
+</script>
 
 <?php echo foot(array('bodyclass' => 'items show')); ?>

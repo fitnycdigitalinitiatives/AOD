@@ -26,6 +26,8 @@ function video_embed()
 		$title = metadata('item', array('Dublin Core', 'Title'));
 		$description = metadata('item', array('Dublin Core', 'Description'));
 		$uploadDate = metadata('item', 'added');
+		$thumbnail_src = 'https://drive.google.com/thumbnail?authuser=0&sz=w320&id=' . metadata($item, array('Item Type Metadata', 'Identifier.GoogleDrive'));
+		$html .= '<img src="' . $thumbnail_src . '" onerror="hideiFrame()" style="display: none;">';
 		$html .= '<div class="videoWrapper" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">';
 		$html .= '<!-- schema.org data -->';
 		$html .= '<meta itemprop="name" content="' . $title . '" />';

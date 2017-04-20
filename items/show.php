@@ -36,7 +36,7 @@
 	<aside id="sidebar">
 		<!-- List related items based on 1st tag -->
 		<?php echo related_items('item'); ?>
-		
+
 		<!-- If the item belongs to a collection, the following creates a link to that collection. -->
 		<?php if (metadata('item', 'Collection Name')): ?>
 		<div id="collection" class="element">
@@ -59,7 +59,7 @@
 			<?php endforeach; ?>
 		</div>
 		<?php endif; ?>
-		
+
 		<!-- If the item has related parts, the following creates a link to those titles. -->
 		<?php if (metadata('item', array('Dublin Core', 'Relation'))): ?>
 		<div id="relation" class="element">
@@ -72,7 +72,7 @@
 			<?php endforeach; ?>
 		</div>
 		<?php endif; ?>
-		
+
 		<!-- The following prints a list of all tags associated with the item -->
 		<?php if (metadata('item', 'has tags')): ?>
 		<div id="item-tags" class="element">
@@ -83,7 +83,7 @@
 			<?php endforeach; ?>
 		</div>
 		<?php endif;?>
-		
+
 		<?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
 	</aside>
@@ -126,6 +126,13 @@
 					});
 				});
 			});
+</script>
+<script>
+function hideiFrame() {
+    jQuery(function($){
+			$(".videoWrapper").css("background-color","black");
+		};
+};
 </script>
 
 <?php echo foot(array('bodyclass' => 'items show')); ?>

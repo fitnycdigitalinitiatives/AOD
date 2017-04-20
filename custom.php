@@ -34,7 +34,7 @@ function video_embed()
 		$html .= '<meta itemprop="description" content="' . $description . '" />';
 		$html .= '<meta itemprop="uploadDate" content="' . $uploadDate . '" />';
 		$html .= '<!-- Google Drive iFrame -->';
-		$html .= '<iframe type="text/html" width="560" height="315" src="' . $src . '?start=1&autoplay=1" frameborder="0" allowfullscreen></iframe>';
+		$html .= '<iframe id="GDplayer" type="text/html" width="560" height="315" src="' . $src . '?start=1&autoplay=1" frameborder="0" allowfullscreen></iframe>';
 		$html .= '</div>';
 	}
 	return $html;

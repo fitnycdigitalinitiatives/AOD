@@ -130,7 +130,8 @@
 <script>
 	function hideiFrame() {
 		jQuery(function($){
-			$(".videoWrapper").css("display","none");
+			$("#GDplayer").css("display","none");
+			$(".social").css("display","none");
 		});
 	}
 </script>

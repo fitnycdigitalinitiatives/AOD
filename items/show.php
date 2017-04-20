@@ -131,7 +131,7 @@
 function hideiFrame() {
     jQuery(function($){
 			$(".videoWrapper").css("background-color","black");
-		};
+		});
 };
 </script>
 

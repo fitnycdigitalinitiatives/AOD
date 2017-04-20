@@ -132,6 +132,7 @@
 		jQuery(function($){
 			$("#GDplayer").css("display","none");
 			$(".social").css("display","none");
+			$("#GDplayer").css("background-image","<?php img('default_gdrive.png'); ?>");
 		});
 	}
 </script>

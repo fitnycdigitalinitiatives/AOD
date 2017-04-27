@@ -132,7 +132,7 @@
 		jQuery(function($){
 			$("#GDplayer").css("display","none");
 			$(".social").css("display","none");
-			var url = "<?php img('default_gdrive.png'); ?>";
+			var url = <?php img('default_gdrive.png'); ?>,
 			$(".videoWrapper").css("background-image","url(" + url + ")");
 		});
 	}

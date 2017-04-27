@@ -132,7 +132,7 @@
 		jQuery(function($){
 			$("#GDplayer").css("display","none");
 			$(".social").css("display","none");
-			var url = "barf";
+			var url = "<?php echo img('default_gdrive.png'); ?>";
 			$(".videoWrapper").css("background-image","url(" + url + ")");
 		});
 	}

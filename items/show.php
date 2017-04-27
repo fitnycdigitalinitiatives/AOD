@@ -133,7 +133,7 @@
 			$("#GDplayer").css("display","none");
 			$(".social").css("display","none");
 			var url = "<?php echo img('default_gdrive.png'); ?>";
-			$(".videoWrapper").css("background-image","url(" + url + ")");
+			$(".videoWrapper").text("This content is restricted to members of the FIT commnunity. If you are a member of the FIT community, please log into your Gmail account before accessing this page. If you would like to inquire about gaining access to this restricted content, please contact us at archiveondemand@fitnyc.edu");
 		});
 	}
 </script>

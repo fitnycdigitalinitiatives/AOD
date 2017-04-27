@@ -133,7 +133,8 @@
 			$("#GDplayer").css("display","none");
 			$(".social").css("display","none");
 			var url = "<?php echo img('default_gdrive.png'); ?>";
-			$(".videoWrapper").text("This content is restricted to members of the FIT commnunity. If you are a member of the FIT community, please log into your Gmail account before accessing this page. If you would like to inquire about gaining access to this restricted content, please contact us at archiveondemand@fitnyc.edu");
+			$(".videoWrapper").text("<h2>Restricted Content</h2><div class='element-text'>This content is restricted to members of the FIT commnunity. If you are a member of the FIT community, please log into your Gmail account before accessing this page. If you would like to inquire about gaining access to this restricted content, please contact us at archiveondemand@fitnyc.edu</div>");
+			$(".videoWrapper").css("padding", "1em")
 		});
 	}
 </script>

@@ -132,7 +132,7 @@
 		jQuery(function($){
 			$("#GDplayer").remove();
 			$(".social").remove();
-			$(".videoWrapper").css("padding", "1em")
+			$(".videoWrapper").css("padding", "1em");
 			$( "<h2>Restricted Content</h2><div class='element-text'>This content is restricted to members of the FIT commnunity. If you are a member of the FIT community, please log into your Gmail account before accessing this page. If you would like to inquire about gaining access to this restricted content, please contact the <a href="mailto:archiveondemand@fitnyc.edu">AOD</a> team for more information.</div>" ).insertAfter( ".videoWrapper" );
 		});
 	}

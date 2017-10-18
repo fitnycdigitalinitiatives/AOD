@@ -67,8 +67,10 @@
 			<div id="menu-button">
 				<a href="#" class="menu"><i class="fa fa-bars  fa-2x"></i></a>
 			</div>
-            <div id="search-container" class="desktop" role="search">
-				<form id="search-form" name="search-form" action="<?php echo url('/items/browse'); ?>" method="get">
+      <div id="search-container" class="desktop" role="search">
+        <!-- Get filter for plugin use -->
+      	<?php $url = apply_filters('search_form_default_action', url('/items/browse')); ?>
+				<form id="search-form" name="search-form" action="<?php echo $url; ?>" method="get">
 					<input type="text" name="search" id="keyword-search" value="" size="40" title="Search">
 					<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
 				</form>

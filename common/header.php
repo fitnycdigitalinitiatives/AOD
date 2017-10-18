@@ -69,9 +69,9 @@
 			</div>
       <div id="search-container" class="desktop" role="search">
         <!-- Get filter for plugin use -->
-      	<?php $url = apply_filters('search_form_default_action', url('/items/browse')); ?>
+      	<?php $url = apply_filters('search_form_default_action', url('search')); ?>
 				<form id="search-form" name="search-form" action="<?php echo $url; ?>" method="get">
-					<input type="text" name="search" id="keyword-search" value="" size="40" title="Search">
+					<input type="text" name="query" id="keyword-search" value="" size="40" title="Search">
 					<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
 				</form>
 			</div>
@@ -85,9 +85,9 @@
 			<?php echo public_nav_main(); ?>
 			<div id="search-container" class="mobile" role="search">
         <!-- Get filter for plugin use -->
-      	<?php $url = apply_filters('search_form_default_action', url('/items/browse')); ?>
+      	<?php $url = apply_filters('search_form_default_action', url('search')); ?>
 				<form id="search-form" name="search-form" action="<?php echo $url; ?>" method="get">
-					<input type="text" name="search" id="keyword-search" value="" size="40" title="Search">
+					<input type="text" name="query" id="keyword-search" value="" size="40" title="Search">
 					<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
 				</form>
 			</div>

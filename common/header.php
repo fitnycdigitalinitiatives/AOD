@@ -17,11 +17,11 @@
 
     <!-- Plugin Stuff -->
     <?php fire_plugin_hook('public_head', array('view'=>$this)); ?>
-	
+
 	<!-- Icon -->
-	<link rel="icon" href="https://www.fitnyc.edu/images/display/buttons/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="https://www.fitnyc.edu/images/display/buttons/favicon.ico" type="image/x-icon">
-	
+  <link rel="icon" href="<?php echo img('favicon.ico'); ?>" type="image/x-icon">
+  <link rel="shortcut icon" href="<?php echo img('favicon.ico'); ?>" type="image/x-icon">
+
     <!-- Stylesheets -->
     <?php
     queue_css_url('//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic');
@@ -31,7 +31,7 @@
     ?>
 
     <!-- JavaScripts -->
-    <?php 
+    <?php
     queue_js_file(array(
         'vendor/selectivizr',
         'vendor/jquery-accessibleMegaMenu',
@@ -40,7 +40,7 @@
         'AOD',
         'globals',
 		'owl.carousel.min'
-    )); 
+    ));
     ?>
 
     <?php echo head_js(); ?>
@@ -69,21 +69,21 @@
 			</div>
             <div id="search-container" class="desktop" role="search">
 				<form id="search-form" name="search-form" action="<?php echo url('/items/browse'); ?>" method="get">
-					<input type="text" name="search" id="keyword-search" value="" size="40" title="Search"> 
+					<input type="text" name="search" id="keyword-search" value="" size="40" title="Search">
 					<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
 				</form>
 			</div>
 			<nav id="top-nav" class="top" role="navigation">
             <?php echo public_nav_main(); ?>
 			</nav>
-			
+
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
 		<div id="mobile-nav" role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
 			<?php echo public_nav_main(); ?>
 			<div id="search-container" class="mobile" role="search">
 				<form id="search-form" name="search-form" action="<?php echo url('/items/browse'); ?>" method="get">
-					<input type="text" name="search" id="keyword-search" value="" size="40" title="Search"> 
+					<input type="text" name="search" id="keyword-search" value="" size="40" title="Search">
 					<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
 				</form>
 			</div>

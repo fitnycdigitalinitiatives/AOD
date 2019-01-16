@@ -8,7 +8,7 @@
   -- Global Classes
   -- Navigation
   ----- Pagination
-  -- Header 
+  -- Header
   -- Footer
   -- Content
   -- Home
@@ -29,7 +29,7 @@
   body {
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 120%;
 	color: #3c3c3c;
     word-wrap: break-word;
@@ -644,7 +644,7 @@
     overflow: visible;
     *zoom: 1;
   }
-  
+
   #content:after {
     content: "";
     display: table;
@@ -902,12 +902,12 @@
 
   /* !---------- Home ---------- */
   body#home {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/doonan.jpg) no-repeat center center fixed; 
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/doonan.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  }  
+  }
   #home .logo {
 	padding: 1.5em 16px;
   }
@@ -1737,16 +1737,16 @@
   footer #social-media ul {
 	float: right;
   }
-  
+
   /* !---------- Navigation --------- */
   nav.top {
     /* mega menu list */
     box-sizing: border-box;
     /* a top level navigation item in the mega menu */
     /* first descendant link within a top level navigation item */
-    /* focus/open states of first descendant link within a top level 
+    /* focus/open states of first descendant link within a top level
        navigation item */
-    /* open state of first descendant link within a top level 
+    /* open state of first descendant link within a top level
        navigation item */
     /* sub-navigation panel */
 	width: auto;
@@ -1961,7 +1961,7 @@
   }
 
   /* !---------- Items --------- */
-  
+
   .items .advanced-search-container {
 	width: 66.5%;
 	margin-right: auto;
